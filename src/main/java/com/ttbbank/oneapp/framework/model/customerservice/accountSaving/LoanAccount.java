@@ -1,0 +1,57 @@
+package com.ttbbank.oneapp.framework.model.customerservice.accountSaving;
+
+import java.util.List;
+
+public class LoanAccount {
+    public String account_name;
+    public String account_nickname;
+    public String account_number;
+    public String account_type_desc_en;
+    public String account_type_desc_th;
+    public String accountname;
+    public String accountno;
+    public String actamount;
+    public String allowPayment;
+    public String app_deeplink_scheme;
+    public String bottomSheetMessage;
+    public String compcode;
+    public String contract;
+    public String custno;
+    public String due_amount;
+    public String due_date;
+    public String dueday;
+    public String installamt;
+    public String installtotamt;
+    public String insuranceduedate;
+    public String lastpaydate;
+    public String license;
+    public String licenseprovince;
+    public String loan_type;
+    public String model;
+    public String nickname;
+    public String osbalance;
+    public String outStandingLabelKey;
+    public String outstanding_amount;
+    public String paid_amount;
+    public String paid_period;
+    public String paydueamt;
+    public String penaltyamt;
+    public String product;
+    public String product_code;
+    public String product_icon;
+    public String product_name_en;
+    public String product_name_th;
+    public String product_nickname;
+    public String product_order;
+    public String remaining_period;
+    public String servicechargeamt;
+    public List<Shortcut> shortcuts;
+    public String showOutstanding;
+    public String status;
+    public String statusdesc;
+    public String taxamount;
+    public String taxduedate;
+    public String termspaid;
+    public String totalpayamt;
+    public String totalterms;
+}

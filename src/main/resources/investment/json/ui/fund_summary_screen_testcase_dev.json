@@ -1,0 +1,34 @@
+{
+  "TC_OneApp_Fund_Summary_Screen_0001": {
+    "ScenarioName": "Fund Summary Screen",
+    "Description": "Validate Fund Summary Screen",
+    "ExpectedResult": [
+      "Fund Summary Screen should be display correctly"
+    ],
+    "TestData": {
+      "Fund_Name": "TMB50",
+      "Fund_Full_Name_EN": "TMB SET50 FUND",
+      "Fund_Full_Name_TH": "กองทุนเปิดทหารไทย SET50",
+      "Portfolio": "PT000000000001829798",
+      "Transaction_Type": "switch"
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  },
+  "TC_OneApp_Fund_Summary_Screen_0002": {
+    "ScenarioName": "Fund Summary Screen",
+    "Description": "Validate Fund Summary Screen",
+    "ExpectedResult": [
+      "Fund Summary Screen should be display correctly"
+    ],
+    "TestData": {
+      "Fund_Name": "MODEL1",
+      "Fund_Full_Name_EN": "Smart Port Model 1",
+      "Fund_Full_Name_TH": "สมาร์ทพอร์ตโมเดล 1",
+      "Portfolio": "PT000000000001829800",
+      "Transaction_Type": "buy"
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

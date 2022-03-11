@@ -1,0 +1,532 @@
+{
+
+  "TS_OneApp_API_VIEW_ACCOUNT_001": {
+    "Description": "Verify Account Detail with All Free (SDA)",
+    "ExpectedResult":{
+      "accountNo" : "0019684927",
+      "accountType" : "SDA",
+      "accountBalance" : "0.0",
+      "accountName" : "NAME TEST",
+      "branchNameEn": "PHAHONYOTHIN",
+      "branchNameTh": "พหลโยธิน",
+      "ledgerBalance": "0.0",
+      "interestRate": "0.650000",
+      "accruedInterest": "0.0",
+      "accountStatus": "Inactive | ปกติ (Active)",
+      "productNameTh": "บัญชี ออลล์ฟรี",
+      "productNameEn": "all free account"
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name" : "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParamsAllFree" : {
+      "account_no": "0019684927",
+      "account_type": "SDA"
+    },
+    "ExpectedResultKey": [
+      ""
+    ],
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "customers-ex-service",
+          "description": "success"
+        }
+      }
+    },
+    "IsSkip": false
+  },
+  "TS_OneApp_API_VIEW_ACCOUNT_002": {
+    "Description": "Verify Account Detail with All Free (SDA) - No Fixed Account",
+    "ExpectedResult": {
+      "accountNo": "2372133393",
+      "accountType": "SDA",
+      "accountBalance": "1966866.43",
+      "accountName": "NAME TEST",
+      "branchNameEn": "SEACON SQUARE",
+      "branchNameTh" : "ซีคอนสแควร์",
+      "ledgerBalance": "2000199.76",
+      "interestRate": "0.249999",
+      "accruedInterest": "82.26",
+      "accountStatus": "Active | ปกติ (Active)",
+      "productNameTh": "บัญชี โนฟิกซ์",
+      "productNameEn": "no fixed account"
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParamsNoFixed": {
+      "account_no": "2372133393",
+      "account_type": "SDA"
+    },
+    "ExpectedResultKey": [
+      ""
+    ],
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "customers-ex-service",
+          "description": "success"
+        }
+      }
+    },
+    "IsSkip": false
+  },
+  "TS_OneApp_API_VIEW_ACCOUNT_003": {
+    "Description": "Verify Account Detail with All Free (SDA) - Basic Saving Account",
+    "ExpectedResult": {
+      "accountNo": "0042000018",
+      "accountType": "SDA",
+      "accountBalance": "7927999.0",
+      "branchNameTh": "อาคารสาทร ซิตี้",
+      "branchNameEn": "SATHORN CITY TOWER",
+      "accountName": "NAME TEST .",
+      "accountStatus": "Active | ปกติ (Active)",
+      "productNameTh": "บัญชี เบสิก",
+      "productNameEn": "basic account"
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParamsBasicSaving": {
+      "account_no": "0042000018",
+      "account_type": "SDA"
+    },
+    "ExpectedResultKey": [
+      ""
+    ],
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "customers-ex-service",
+          "description": "success"
+        }
+      }
+    },
+    "IsSkip": false
+  },
+  "TS_OneApp_API_VIEW_ACCOUNT_004": {
+    "Description": "Verify Account Detail with All Free (SDA) - Dream Saving Account",
+    "ExpectedResult": {
+      "accountNo": "0042435008",
+      "accountType": "SDA",
+      "accountBalance": "10000.0",
+      "branchNameTh": "อาคารสาทร ซิตี้",
+      "branchNameEn": "SATHORN CITY TOWER",
+      "accountName": "เจมส์ ทดสอบ",
+      "ledgerBalance": "10000.0",
+      "interestRate": "1.500000",
+      "accruedInterest": "3.29",
+      "accountStatus": "Active | ปกติ (Active)",
+      "productNameTh": "บัญชี ดรีม เซฟวิ่ง",
+      "productNameEn": "dream savings account"
+
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParamsDreamSaving": {
+      "account_no": "0042435008",
+      "account_type": "SDA"
+    },
+    "ExpectedResultKey": [
+      ""
+    ],
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "customers-ex-service",
+          "description": "success"
+        }
+      }
+    },
+    "IsSkip": false
+  },
+  "TS_OneApp_API_VIEW_ACCOUNT_005": {
+    "Description": "Verify Account Detail with (DDA) - Current Account",
+    "ExpectedResult": {
+      "accountNo": "0041001553",
+      "accountType": "DDA",
+      "accountBalance": "6000.0",
+      "branchNameTh": "อาคารสาทร ซิตี้",
+      "branchNameEn": "SATHORN CITY TOWER",
+      "accountName": "NAME TEST",
+      "ledgerBalance": "6000.0",
+      "interestRate": "0.000000",
+      "accountStatus": "Active | ปกติ (Active)",
+      "productNameTh": "บัญชี กระแสรายวัน",
+      "productNameEn": "current account"
+
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParamsCurrentSaving": {
+      "account_no": "0041001553",
+      "account_type": "DDA"
+    },
+    "ExpectedResultKey": [
+      ""
+    ],
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "customers-ex-service",
+          "description": "success"
+        }
+      }
+    },
+    "IsSkip": false
+  },
+  "TS_OneApp_API_VIEW_ACCOUNT_006 - No edit yet": {
+    "Description": "Verify Account Detail with (DDA) - Current Account",
+    "ExpectedResult": {
+      "accountNo": "0041001553",
+      "accountType": "DDA",
+      "accountBalance": "6000.0",
+      "branchNameTh": "อาคารสาทร ซิตี้",
+      "branchNameEn": "SATHORN CITY TOWER",
+      "accountName": "NAME TEST",
+      "ledgerBalance": "6000.0",
+      "interestRate": "0.000000",
+      "accountStatus": "Active | ปกติ (Active)",
+      "productNameTh": "บัญชีกระแสรายวัน",
+      "productNameEn": "Current Account"
+
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+      "account_no": "0041001553",
+      "account_type": "DDA"
+    },
+    "ExpectedResultKey": [
+      ""
+    ],
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "customers-ex-service",
+          "description": "success"
+        }
+      }
+    },
+    "IsSkip": false
+  },
+
+  "TS_OneApp_API_VIEW_ACCOUNT_007 - No edit yet": {
+    "Description": "Verify Account Detail with (DDA) - Current Account",
+    "ExpectedResult": {
+      "accountNo": "0041001553",
+      "accountType": "DDA",
+      "accountBalance": "6000.0",
+      "branchNameTh": "อาคารสาทร ซิตี้",
+      "branchNameEn": "SATHORN CITY TOWER",
+      "accountName": "NAME TEST",
+      "ledgerBalance": "6000.0",
+      "interestRate": "0.000000",
+      "accountStatus": "Active | ปกติ (Active)",
+      "productNameTh": "บัญชีกระแสรายวัน",
+      "productNameEn": "Current Account"
+
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+      "account_no": "0041001553",
+      "account_type": "DDA"
+    },
+    "ExpectedResultKey": [
+      ""
+    ],
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "customers-ex-service",
+          "description": "success"
+        }
+      }
+    },
+    "IsSkip": false
+  },
+  "TS_OneApp_API_VIEW_ACCOUNT_008": {
+    "Description": "Verify Account Detail with deleted params (account_no)",
+    "ExpectedResult":{
+      "code": "1000014",
+      "message": "Missing required field 'accountNo'",
+      "service": "accounts-service",
+      "description": null
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParamsDeleteAccountNo": {
+      "account_type": "SDA"
+    },
+    "ExpectedResultKey": [
+      ""
+    ],
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "1000014",
+          "message": "Missing required field 'accountNo'",
+          "service": "accounts-service",
+          "description": null
+        }
+      }
+    },
+    "IsSkip": false
+  },
+  "TS_OneApp_API_VIEW_ACCOUNT_009": {
+    "Description": "Verify Account Details with invalid account_no",
+    "ExpectedResult":{
+      "code": "1000016",
+      "message": "Invalid Account Type",
+      "service": "accounts-service",
+      "description": null
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParamsInvalidAccountType": {
+      "account_no" : "0019684927",
+      "account_type": "ABC"
+    },
+    "ExpectedResultKey": [
+      ""
+    ],
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "1000016",
+          "message": "Invalid Account Type",
+          "service": "accounts-service",
+          "description": null
+        }
+      }
+    },
+    "IsSkip": false
+  },
+  "TS_OneApp_API_VIEW_ACCOUNT_010": {
+    "Description": "Verify Account Details with invalid account_no",
+    "ExpectedResult" : {
+      "code": "1000015",
+      "message": "Invalid Account Number",
+      "service": "accounts-service",
+      "description": null
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "1000015",
+          "message": "Invalid Account Number",
+          "service": "accounts-service",
+          "description": null
+        }
+      }
+    },
+    "IsSkip": false
+  },
+  "TS_OneApp_API_VIEW_ACCOUNT_011": {
+    "Description": "Verify Account Details with an empty account type",
+    "ExpectedResult":{
+      "code": "1000014",
+      "message": "Missing required field 'accountType'",
+      "service": "accounts-service",
+      "description": null
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParamsNullAccountType": {
+      "account_no" : "0019684927",
+      "account_type": null
+    },
+    "ExpectedResultKey": [
+      ""
+    ],
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "1000014",
+          "message": "Missing required field 'accountType'",
+          "service": "accounts-service",
+          "description": null
+        }
+      }
+    },
+    "IsSkip": false
+  },
+  "TS_OneApp_API_VIEW_ACCOUNT_012": {
+    "Description": "Verify Account Details with an empty account_no and account_type",
+    "ExpectResult": {
+      "code": "1000015",
+      "message": "Invalid Account Number",
+      "service": "accounts-service",
+      "description": null
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "1000015",
+          "message": "Invalid Account Number",
+          "service": "accounts-service",
+          "description": null
+        }
+      }
+    },
+    "IsSkip": false
+  },
+
+  "TS_OneApp_API_VIEW_ACCOUNT_013": {
+    "Description": "Verify Account Details with an empty account_no and account_type",
+    "ExpectedResult":{
+      "code": "1000015",
+      "message": "Invalid Account Number",
+      "service": "accounts-service",
+      "description": null
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+      "account_no" : "00000019223627789541",
+      "account_type": "SDA"
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "1000015",
+          "message": "Invalid Account Number",
+          "service": "accounts-service",
+          "description": null
+        }
+      }
+    },
+    "IsSkip": false
+  },
+  "TS_OneApp_API_VIEW_ACCOUNT_014": {
+    "Description": "Verify Account Details with input account number less than 10 digits",
+    "ExpectedResult":{
+      "code": "1000015",
+      "message": "Invalid Account Number",
+      "service": "accounts-service",
+      "description": null
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+      "account_no" : "0019",
+      "account_type": "SDA"
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "1000015",
+          "message": "Invalid Account Number",
+          "service": "accounts-service",
+          "description": null
+        }
+      }
+    },
+    "IsSkip": false
+  },
+
+  "TS_OneApp_API_VIEW_ACCOUNT_015": {
+    "Description": "Verify Account Details with input account type as a number",
+    "ExpectedResult":{
+      "code": "1000016",
+      "message": "Invalid Account Type",
+      "service": "accounts-service",
+      "description": null
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+      "account_no" : "0019684927",
+      "account_type": "123"
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "1000016",
+          "message": "Invalid Account Type",
+          "service": "accounts-service",
+          "description": null
+        }
+      }
+    },
+    "IsSkip": false
+  },
+  "TS_OneApp_API_VIEW_ACCOUNT_016": {
+    "Description": "Validate response for DATA NOT FOUND",
+    "ExpectedResult":{
+      "code": "0009",
+      "message": "DATA NOT FOUND",
+      "service": "accounts-service",
+      "description": null
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+      "account_no" : "0019223620",
+      "account_type": "SDA"
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0009",
+          "message": "DATA NOT FOUND",
+          "service": "accounts-service",
+          "description": null
+        }
+      }
+    },
+    "IsSkip": false
+  }
+}
+

@@ -1,0 +1,78 @@
+{
+  "TC_OneApp_Investment_Past_Performance_0001": {
+    "ScenarioName": "Past Performance Service",
+    "Description": "Validate Past Performance of Mutual fund by all of year",
+    "ExpectedResult": [
+      "The response of Past Performance is return the data as All of year correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "getFlag": "A",
+      "smartPortFlag": "N"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Past_Performance_0002": {
+    "ScenarioName": "Past Performance Service",
+    "Description": "Validate Past Performance of Mutual fund by Yearly",
+    "ExpectedResult": [
+      "The response of Past Performance is return the data as yearly correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "getFlag": "Y",
+      "smartPortFlag": "N"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Past_Performance_0003": {
+    "ScenarioName": "Past Performance Service",
+    "Description": "Validate Past Performance of TTB Smart Port by all of year",
+    "ExpectedResult": [
+      "The response of Past Performance is return the data as TTB Smart Port correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "getFlag": "A",
+      "smartPortFlag": "Y"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Past_Performance_0004": {
+    "ScenarioName": "Past Performance Service",
+    "Description": "Validate Past Performance of TTB Smart Port by yearly",
+    "ExpectedResult": [
+      "The response of Past Performance is return the data as TTB Smart Port correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "getFlag": "Y",
+      "smartPortFlag": "Y"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

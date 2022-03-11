@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="1">
+    <test name="PB2 - iOS (Setting PromptPay)">
+        <parameter name="DeviceProfile" value="pb2-ios-iphone13ProMax"/>
+        <groups>
+            <run>
+                <include name="Activate new flow"/>
+                <include name="RegisterWithMobileNo"/>
+                <exclude name="RegisterWithCitizenID"/>
+                <include name="DeRegisterWithMobileNo"/>
+                <exclude name="DeRegisterWithCitizenID"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.SettingPromptpayRunneriOS"/>
+        </classes>
+    </test>
+
+    <!--	<test name="PB2 - iOS Sauce Labs (Setting PromptPay)">-->
+    <!--		<parameter name="DeviceProfile" value="pb2-ios-iphone11ProMax.saucelabs" />-->
+    <!--		<groups>-->
+    <!--			<run>-->
+    <!--				<include name="Activate new flow"/>-->
+    <!--				<include name="RegisterWithMobileNo"/>-->
+    <!--				<exclude name="RegisterWithCitizenID"/>-->
+    <!--				<include name="DeRegisterWithMobileNo"/>-->
+    <!--				<exclude name="DeRegisterWithCitizenID"/>-->
+    <!--			</run>-->
+    <!--		</groups>-->
+    <!--		<classes>-->
+    <!--			<class name="com.ttbbank.oneapp.runner.primarybanking2.SettingPromptpayRunnerAndroid" />-->
+    <!--		</classes>-->
+    <!--	</test>-->
+
+
+</suite>
+

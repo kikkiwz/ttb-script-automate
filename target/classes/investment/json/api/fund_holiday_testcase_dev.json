@@ -1,0 +1,15 @@
+{
+  "TC_OneApp_Investment_Funds_Holiday_0001": {
+    "ScenarioName": "Funds Holiday",
+    "Description": "Verify Funds Holiday service",
+    "ExpectedResult": [
+      "Validate response Funds Holiday is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "TESCHINAA"
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

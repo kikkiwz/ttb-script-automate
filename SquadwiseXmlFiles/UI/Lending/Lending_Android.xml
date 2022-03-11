@@ -1,0 +1,51 @@
+<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >-->
+
+<!--<suite name="Automation-Testing" verbose="1">-->
+<!--	<listeners>-->
+<!--		<listener-->
+<!--			class-name="com.tmb.automation.helper.ExtentListeners">-->
+
+<!--		</listener>-->
+<!--	</listeners>-->
+<!--	-->
+
+<!--	<parameter name="DeviceProfile" value="SaucelabAndroidLending" />-->
+<!--	<test name="Lending -Mobile-Automation">-->
+<!--	-->
+<!--		<classes>-->
+<!--			-->
+<!--				<class name="com.tmb.automation.test.lending.sprint25Android.OneApp13704_C2G" />-->
+<!--		</classes>-->
+<!--	</test>-->
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+
+
+	<test name="Set Limit permanent">
+		<parameter name="DeviceProfile" value="lending-android-oneapp-vit-a51"/>
+		<groups>
+			<run>
+				<include name="Set Limit permanent"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.SetLimitTempRunner"/>
+		</classes>
+	</test>
+
+	<!--	<test name="SET ATM PIN Primary">-->
+	<!--		<parameter name="DeviceProfile" value="lending-android-oneapp-saucelabs-a80"/>-->
+	<!--		<groups>-->
+	<!--			<run>-->
+	<!--				<include name="SET ATM PIN Primary"/>-->
+	<!--			</run>-->
+	<!--		</groups>-->
+	<!--		<classes>-->
+	<!--			<class name="com.ttbbank.oneapp.runner.lending.SetAtmPinRunner"/>-->
+	<!--		</classes>-->
+	<!--	</test>-->
+
+</suite>
+

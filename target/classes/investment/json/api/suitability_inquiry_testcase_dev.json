@@ -1,0 +1,19 @@
+{
+  "TC_OneApp_Investment_Suitability_Inquiry_0001": {
+    "ScenarioName": "Suitability inquiry Service",
+    "Description": "Validate Suitability inquiry",
+    "ExpectedResult": [
+      "The response of Suitability inquiry is return the data score correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

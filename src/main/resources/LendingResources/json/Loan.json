@@ -1,0 +1,109 @@
+{
+  "get-loan-statement": {
+    "description": "Get Campaign Transaction",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/creditcard/card-installment-confirm",
+    "header": {
+      "accept": "application/json",
+      "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "account_id": "0000000050078360414020372",
+      "end_date": "2021-08-25",
+      "start_date": "2020-03-01"
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      },
+      "data": {
+        "status": {},
+        "additional_status": [
+          {
+            "status_code": "0",
+            "server_status_code": "",
+            "severity": "Info",
+            "status_desc": "Success"
+          },
+          {
+            "status_code": "0",
+            "server_status_code": "0",
+            "severity": "Info",
+            "status_desc": "TRANSACTION PROCESSING COMPLETE."
+          }
+        ],
+        "account": {
+          "id": "00015719933001",
+          "statements": [
+            {
+              "sequence_no": "1",
+              "transaction_date": "2021-03-15",
+              "transaction_code": "CR/TR",
+              "loan_balance_amount": "0.00",
+              "interest_amount": "100.00",
+              "transaction_amount": "100.00",
+              "interest_rate": "0.000",
+              "outstanding_balance": "267706.70",
+              "outstanding_interest": "806.80",
+              "fee_amount": ""
+            }
+          ]
+        }
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzc1MDE3Mywic3NpZCI6IjAwMDAwMDAwMDA3MDI1LXpqcGRoZWRiIiwianRpIjoiZTk4Mzk3YjEtODQ0OS00ZGRmLTgwOWMtODYxNDgxNzg0NDFmIiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.Zd29-qZJPuS_Tf9OBXvq_qu2QdBWdJUKfex_2PeGzoQ"
+      }
+    }
+  },
+  "get-account-detail" : {
+    "description": "Get Account Detail",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/loan/get-account-detail",
+    "header": {
+      "accept": "application/json",
+      "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "account_id": "0000000050078670143000945"
+    }
+  ,
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      },
+      "data": {
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzc1MDE3Mywic3NpZCI6IjAwMDAwMDAwMDA3MDI1LXpqcGRoZWRiIiwianRpIjoiZTk4Mzk3YjEtODQ0OS00ZGRmLTgwOWMtODYxNDgxNzg0NDFmIiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.Zd29-qZJPuS_Tf9OBXvq_qu2QdBWdJUKfex_2PeGzoQ"
+      }
+    }
+  },
+}

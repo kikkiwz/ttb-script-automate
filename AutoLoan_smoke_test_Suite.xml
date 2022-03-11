@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="5" data-provider-thread-count="6">
+
+
+	<listeners>
+		<listener
+				class-name="com.tmb.automation.helper.ExtentListeners">
+		</listener>
+	</listeners>
+
+	<test name="AutoLoan Account Detail android">
+		<parameter name="DeviceProfile" value="AutoLoan-android-saucelabs-huaweiP30.accdetail"/>
+		<groups>
+			<run>
+				<include name="Activate new flow"/>
+				<include name="Enter Loan Home"/>
+				<include name="Auto loan account detail"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.autoloan.AutoLoanAccountDetailRunner"/>
+		</classes>
+	</test>
+
+	<test name="AutoLoan Account Detail ios">
+		<parameter name="DeviceProfile" value="AutoLoan-iOS-saucelabs-Iphone12Pro.accdetail"/>
+		<groups>
+			<run>
+				<include name="Activate new flow"/>
+				<include name="Enter Loan Home"/>
+				<include name="Auto loan account detail"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.autoloan.AutoLoanAccountDetailRunner"/>
+		</classes>
+	</test>
+
+
+
+</suite>
+

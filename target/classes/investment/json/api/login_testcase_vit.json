@@ -1,0 +1,40 @@
+{
+  "TC_OneApp_Investment_LogIn_Api_0001": {
+    "ScenarioName": "Verify Login APIs",
+    "Description": "Verify Login APIs",
+    "ExpectedResult": [
+      "Can generate the token successfully"
+    ],
+    "TestData": {
+      "body": {
+        "username": "BRTnzHnx0MVEivZ2FYDM00u5ttz7aESAmNQHYFdw/BzDkuALv/NEdd0t5OQ6x0bCVVcjFRZgqbRo1o6uq1hYmHvVI09JKNCy37b4ORzQujRh5/TaWaMFCZicBeUmrz/kuSZ/ipEQjGepdlwxQwQKUC3jTo0inV4PGlsfAC2f7JHX0K885ltOL0988XR9hgxKjENuYK3rHYnK3ApCtloELfE5HX5Kcn3J52pLCkHiSVxfUrlXuORmeaeBKtAAsmoYvBc4q6tEAnM5bkPt22pZA1BqimEIP5ugU9/1yhiVaUq5EZ8WGXmOdgDtlxDMp2Rb41SsgIONEBv9son7Wx1Nxg==",
+        "password": "WfR5cuIdLh/GY9d9LME+SpKawy+LUToauMWCF+F87GGLCka6IlTP1Q7qnOVmYxl0jZGusmFNK/bICIUJA1ro2AhQXYaTKgs5mOJEO0DDEYla7vvXaLYZP1l2E57Yyk5r/iIxP/EdhuV6wIi/wmeGDM6jWgwtI9SisCq5Mcf1rvXHpBb6Dz/K9ppUrkGeyh24QdHoGxsPhi98mE8XB9jy5bWFf2fUtCNZzsFY5oLj+9PcHv+t9iS1H11SNN6nqJvCErlAGRIRoV5LxEOVuZ2rh8AO4Dy4CDUpCE8EPVRlvwbMndgiCaOGc3NAt5fs0Dbh+HZ8w0K8mQiTdx7lrRyVfA==",
+        "grant_type": "password",
+        "scope": "mobile"
+      },
+      "headers": {
+      }
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_LogIn_Api_0002": {
+    "ScenarioName": "Verify Login APIs",
+    "Description": "Verify Login APIs",
+    "ExpectedResult": [
+      "Can generate the token successfully"
+    ],
+    "TestData": {
+      "body": {
+        "username": "X5k7vWVK/NziIoyb4HISSrgz/K1slCjwFWRjahy+JkF7MPoYLI3JazKsFsN4TYdVx2K9iWCOzipNE29cjrbTVirwH1n33zpEnaXzzJKT1IJ1jOx/aRKETIEt818/xrtzOzajFx6dWtR4pSl6KTo0YLRTLJbEGWWHXHThEwX4wM0+1gwvSNauaYBOmP2xnjygjmrUERQc2UrUkQxz1oDogFVLRHkUhhliIjFD1AbAjur3N3QZdN7A+nL47fwQ0LhFppXUfujQIu5bRY8bA8yOK6a/mHwQ4MzvXCcyUWYNkMfIW/T7wHOgbGKKw44nxz2PmV0LiaOT/HXWV3oEWeooWw==",
+        "password": "WfR5cuIdLh/GY9d9LME+SpKawy+LUToauMWCF+F87GGLCka6IlTP1Q7qnOVmYxl0jZGusmFNK/bICIUJA1ro2AhQXYaTKgs5mOJEO0DDEYla7vvXaLYZP1l2E57Yyk5r/iIxP/EdhuV6wIi/wmeGDM6jWgwtI9SisCq5Mcf1rvXHpBb6Dz/K9ppUrkGeyh24QdHoGxsPhi98mE8XB9jy5bWFf2fUtCNZzsFY5oLj+9PcHv+t9iS1H11SNN6nqJvCErlAGRIRoV5LxEOVuZ2rh8AO4Dy4CDUpCE8EPVRlvwbMndgiCaOGc3NAt5fs0Dbh+HZ8w0K8mQiTdx7lrRyVfA==",
+        "grant_type": "password",
+        "scope": "mobile"
+      },
+      "headers": {
+      }
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

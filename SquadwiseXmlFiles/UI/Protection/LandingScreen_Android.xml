@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation-Testing" verbose="5" thread-count="4" data-provider-thread-count="6">
+
+	<test name="Protection: Landing screen Customer4">
+		<parameter name="DeviceProfile" value="protection-android-customer04"/>
+		<groups>
+			<run>
+				<include name="Landing_04_EN_Landing screen - Life and Health Summary"/>
+				<include name="Landing_20_EN_Landing screen - Other insurance Summary"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LandingScreenRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Landing screen TH Customer4">
+		<parameter name="DeviceProfile" value="protection-android-customer04"/>
+		<groups>
+			<run>
+				<include name="Landing_04_TH_Landing screen - Life and Health Summary"/>
+				<include name="Landing_20_TH_Landing screen - Other insurance Summary"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LandingScreenTHRunner"/>
+		</classes>
+	</test>
+
+</suite>

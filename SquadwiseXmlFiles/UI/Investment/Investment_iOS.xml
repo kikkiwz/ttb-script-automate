@@ -1,0 +1,198 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5">
+<!--    <listeners>-->
+<!--        <listener-->
+<!--                class-name="com.tmb.automation.helper.ExtentListeners">-->
+
+<!--        </listener>-->
+<!--    </listeners>-->
+
+    <test name="[Investment : iOS] - Tax Summary and Tax Document">
+        <parameter name="DeviceProfile"
+                   value="investment-ios-saucelabs-1589-vit-iphone12-max-pro-existing-customer-tax"/>
+        <parameter name="mutualFundMenuItem" value="more"/>
+        <parameter name="moreMenuItem" value="taxDoc"/>
+        <parameter name="language" value="th"/>
+        <groups>
+            <run>
+                <include name="Activate new flow"/>
+                <include name="Click My Mutual Fund"/>
+                <include name="My Mutual Fund"/>
+                <include name="My Mutual Fund Menu"/>
+                <include name="More Menu"/>
+                <include name="Tax Summary"/>
+                <include name="Tax document"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.investment.PreviewTaxDocumentRunner"/>
+        </classes>
+    </test>
+
+    <!--	<parameter name="DeviceProfile" value="SaucelabiosInvestment" />-->
+    <!--	<test preserve-order="true" name="Investment -BuyHoldingFund">-->
+
+    <!--		<classes>-->
+    <!--			<class name="com.tmb.automation.investment.HomeTest" />-->
+    <!--			<class name="com.tmb.automation.investment.DiscoveryTest" />-->
+    <!--			<class name="com.tmb.automation.investment.MyMutualFundTest" />-->
+    <!--			<class name="com.tmb.automation.investment.FundSummaryTest" />-->
+    <!--			<class name="com.tmb.automation.investment.FundFactSheetTest" />-->
+    <!--			<class name="com.tmb.automation.investment.FillingTest" />-->
+    <!--			<class name="com.tmb.automation.investment.ConfirmationTest" />-->
+    <!--			<class name="com.tmb.automation.investment.CompletedTest" />-->
+    <!--		</classes>-->
+    <!--	</test>-->
+    <!--
+        <parameter name="DeviceProfile" value="SaucelabiosInvestment" />
+        <test preserve-order="true" name="Investment -BuyNewFund">
+
+            <classes>
+                <class name="com.tmb.automation.investment.HomeTest" />
+                <class name="com.tmb.automation.investment.DiscoveryTest" />
+                <class name="com.tmb.automation.investment.MyMutualFundTest" />
+                <class name="com.tmb.automation.investment.FundsListTest" />
+                <class name="com.tmb.automation.investment.FundsDetailsTest" />
+                <class name="com.tmb.automation.investment.FundFactSheetTest" />
+                <class name="com.tmb.automation.investment.FillingTest" />
+                <class name="com.tmb.automation.investment.ConfirmationTest" />
+                <class name="com.tmb.automation.investment.CompletedTest" />
+            </classes>
+        </test>
+
+
+        <parameter name="DeviceProfile" value="SaucelabiosInvestment" />
+        <test preserve-order="true"
+            name="Investment -CanceltransactionOnFundSummary.xml">
+
+            <classes>
+                <class name="com.tmb.automation.investment.HomeTest" />
+                <class name="com.tmb.automation.investment.DiscoveryTest" />
+                <class name="com.tmb.automation.investment.MyMutualFundTest" />
+                <class name="com.tmb.automation.investment.FundSummaryTest" />
+            </classes>
+        </test>
+
+        <parameter name="DeviceProfile" value="SaucelabiosInvestment" />
+        <test preserve-order="true"
+            name="Investment -CanceltransactionOnHistory.xml">
+
+            <classes>
+                <class name="com.tmb.automation.investment.HomeTest" />
+                <class name="com.tmb.automation.investment.DiscoveryTest" />
+                <class name="com.tmb.automation.investment.MyMutualFundTest" />
+                <class
+                    name="com.tmb.automation.investment.HistoricalTransactionTest" />
+            </classes>
+        </test>
+
+        <parameter name="DeviceProfile" value="SaucelabiosInvestment" />
+        <test preserve-order="true"
+            name="Investment -Sell_fund_on_fund_summary.xml">
+
+            <classes>
+                <class name="com.tmb.automation.investment.HomeTest" />
+                <class name="com.tmb.automation.investment.DiscoveryTest" />
+                <class name="com.tmb.automation.investment.MyMutualFundTest" />
+                <class name="com.tmb.automation.investment.FundSummaryTest" />
+                <class name="com.tmb.automation.investment.SellTest" />
+                <class
+                    name="com.tmb.automation.investment.ConfirmationSellTest" />
+                <class name="com.tmb.automation.investment.CompletedSellTest" />
+            </classes>
+        </test>
+
+        <parameter name="DeviceProfile" value="SaucelabiosInvestment" />
+        <test preserve-order="true"
+            name="Investment -Sell_fund_on_mymutual.xml">
+
+            <classes>
+                <class name="com.tmb.automation.investment.HomeTest" />
+                <class name="com.tmb.automation.investment.DiscoveryTest" />
+                <class name="com.tmb.automation.investment.MyMutualFundTest" />
+                <class name="com.tmb.automation.investment.FundsTest" />
+                <class name="com.tmb.automation.investment.SellTest" />
+                <class
+                    name="com.tmb.automation.investment.ConfirmationSellTest" />
+                <class name="com.tmb.automation.investment.CompletedSellTest" />
+            </classes>
+        </test>
+
+        <parameter name="DeviceProfile" value="SaucelabiosInvestment" />
+        <test preserve-order="true"
+            name="Investment -Switch_fund_on_fundsummary.xml">
+
+            <classes>
+                <class name="com.tmb.automation.investment.HomeTest" />
+                <class name="com.tmb.automation.investment.DiscoveryTest" />
+                <class name="com.tmb.automation.investment.MyMutualFundTest" />
+                <class name="com.tmb.automation.investment.FundSummaryTest" />
+                <class
+                    name="com.tmb.automation.investment.SelectSourceFundsTest" />
+                <class
+                    name="com.tmb.automation.investment.SelectTargetFundsTest" />
+                <class name="com.tmb.automation.investment.FundFactSheetTest" />
+                <class name="com.tmb.automation.investment.SwitchTest" />
+                <class
+                    name="com.tmb.automation.investment.ConfirmationSwitchTest" />
+                <class name="com.tmb.automation.investment.CompletedSwitchTest" />
+            </classes>
+        </test>
+
+        <parameter name="DeviceProfile" value="SaucelabiosInvestment" />
+        <test preserve-order="true"
+            name="Investment -Switch_fund_on_mymutual.xml">
+
+            <classes>
+                <class name="com.tmb.automation.investment.HomeTest" />
+                <class name="com.tmb.automation.investment.DiscoveryTest" />
+                <class name="com.tmb.automation.investment.MyMutualFundTest" />
+                <class
+                    name="com.tmb.automation.investment.SelectSourceFundsTest" />
+                <class
+                    name="com.tmb.automation.investment.SelectTargetFundsTest" />
+                <class name="com.tmb.automation.investment.FundFactSheetTest" />
+                <class name="com.tmb.automation.investment.SwitchTest" />
+                <class
+                    name="com.tmb.automation.investment.ConfirmationSwitchTest" />
+                <class name="com.tmb.automation.investment.CompletedSwitchTest" />
+            </classes>
+        </test>
+
+        <parameter name="DeviceProfile" value="SaucelabiosInvestment" />
+        <test preserve-order="true"
+            name="Investment -ttb_smart_port_buy_on_fund_summary.xml">
+
+            <classes>
+                <class name="com.tmb.automation.investment.HomeTest" />
+                <class name="com.tmb.automation.investment.DiscoveryTest" />
+                <class name="com.tmb.automation.investment.MyMutualFundTest" />
+                <class name="com.tmb.automation.investment.TTBSmartPortTest" />
+                <class name="com.tmb.automation.investment.FundSummaryTest" />
+                <class name="com.tmb.automation.investment.FundFactSheetTest" />
+                <class name="com.tmb.automation.investment.FillingTest" />
+                <class name="com.tmb.automation.investment.ConfirmationTest" />
+                <class name="com.tmb.automation.investment.CompletedSwitchTest" />
+            </classes>
+        </test>
+     -->
+</suite>
+	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	

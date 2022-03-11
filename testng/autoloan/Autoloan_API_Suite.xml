@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+
+
+    <listeners>
+        <listener
+                class-name="com.tmb.automation.helper.ExtentListeners">
+
+        </listener>
+    </listeners>
+
+    <test name="Autoloan API Test">
+        <classes>
+            <class name="com.tmb.automation.autoloan.APITest.APITestAddress"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestCarTaxSign"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestCarTransferForm"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestCloseAccount"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestCopyOfContract"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestCustomerProfile"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestGetAccountDeatail"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestGetBranch"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestGetListOfReceipt"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestGetSRTrackingList"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestGetSRTrackingListDetail"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestPaymentDetail"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestPaymentList"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestSetRequestForPayment"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestViewCarRegistrationBook"/>
+            <class name="com.tmb.automation.autoloan.APITest.APITestViewSaleSheet"/>
+        </classes>
+    </test>
+
+
+</suite>
+

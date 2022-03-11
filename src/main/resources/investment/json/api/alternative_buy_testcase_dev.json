@@ -1,0 +1,22 @@
+{
+  "TC_OneApp_Investment_Alternative_Buy_0001": {
+    "ScenarioName": "Alternative Buy",
+    "Description": "Verify Alternative Buy service",
+    "ExpectedResult": [
+      "Validate response Alternative Buy in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "crmId": "00000018592884",
+      "fundClassNameThHub": "กองทุนเปิดธนชาต อิีสท์สปริง China A Active",
+      "fundCode": "TESCHINAA",
+      "fundHouseCode": "TFUND",
+      "language": "EN",
+      "orderType": "1",
+      "processFlag": "Y",
+      "unitHolderNo": "PT000000000001829800"
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

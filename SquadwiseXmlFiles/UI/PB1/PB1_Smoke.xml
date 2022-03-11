@@ -1,0 +1,57 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="1" parallel="tests" thread-count="1" data-provider-thread-count="1">
+<listeners> <listener class-name="com.tmb.automation.helper.ExtentListeners"> </listener> </listeners>
+
+
+	<test name="PB1 AndroidEn">
+		<parameter name="DeviceProfile" value="PB1-android-saucelabs" />
+		<groups>
+			<run>
+				<include name="PB1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.pb1.UIc23420.TC01_CardlessSmokeEnAndroid" />
+		</classes>
+	</test>
+
+	<test name="PB1 AndroidTh">
+		<parameter name="DeviceProfile" value="PB1-android-saucelabs" />
+		<groups>
+			<run>
+				<include name="PB1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.pb1.UIc23420.TC02_CardlessSmokeThAndroid" />
+		</classes>
+	</test>
+
+
+	<test name="PB1 IOSEn">
+		<parameter name="DeviceProfile" value="PB1-iOS-saucelabs" />
+		<groups>
+			<run>
+				<include name="PB1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.pb1.UIc23420.TC03_CardlessSmokeEnIOS" />
+		</classes>
+	</test>
+
+	<test name="PB1 IOSTh">
+		<parameter name="DeviceProfile" value="PB1-iOS-saucelabs" />
+		<groups>
+			<run>
+				<include name="PB1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.pb1.UIc23420.TC04_CardlessSmokeThIOS" />
+		</classes>
+	</test>
+
+</suite>
+

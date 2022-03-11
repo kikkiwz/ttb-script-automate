@@ -1,0 +1,1 @@
+{"uuid":"4ebee22c-b36b-451e-b377-5de91a675432","name":"Android/iOS Platform1","children":["f718816a-b4f0-452f-9ba1-4d98ff1fb961"],"befores":[{"name":"BeforeTest","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1643622327144,"stop":1643622331841}],"afters":[],"links":[],"start":1643622327132,"stop":1643622353137}

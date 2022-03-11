@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="1">
+	<listeners>
+		<listener
+			class-name="com.tmb.automation.helper.ExtentListeners">
+		</listener>
+	</listeners>
+	<test name="API Testing for OneApp">
+	  
+		<classes>
+			<class
+					name="com.tmb.automation.api.IT4IT.API_OneApp"/>
+		</classes>
+	</test> 
+	
+   <test name="API Testing for cc-web">
+	  
+		<classes>
+			<class
+					name="com.tmb.automation.api.IT4IT.API_CC_WEB"/>
+		</classes>
+	</test> 
+	 	
+</suite>
+

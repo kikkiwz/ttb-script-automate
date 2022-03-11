@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation-Testing" >
+	<listeners>
+		<listener class-name="com.ttbbank.oneapp.scenario.lending.iosUtil.ExReport">
+		</listener>
+	</listeners>
+	<test name="Lending_iOS_Card_Details_PRI">
+		<parameter name="DeviceProfile" value="lending_ios_saucelabs"/>
+		<groups>
+			<run>
+				<include name="Lending_iOS_Card_Details_PRI"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+	<test name="Lending_iOS_Card_Details_PRI_has_SUP">
+		<parameter name="DeviceProfile" value="lending_ios_saucelabs"/>
+		<groups>
+			<run>
+				<include name="Lending_iOS_Card_Details_PRI_has_SUP"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+    <test name="Lending_iOS_Card_Details_SUP">
+            <parameter name="DeviceProfile" value="lending_ios_saucelabs"/>
+            <groups>
+                <run>
+                    <include name="Lending_iOS_Card_Details_SUP"/>
+                </run>
+            </groups>
+            <classes>
+                <class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+            </classes>
+    </test>
+    <test name="Lending_iOS_Card_Details_SSC">
+            <parameter name="DeviceProfile" value="lending_ios_saucelabs"/>
+            <groups>
+                <run>
+                    <include name="Lending_iOS_Card_Details_SSC"/>
+                </run>
+            </groups>
+            <classes>
+                <class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+            </classes>
+    </test>
+</suite>

@@ -1,0 +1,2004 @@
+{
+  "TC_OneApp_11889_CC_update_email_0001": {
+    "ScenarioName": "Verify update email service successfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email successfully in case of '<b>Generate-otp</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be redirect to activate code page successfully]-(Name: ม.จ. สยามมงคร ณรา ณ ขอนแก่น)",
+    "ExpectedResult": [
+      "1. Update email successfully.",
+      "<br> 2. Display 'Your verification code will be sent to this email.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "qa.at.01@tcs.com"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "200",
+      "Your verification code will be sent to this email."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0002": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The parameter is empty</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en:, custname_th:, new_email:)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'Your verification code will be sent to this email.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "",
+        "custname_th": "",
+        "new_email": ""
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "Your verification code will be sent to this email."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0003": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The parameter is null</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: null, custname_th: null, new_email: null)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully."
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "",
+        "custname_th": "",
+        "new_email": ""
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400"
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0004": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The parameter is null</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: null, custname_th: null, new_email: null)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully."
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": null,
+        "custname_th": null,
+        "new_email": null
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400"
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0005": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The parameter is thai number</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: ๑๒๓๔๕๖๗๘๙๐, custname_th: ๑๒๓๔๕๖๗๘๙๐, new_email: ๑๒๓๔๕๖๗๘๙๐)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "๑๒๓๔๕๖๗๘๙๐",
+        "custname_th": "๑๒๓๔๕๖๗๘๙๐",
+        "new_email": "๑๒๓๔๕๖๗๘๙๐"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": true
+  },
+  "TC_OneApp_11889_CC_update_email_0006": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The parameter is emoji</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: ➡️ ⬅️ ⬆️ ⬇️ ↗️ ↘️ ↙️ ↖️ ↕️ ↔️ ↪️ ↩️ ⤴️ ⤵️, custname_th: ➡️ ⬅️ ⬆️ ⬇️ ↗️ ↘️ ↙️ ↖️ ↕️ ↔️ ↪️ ↩️ ⤴️ ⤵️, new_email: ➡️ ⬅️ ⬆️ ⬇️ ↗️ ↘️ ↙️ ↖️ ↕️ ↔️ ↪️ ↩️ ⤴️ ⤵️)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "➡️ ⬅️ ⬆️ ⬇️ ↗️ ↘️ ↙️ ↖️ ↕️ ↔️ ↪️ ↩️ ⤴️ ⤵️",
+        "custname_th": "➡️ ⬅️ ⬆️ ⬇️ ↗️ ↘️ ↙️ ↖️ ↕️ ↔️ ↪️ ↩️ ⤴️ ⤵️",
+        "new_email": "➡️ ⬅️ ⬆️ ⬇️ ↗️ ↘️ ↙️ ↖️ ↕️ ↔️ ↪️ ↩️ ⤴️ ⤵️"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0007": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The parameter is URL</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: https://www.ttbbank.com, custname_th: https://www.ttbbank.com️, new_email: https://www.ttbbank.com️)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "https://www.ttbbank.com️",
+        "custname_th": "https://www.ttbbank.com️",
+        "new_email": "https://www.ttbbank.com"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0008": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The parameter is HTML</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: &lt;html&gt;&lt;body&gt;&lt;u&gt;test&lt;/u&gt;&lt;/body&gt;&lt;/html&gt;, custname_th: &lt;html&gt;&lt;body&gt;&lt;u&gt;test&lt;/u&gt;&lt;/body&gt;&lt;/html&gt;, new_email: &lt;html&gt;&lt;body&gt;&lt;u&gt;test@test.test&lt;/u&gt;&lt;/body&gt;&lt;/html&gt;)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "<html><b><u>test</u></b></html>️",
+        "custname_th": "<html><b><u>test</u></b></html>️",
+        "new_email": "<html><b><u>test@test.test</u></b></html>️"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0009": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The parameter is already in the database</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: qa.at.02@tcs.com)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'Your new email cannot be the same as your current email, please choose a different email'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "qa.at.02@tcs.com"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "Your new email cannot be the same as your current email, please choose a different email"
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0010": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: qaat01tcscoth)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "qaat01tcscoth"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0011": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: qa.at.01.tcs.co.th)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "qa.at.01.tcs.co.th"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0012": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: qa.at.01.tcs.co@th)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "qa.at.01.tcs.co@th"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0013": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: qa@at@01@tcs@co@th)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "qa@at@01@tcs@co@th"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0014": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: qa:at:01:tcs:co:th)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "qa:at:01:tcs:co:th"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0015": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: 2030-09-31)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "2030-09-31"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0016": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: 2030-09-31)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "2030-09-31"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0017": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: @example.com)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "@example.com"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0018": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: Joe Smith <email@example.com>)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "Joe Smith <email@example.com>"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0019": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: email.@example.com)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "email.@example.com"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0020": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: email..email@example.com)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "email..email@example.com"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0021": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: あいうえお@example.com)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "あいうえお@example.com"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0022": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: email@example.com (Joe Smith))",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "email@example.com (Joe Smith)"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0023": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: email@example)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "email@example"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0024": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: email@-example.com)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "email@-example.com"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0025": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: email@111.222.333.44444)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "email@111.222.333.44444"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0026": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: email@example..ttbbank)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "email@example..ttbbank"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0027": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: Abc..123@example.uk)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "Abc..123@example.uk"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0028": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: Abc..123@@example..us)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "Abc..123@@example..us"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0029": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: 00..00@@00..00)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "00..00@@00..00"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0030": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Generate-otp: The email is invalid format</b>'., When: Users follow these steps {1. Click 'Email' menu, 2. Input new email, 3. Click 'Next' button, 4. Confirm PIN}, Then: Should be display error]-(custname_en: SYAIM N KHONKAEN, custname_th: สยามมงคร ณรา ณ ขอนแก่น, new_email: ttbbank@@@#@%^%#$@#$@#.com)",
+    "ExpectedResult": [
+      "1. Generate-otp for update email unsuccessfully.",
+      "<br> 2. Display 'You've entered a wrong email format, please try again.'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "ttbbank@@@#@%^%#$@#$@#.com"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "You've entered a wrong email format, please try again."
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0031": {
+    "ScenarioName": "Verify update email service successfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email successfully in case of '<b>Email-OTP is correct</b>'., When: Users follow these steps {1. Input 'Email OTP: 4 digits' }, Then: Should be update email successfully]-(Name: ม.จ. สยามมงคร ณรา ณ ขอนแก่น)",
+    "ExpectedResult": [
+      "1. Update email successfully."
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "qa.at.01@tcs.co"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "200",
+      "xy",
+      "yx"
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0032": {
+    "ScenarioName": "Verify update email service unsuccessfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Email-OTP is incorrect</b>'., When: Users follow these steps {1. Input 'Email OTP: 4 digits' }, Then: Should be update email unsuccessfully]-(Name: ม.จ. สยามมงคร ณรา ณ ขอนแก่น)",
+    "ExpectedResult": [
+      "1. Update email unsuccessfully.",
+      "2. <br> Display 'Incorrect verification code, please try again'"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "qa.at.01@tcs.co"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "Incorrect verification code, please try again"
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0033": {
+    "ScenarioName": "Verify update email service successfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email unsuccessfully in case of '<b>Resend verification code</b>'., When: Users follow these steps {1. Input 'Email OTP: 4 digits' }, Then: Should be update email unsuccessfully]-(Name: ม.จ. สยามมงคร ณรา ณ ขอนแก่น)",
+    "ExpectedResult": [
+      "1. Update email unsuccessfully.",
+      "<br>2. Enable 'Resend code' button",
+      "<br>3. After resend verification code successfully should be disable 'Resend code' 60 seconds"
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "qa.at.01@tcs.co"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "Incorrect verification code, please try again"
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_11889_CC_update_email_0034": {
+    "ScenarioName": "Verify update email service successfully",
+    "Description": "[Update email Page]-[Verify service]-[Given: Update email successfully in case of '<b>Email-OTP is correct</b>'., When: Users follow these steps {1. Input 'Email OTP: 4 digits' }, Then: Should be update email successfully]-(Name: ม.จ. สยามมงคร ณรา ณ ขอนแก่น)",
+    "ExpectedResult": [
+      "1. Update email successfully."
+    ],
+    "TestData": {
+      "body": {
+        "custname_en": "SYAIM N KHONKAEN",
+        "custname_th": "สยามมงคร ณรา ณ ขอนแก่น",
+        "new_email": "qa.at.01@tcs.co"
+      },
+      "headers": {
+        "Channel": "mb",
+        "Device_Id": "VZmH5jr7OPMTNrHb5zYTdWSgXSX0jqpAU6BiHcZIVVyTVScOAj7jjyBcRXgI6PY4NsPgbgg/gRTLcycL8y/NPNLHa/ONUs0bQLS4NRO9Dg4jQmz/rv+/w6stVFaWnLladrflrIaUHco4EN5DVHoiQ3FREPhELJo73gxlPWc/XUsDcW/rVpl28pLj9HC0cZmFB7qqomQZbuOZYI6yReyPBuyFcOTFCRTbqcgjMXnnc4c7rEQm8C4MW6uqj6WHtApOXPZUBd6q3yoQFay9kWKkFGDZKbFRhdi92IGd3NlF5lsDCbcoAJnJK36J+bcN/JTXc5hecmOJNTSP7dS6Q/dfVQ=="
+      }
+    },
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "cc-exp-service",
+          "description": null
+        },
+        "data": {}
+      }
+    },
+    "ExpectedResultKey": [
+      "400",
+      "Incorrect verification code, please try again"
+    ],
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9002001",
+        "activity_type": "Search Customer",
+        "agent_id": "occ_120",
+        "activity_status": "Success",
+        "activitydescription": [
+          {
+            "flex": "module_name",
+            "value": "PROSPECT SEARCH"
+          },
+          {
+            "flex": "search_by",
+            "value": "mobile_no"
+          },
+          {
+            "flex": "from_date_time"
+          },
+          {
+            "flex": "to_date_time"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  }
+}

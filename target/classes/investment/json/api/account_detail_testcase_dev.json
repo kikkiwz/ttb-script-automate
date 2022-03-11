@@ -1,0 +1,68 @@
+{
+  "TC_OneApp_Investment_Account_Detail_0001": {
+    "ScenarioName": "Verify Account Detail Service",
+    "Description": "Verify Account Detail of Mutual Fund",
+    "ExpectedResult": [
+      "The response of Account Detail Service turn as of information mutual fund correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "TMBAALF",
+      "fundHouseCode": "TMBAM",
+      "serviceType": "1",
+      "tranType": "All",
+      "portfolioNumber": "PT000000000001829798"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "product-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Account_Detail_0002": {
+    "ScenarioName": "Verify Account Detail Service",
+    "Description": "Verify Account Detail of TTB SmartPort",
+    "ExpectedResult": [
+      "The response of Account Detail Service turn as of information TTB SmartPort correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "MODEL1",
+      "fundHouseCode": "TMBAM",
+      "serviceType": "1",
+      "tranType": "All",
+      "portfolioNumber": "PT000000000001829800"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "product-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Account_Detail_0003": {
+    "ScenarioName": "Verify Account Detail Service",
+    "Description": "Verify Account Detail of PTES (TMBAM Port)",
+    "ExpectedResult": [
+      "The response of Account Detail Service turn as of information PTES (TMBAM Port) correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "MODEL1",
+      "fundHouseCode": "TMBAM",
+      "serviceType": "1",
+      "tranType": "All",
+      "portfolioNumber": "PT000000000001829798"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "product-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

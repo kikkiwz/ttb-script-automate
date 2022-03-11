@@ -1,0 +1,38 @@
+{
+  "TC_OneApp_Investment_Open_Portfolio_0001": {
+    "ScenarioName": "Open Portfolio Service",
+    "Description": "Validate Open Portfolio in case existing customer",
+    "ExpectedResult": [
+      "The response of Open Portfolio is return the data as correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "existingCustomer": true
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Open_Portfolio_0002": {
+    "ScenarioName": "Open Portfolio Service",
+    "Description": "Validate Open Portfolio in case new customer",
+    "ExpectedResult": [
+      "The response of Open Portfolio is return the data as correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "existingCustomer": false
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

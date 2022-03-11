@@ -1,0 +1,140 @@
+{
+  "TC_OneApp_Investment_Fund_List_0001": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List All",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+      ]
+    },
+    "ResponseData": {
+      "data": [
+        {
+          "fundHouseCode": "TFUND",
+          "fundCode": "TCASH",
+          "fundShortName": "T-CASH",
+          "fundNameEn": "THANACHART CASH MANAGEMENT FUND",
+          "fundNameTh": "กองทุนเปิดธนชาตบริหารเงิน",
+          "riskRate": "01",
+          "allotType": "1",
+          "fundTypeL1": "Thai Money Market",
+          "fundTypeL2": "A",
+          "reserved1": "",
+          "reserved2": "",
+          "reserved3": "",
+          "reserved4": "",
+          "reserved5": "",
+          "fxRisk": "N",
+          "allowAipFlag": "Y",
+          "ipoDateFrom": "2005-08-18",
+          "ipoDateTo": "2005-08-26",
+          "dateAfterIpo": "2006-10-27",
+          "ipoFlag": "N",
+          "inceptionDate": "2005-08-31",
+          "return1Day": 0.00293,
+          "return1Month": 0.02348,
+          "return3Month": 0.08736,
+          "return6Month": 0.18813,
+          "returnYTD": 0.20507,
+          "return1Year": 0.37771,
+          "return3Year": 0.88310,
+          "return5Year": 0.97965,
+          "inceptionSinceReturn": 1.95725,
+          "smartPortFlag": "N",
+          "recommendFlag": "Y",
+          "followingFlag": "Y",
+          "boughtFlag": "N",
+          "navAsOfDate": "2021-08-27",
+          "nav": "13.63320",
+          "fundTypeGroup": "Regular Mutual Fund",
+          "customTag": "China",
+          "fundclassCode": "100",
+          "secid": "F000000RJK",
+          "fundclassCodeHub": "TMB_MS_LOCALFIXEDINCOME",
+          "fundclassNameEnHub": "Fixed Income",
+          "fundclassNameThHub": "กองทุนตราสารหนี้",
+          "termfundFlag": "N"
+        }
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0002": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as following Flag flag Y",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+    },
+    "ResponseData": {
+      "data": [
+        {
+          "fundHouseCode": "TFUND",
+          "fundCode": "TCASH",
+          "fundShortName": "T-CASH",
+          "fundNameEn": "THANACHART CASH MANAGEMENT FUND",
+          "fundNameTh": "กองทุนเปิดธนชาตบริหารเงิน",
+          "riskRate": "01",
+          "allotType": "1",
+          "fundTypeL1": "Thai Money Market",
+          "fundTypeL2": "A",
+          "reserved1": "",
+          "reserved2": "",
+          "reserved3": "",
+          "reserved4": "",
+          "reserved5": "",
+          "fxRisk": "N",
+          "allowAipFlag": "Y",
+          "ipoDateFrom": "2005-08-18",
+          "ipoDateTo": "2005-08-26",
+          "dateAfterIpo": "2006-10-27",
+          "ipoFlag": "N",
+          "inceptionDate": "2005-08-31",
+          "return1Day": 0.00293,
+          "return1Month": 0.02348,
+          "return3Month": 0.08736,
+          "return6Month": 0.18813,
+          "returnYTD": 0.20507,
+          "return1Year": 0.37771,
+          "return3Year": 0.88310,
+          "return5Year": 0.97965,
+          "inceptionSinceReturn": 1.95725,
+          "smartPortFlag": "N",
+          "recommendFlag": "Y",
+          "followingFlag": "Y",
+          "boughtFlag": "N",
+          "navAsOfDate": "2021-08-27",
+          "nav": "13.63320",
+          "fundTypeGroup": "Regular Mutual Fund",
+          "customTag": "China",
+          "fundclassCode": "100",
+          "secid": "F000000RJK",
+          "fundclassCodeHub": "TMB_MS_LOCALFIXEDINCOME",
+          "fundclassNameEnHub": "Fixed Income",
+          "fundclassNameThHub": "กองทุนตราสารหนี้",
+          "termfundFlag": "N"
+        }
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}
+
+

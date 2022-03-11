@@ -1,0 +1,114 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">-->
+<suite name="Automation-Testing" >
+	<listeners>
+		<listener class-name="com.ttbbank.oneapp.scenario.lending.iosUtil.ExReport">
+		</listener>
+	</listeners>
+<!--	<test name="Lending iOS - Product Landing - C2G">
+		<parameter name="DeviceProfile" value="device.ios_mac_s1"/>
+		<parameter name="DataProfile" value="Lending_DataProfile"/>
+		<groups>
+			<run>
+				<include name="Lending iOS - Open HomeScreen"/>
+				<include name="Lending iOS:ฺProduct Landing - Home To Product Landing"/>
+				<include name="Lending iOS:ฺProduct Landing - C2G - Verified"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>-->
+
+	<test name="Lending iOS - Product Landing - C2G">
+		<parameter name="DeviceProfile" value="device.ios_mac_s1"/>
+		<parameter name="DataProfile" value="Lending_DataProfile"/>
+		<groups>
+			<run>
+<!--				<include name="Lending iOS - Open HomeScreen"/>-->
+<!--				<include name="Lending iOS:ฺProduct Landing - Home To Product Landing"/>-->
+				<include name="Lending iOS:ฺProduct Landing - C2G - Verified"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+
+
+
+
+<!--	<test name="Lending iOS - Product Landing - B+">
+		<parameter name="DeviceProfile" value="device.ios_mac_s1"/>
+		<parameter name="TestData" value="UI_ProductLanding_BPlus"/>
+		<groups>
+			<run>
+				<include name="Lending iOS - Open HomeScreen"/>
+				<include name="Lending iOS:ฺProduct Landing - Home To Product Landing"/>
+				<include name="Lending iOS:ฺProduct Landing - BPlus - Verified"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>-->
+<!--	<test name="Lending iOS - Product Landing - HomeLoan">
+		<parameter name="DeviceProfile" value="device.ios_mac_s1"/>
+		<parameter name="TestData" value="UI_ProductLanding_HOmeLoan"/>
+		<groups>
+			<run>
+				<include name="Lending iOS - Open HomeScreen"/>
+				<include name="Lending iOS:ฺProduct Landing - Home To Product Landing"/>
+				<include name="Lending iOS:ฺProduct Landing - HomeLoan - Verified"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>-->
+
+<!--	<test name="Lending iOS - Product Landing - C2G">
+		<parameter name="DeviceProfile" value="device.ios_saucelabs_e1"/>
+		<parameter name="DataProfile" value="Lending_DataProfile"/>
+		<groups>
+			<run>
+				<include name="Lending iOS - Open HomeScreen"/>
+				<include name="Lending iOS:ฺProduct Landing - Home To Product Landing"/>
+				<include name="Lending iOS:ฺProduct Landing - C2G - Verified"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+	<test name="Lending iOS - Product Landing - B+">
+		<parameter name="DeviceProfile" value="device.ios_saucelabs_e1"/>
+		<parameter name="TestData" value="UI_ProductLanding_BPlus"/>
+		<groups>
+			<run>
+				<include name="Lending iOS - Open HomeScreen"/>
+				<include name="Lending iOS:ฺProduct Landing - Home To Product Landing"/>
+				<include name="Lending iOS:ฺProduct Landing - BPlus - Verified"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+	<test name="Lending iOS - Product Landing - HomeLoan">
+		<parameter name="DeviceProfile" value="device.ios_saucelabs_e1"/>
+		<parameter name="TestData" value="UI_ProductLanding_HOmeLoan"/>
+		<groups>
+			<run>
+				<include name="Lending iOS - Open HomeScreen"/>
+				<include name="Lending iOS:ฺProduct Landing - Home To Product Landing"/>
+				<include name="Lending iOS:ฺProduct Landing - HomeLoan - Verified"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>-->
+
+</suite>

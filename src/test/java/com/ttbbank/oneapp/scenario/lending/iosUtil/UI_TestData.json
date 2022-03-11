@@ -1,0 +1,383 @@
+{
+  "Description": "Test Data for UI",
+  "config": {
+    "wait_visible_second": 30,
+    "pin": "010203",
+    "isByPassOTP": true,
+    "rm1":{
+      "rm": "001100000000000000000000005650",
+      "citizen_id": "3-4831-05638-35-1",
+      "card_number1": ""
+    },
+    "rm2": {
+      "rm": "001100000000000000000000611330",
+      "citizen_id": "6-1133-00000-00-7",
+      "card_number1": ""
+    },
+    "rm3":{
+      "rm": "001100000000000000000012004011",
+      "citizen_id": "1-1001-00054-68-1",
+      "card_number1": "",
+      "card_number2": "4050-16xx-xxxx-0128",
+      "cvv_number2": "153",
+      "card_number2_desc": "so fast - pending activation",
+      "card_number3": "",
+      "card_number4": "4891-76xx-xxxx-0150",
+      "card_number4_desc": "flash card",
+      "card_number5": ""
+    },
+    "rm4": {
+      "rm": "001100000000000000000011004078",
+      "citizen_id": "9446753669299",
+      "card_number1": "4706-80xx-xxxx-0960",
+      "card_number1_desc": "reserve infinite",
+      "card_number2": "4050-16xx-xxxx-0144",
+      "card_number2_desc": "so fast - temp limit",
+      "card_number3":"4770-63xx-xxxx-0095",
+      "card_number3_desc": "royal top brass",
+      "card_number4": "4050-16xx-xxxx-1119",
+      "card_number4_desc": "royal top brass",
+      "card_number5":"4891-76xx-xxxx-0184",
+      "card_number5_desc": "flash card",
+      "loan_number1": "001-6-16922-9",
+      "loan_number1_desc": "Cash 2 Go Loan",
+      "loan_number2": "058-5-71365-4",
+      "loan_number2_desc": "Home Loan",
+      "loan_number3": "060-5-71266-0",
+      "loan_number3_desc": "SME So Smooth"
+    },
+    "rm5": {
+      "rm": "001100000000000000000000031557",
+      "citizen_id": "1-4515-00040-06-6",
+      "card_number1": ""
+    },
+    "rm6": {
+      "rm": "001100000000000000000000031586",
+      "citizen_id": "1-4807-00149-36-2",
+      "card_number1": ""
+    },
+    "rm7": {
+      "rm": "001100000000000000000000004608",
+      "citizen_id": "1-6370-80680-77-1",
+      "card_number1": "4706-86xx-xxxx-0070",
+      "card_number2": "4706-86xx-xxxx-0096",
+      "card_number2_desc": "absolute - SSC",
+      "card_number3": "5241-72xx-xxxx-1017",
+      "card_number4": "5241-72xx-xxxx-1066"
+    },
+    "rm8": {
+      "rm": "001100000000000000000018593701",
+      "citizen_id": "5-2275-41812-19-5",
+      "card_number1": "4308-40xx-xxxx-0128",
+      "loan_number1": "001-5-61451-4",
+      "loan_number1_desc": "BenefitPlus Loan",
+      "loan_number2": "003-5-71840-2",
+      "loan_number2_desc": "Cash 2 Go Loan",
+      "loan_number3": "001-6-99687-8",
+      "loan_number3_desc": "Cash 2 Go Loan",
+      "loan_number4": "001-5-73343-9",
+      "loan_number4_desc": "TMB BenefitPlus Loan-Mil...",
+      "loan_number5": "001-5-13424-0",
+      "loan_number5_desc": "Home Loan"
+    },
+    "rm9": {
+      "rm": "",
+      "citizen_id_bak" : "4-4760-9864-205-1",
+      "citizen_id" : "1351508003110",
+      "card_number1": "4770-25xx-xxxx-0167",
+      "card_number1_desc": "so chill, PRI - Pending Activation",
+      "cvv_number1": "613",
+      "card_number2": "4770-25xx-xxxx-0175",
+      "card_number2_desc": "so chill, SUP",
+      "card_number3": "4762-81xx-xxxx-0372",
+      "card_number3_desc": "BlackDiamon0372",
+      "card_number4": "4762-81xx-xxxx-0380",
+      "card_number4_desc": "reserve signature",
+      "loan_number1": "001-6-16826-2",
+      "loan_number1_desc": "Cash 2 Go Loan",
+      "loan_number2": "046-5-71822-9",
+      "loan_number2_desc": "Home Loan",
+      "loan_number3": "066-5-70558-8",
+      "loan_number3_desc": "SME Step up"
+
+    },
+    "rm10": {
+      "citizen_id": "2989208507414",
+      "card_number1": "4770250000000175"
+    },
+    "rm11": {
+      "citizen_id": "2989208507414",
+      "rm": "001100000000000000000012021064",
+      "card_number1": "4770250000000175"
+    },
+    "rm12": {
+      "citizen_id": "6647671407082",
+      "rm": "001100000000000000000011004056",
+      "card_number1": "4891-76xx-xxxx-0036",
+      "card_number1_desc": "flash card"
+    },
+
+    "FlexiLeadRM1": {
+      "rm": "001100000000000000000018593707",
+      "citizen_id": "1800272993728",
+      "card_number1": "4628-56xx-xxxx-0146"
+    },
+    "FlexiLeadRM2": {
+      "rm": "001100000000000000000018593708",
+      "citizen_id": "7605993205506"
+    },
+    "FlexiLeadRM3": {
+      "rm": "001100000000000000000018593709",
+      "citizen_id": "4180704999015"
+    },
+
+    "rmuat1": {
+      "citizen_id": "8112317895521",
+      "rm": "001100000000000000000025534137"
+    },
+    "rmuat2": {
+      "citizen_id": "2075702978591",
+      "rm": "001100000000000000000025534138"
+    },
+    "rmuat3": {
+      "citizen_id": "1699026042844",
+      "rm": "001100000000000000000025534139"
+    },
+    "rmuat4": {
+      "citizen_id": "1057968035234",
+      "rm": "001100000000000000000025534140"
+    },
+    "rmuat5": {
+      "citizen_id": "8363857159572",
+      "rm": "001100000000000000000025534141"
+    },
+    "rmuat6": {
+      "citizen_id": "2094652645607",
+      "rm": "001100000000000000000025534142"
+    },
+    "rm_new9": {
+      "citizen_id": "1421000030797",
+      "rm": "001100000000000000000000023634"
+    },
+    "rm_new10": {
+      "citizen_id": "1439900105081",
+      "rm": "001100000000000000000000028205"
+    },
+    "rm_new11": {
+      "citizen_id": "1451500040066",
+      "rm": "001100000000000000000000031557"
+    },
+    "rm_new12": {
+      "citizen_id": "1480700149362",
+      "rm": "001100000000000000000000031586",
+      "card_number1": "4762-81xx-xxxx-0711",
+      "card_number1_desc": "reserve signature",
+    },
+        "rm_new13": {
+      "citizen_id": "1490300079162",
+      "rm": "001100000000000000000000037762",
+      "card_number1": "4762-81xx-xxxx-0729",
+      "card_number1_desc": "reserve signature-pending activation",
+      "card_number2": "5124-45xx-xxxx-1126",
+      "card_number2_desc": "so smart-pending activation"
+    },
+    "rm_new14": {
+      "citizen_id": "1100200515516",
+      "rm": "001100000000000000000000040128",
+      "card_number1": "4762-81xx-xxxx-0729",
+      "card_number1_desc": "reserve signature-pending activation",
+      "card_number2": "5124-45xx-xxxx-1126",
+      "card_number2_desc": "so smart-pending activation"
+    },
+        "rm_new18": {
+      "citizen_id": "2989208507414",
+      "rm": "001100000000000000000012021064",
+      "card_number1": "4762-81xx-xxxx-0729",
+      "card_number1_desc": "reserve signature-pending activation",
+      "card_number2": "5124-45xx-xxxx-1126",
+      "card_number2_desc": "so smart-pending activation",
+      "card_number3": "4770-25xx-xxxx-0175",
+      "card_number3_desc": "so chill-pending activation",
+      "cvv_number3": "287"
+    },
+
+
+
+
+  },
+  "Lending_iOS_Activate_Card_PRI": {
+    "rm": "rm9",
+    "card_number": "card_number1",
+    "cvv_number": "cvv_number1"
+  },
+  "Lending_iOS_Activate_Card_SSC": {
+    "rm": "rm_new18",
+    "card_number": "card_number3",
+    "cvv_number": "cvv_number3"
+  },
+
+  "Lending_iOS_Set_Pin_PRI": {
+    "rm": "rm8",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_Set_Pin_SSC": {
+    "rm": "rm11",
+    "card_number": "card_number1"
+  },
+
+  "Lending_iOS_Block_Card_PRI": {
+    "rm": "rm8",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_Block_Card_SUP": {
+    "rm": "rm7",
+    "card_number": "card_number2"
+  },
+  "Lending_iOS_Block_Card_SSC": {
+    "rm": "rm8",
+    "card_number": "card_number1",
+    "citizen_id": "1-6370-80680-77-1",
+    "card_number0": "5241-72XX-XXXX-1066"
+  },
+
+  "Lending_iOS_PRODUCT_LANDING_CARD": {
+    "rm": "rm8",
+    "card_number": "card_number1"
+  },
+
+  "Lending_iOS_PRODUCT_LANDING_C2G": {
+    "rm": "rm8",
+    "loan_number": "loan_number2"
+  },
+  "Lending_iOS_PRODUCT_LANDING_BPlus": {
+    "rm": "rm8",
+    "loan_number": "loan_number1"
+
+  },
+  "Lending_iOS_PRODUCT_LANDING_HomeLoan": {
+    "rm": "rm8",
+    "card_number": "card_number1",
+    "citizen_id": "1-6370-80680-77-1",
+    "card_number0": "001-0-03657-2",
+    "loan_number": "loan_number5"
+  },
+
+  "Lending_iOS_Card_Details_PRI": {
+    "rm": "rm8",
+    "card_number": "card_number1",
+    "citizen_id": "1-6370-80680-77-1",
+    "card_number0": "4706-86XX-XXXX-0070"
+  },
+  "Lending_iOS_Card_Details_PRI_has_SUP": {
+    "rm": "rm9",
+    "card_number": "card_number2"
+  },
+  "Lending_iOS_Card_Details_SUP": {
+    "rm": "rm7",
+    "card_number": "card_number2"
+  },
+  "Lending_iOS_Card_Details_SSC": {
+    "rm": "rm11",
+    "card_number": "card_number1"
+  },
+
+  "Lending_iOS_Change_Usage_Limit_PRI": {
+    "rm": "rm9",
+    "card_number": "card_number3"
+  },
+
+  "Lending_iOS_Change_Usage_Limit_SUP": {
+    "rm": "rm9",
+    "card_number": "card_number2"
+  },
+
+  "Lending_iOS_Change_Usage_Temp_Limit_PRI": {
+    "rm": "rm4",
+    "card_number": "card_number2"
+  },
+  "Lending_iOS_Apply_Estatement_CreditCard": {
+    "rm": "rm8",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_Apply_Estatement_C2G": {
+    "rm": "rm_new9",
+    "card_number": "card_number1",
+    "loan_number": "loan_number2"
+  },
+    "Lending_iOS_Apply_Estatement_FlashCard": {
+    "rm": "rm12",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_CashForYou_CashAdvance": {
+    "rm": "rm8",
+    "card_number": "card_number1",
+    "cashforyou_amount": "5000",
+    "cashforyou_payment": "full"
+  },
+  "Lending_iOS_CashForYou_CashTransfer": {
+    "rm": "rm4",
+    "card_number": "card_number1",
+    "cashforyou_amount": "5010",
+    "cashforyou_payment": "full"
+  },
+  "Lending_iOS_CashForYou_CashChillChill": {
+    "rm": "rm7",
+    "card_number": "card_number1",
+    "cashforyou_amount": "5010",
+    "cashforyou_payment": "installment",
+    "month": "12"
+  },
+  "Lending_iOS_ApplySoGood_PRI": {
+    "rm": "rm7",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_ApplySoGood_PRI_6Mos": {
+    "rm": "rm7",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_ApplySoGood_PRI_10Mos": {
+    "rm": "rm7",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_ApplySoGood_PRI_99Mos": {
+    "rm": "rm7",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_ApplySoGood_PRI_4Mos": {
+    "rm": "rm7",
+    "card_number": "card_number1"
+  },
+
+  "Lending_iOS_ApplySoGood_SSC": {
+    "rm": "rm11",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_ApplySoGood_SSC_6Mos": {
+    "rm": "rm10",
+    "card_number": "card_number1"
+  },
+    "Lending_iOS_ApplySoGood_SSC_10Mos": {
+    "rm": "rm10",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_FlexiLoan_CreditCard": {
+    "rm": "FlexiLeadRM1",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_FlexiLoan_FlashCard": {
+    "rm": "FlexiLeadRM1",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_FlexiLoan_C2G": {
+    "rm": "FlexiLeadRM1",
+    "card_number": "card_number1"
+  },
+  "Lending_iOS_FlexiLoan_C2GTOPUP": {
+    "rm": "rm8",
+    "card_number": "card_number1"
+  },
+    "Lending_iOS_Setting1": {
+    "rm": "rm8",
+    "card_number": "card_number1"
+  },
+}

@@ -1,0 +1,76 @@
+{
+  "TC_OneApp_Investment_Aip_Order_0001": {
+    "ScenarioName": "Verify AIP service",
+    "Description": "Verify AIP order service in case create DCA (AIP order) Onetime",
+    "ExpectedResult": [
+      "Validate response AIP order in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "orderType": "P",
+      "fundHouseCode": "TMBAM",
+      "fundCode": "TMBAALF",
+      "portfolioNumber": "PT000000000001829798",
+      "orderAmount": 200.15,
+      "orderDateTime": "2021-08-04T19:38:45+07:00",
+      "transferBank": "",
+      "transferBranch": "",
+      "bankAccountType": "S",
+      "bankAccountNumber": "1102416367",
+      "bankAccountId": "",
+      "aipStartDate": "",
+      "aipEndDate": "",
+      "frequency": " ",
+      "weekDay": "",
+      "dayOfMonth": " ",
+      "quarterSchedule": "",
+      "investmentDate": "",
+      "creditCardExpiry": "",
+      "paymentReference": "NT2039350189124900"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Aip_Order_0002": {
+    "ScenarioName": "Verify AIP service",
+    "Description": "Verify AIP order service in case create DCA (AIP order) Monthly",
+    "ExpectedResult": [
+      "Validate response AIP order in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "orderType": "P",
+      "fundHouseCode": "TMBAM",
+      "fundCode": "TMBAALF",
+      "portfolioNumber": "PT000000000001829798",
+      "orderAmount": 200.15,
+      "orderDateTime": "2021-07-27T14:38:45+07:00",
+      "transferBank": "",
+      "transferBranch": "",
+      "bankAccountType": "S",
+      "bankAccountNumber": "1102416367",
+      "bankAccountId": "1102416367",
+      "aipStartDate": "2021-08-05T14:40:45",
+      "aipEndDate": "2022-08-30T15:40:45",
+      "frequency": "Monthly",
+      "weekDay": "",
+      "dayOfMonth": "5",
+      "quarterSchedule": "",
+      "investmentDate": "2022-07-27T15:40:45",
+      "creditCardExpiry": "",
+      "paymentReference": "NT2039350189124900"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

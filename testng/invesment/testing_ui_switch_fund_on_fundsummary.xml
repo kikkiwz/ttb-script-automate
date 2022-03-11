@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite Investment">
+    <test verbose="2" preserve-order="true" name="Investment">
+        <classes>
+            <class name="com.tmb.automation.investment.HomeTest"/>
+            <class name="com.tmb.automation.investment.DiscoveryTest"/>
+            <class name="com.tmb.automation.investment.MyMutualFundTest"/>
+            <class name="com.tmb.automation.investment.FundSummaryTest"/>
+            <class name="com.tmb.automation.investment.SelectSourceFundsTest"/>
+            <class name="com.tmb.automation.investment.SelectTargetFundsTest"/>
+            <class name="com.tmb.automation.investment.FundFactSheetTest"/>
+            <class name="com.tmb.automation.investment.SwitchTest"/>
+            <class name="com.tmb.automation.investment.ConfirmationSwitchTest"/>
+            <class name="com.tmb.automation.investment.CompletedSwitchTest"/>
+        </classes>
+    </test>
+</suite>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="1">
+<!--    <test name="PB2 - Sauce Labs Android (Setting PromptPay)">-->
+<!--        <parameter name="DeviceProfile" value="pb2-android-saucelabs-pixel3a"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Activate new flow"/>-->
+<!--                <include name="RegisterWithMobileNo"/>-->
+<!--                <exclude name="RegisterWithCitizenID"/>-->
+<!--                <include name="DeRegisterWithMobileNo"/>-->
+<!--                <exclude name="DeRegisterWithCitizenID"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.primarybanking2.SettingPromptpayRunnerAndroid"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="PB2 - Android (Setting PromptPay)">
+        <parameter name="DeviceProfile" value="pb2-android-Vivo.Y30"/>
+        <groups>
+            <run>
+                <include name="Activate new flow"/>
+                <exclude name="RegisterWithMobileNo"/>
+                <include name="RegisterWithCitizenID"/>
+                <exclude name="DeRegisterWithMobileNo"/>
+                <include name="DeRegisterWithCitizenID"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.SettingPromptpayRunnerAndroid"/>
+        </classes>
+    </test>
+</suite>
+
+<!--        pb2-android-saucelabs-pixel3a-->
+<!--        pb2-android-Vivo.Y30-->

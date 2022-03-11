@@ -1,0 +1,15 @@
+{
+  "TC_OneApp1682_CC_FundSummary_0001": {
+    "ScenarioName": "Fund Summary",
+    "Description": "Inquiry the account detail to display",
+    "ExpectedResult": [
+      "Validate response Fund Summary in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "crmId": "00000018592884"
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

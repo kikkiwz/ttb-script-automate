@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+
+<!--    <test name="Android Document Menu Activated Post Login">-->
+<!--        <parameter name="DeviceProfile" value="customer-service-android-oneapp-488-dev-Huawei"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Activate new flow"/>-->
+<!--                <include name="Enter Service Screen Dev Latest" />-->
+<!--                <include name="Customer Service Document Menu Activated Post Login"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.customerservice.sprint28.DocumentMenuActivatedPostLoginRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="iOS Document Menu Activated Post Login">
+        <parameter name="DeviceProfile" value="customer-service-ios-oneapp-sim-iphone12-pro-max"/>
+        <groups>
+            <run>
+                <include name="Activate new flow"/>
+                <include name="Enter Service Screen Dev Latest" />
+                <include name="Customer Service Document Menu Activated Post Login"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.customerservice.sprint28.DocumentMenuActivatedPostLoginRunner"/>
+        </classes>
+    </test>
+
+
+</suite>

@@ -1,0 +1,20 @@
+{
+  "TC_OneApp_Investment_Create_Favorite_Fund_0001": {
+    "ScenarioName": "Verify Create Favorite Fund Service",
+    "Description": "Verify create favorite fund ",
+    "ExpectedResult": [
+      "The response of create favorite is return data are correctly (isFavorite = Y)",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "TMBINDAE"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

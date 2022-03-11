@@ -1,0 +1,241 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation-Testing" verbose="5" thread-count="4" data-provider-thread-count="6">
+
+	<test name="Protection: Life Dashboard Customer4">
+		<parameter name="DeviceProfile" value="protection-android-customer04-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_04_EN_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_20_EN_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_36_EN_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_52_EN_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_68_EN_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard Customer6">
+		<parameter name="DeviceProfile" value="protection-android-customer06-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_06_EN_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_22_EN_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_38_EN_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_54_EN_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_70_EN_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard Customer8">
+		<parameter name="DeviceProfile" value="protection-android-customer08-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_08_EN_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_24_EN_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_40_EN_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_56_EN_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_72_EN_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard Customer10">
+		<parameter name="DeviceProfile" value="protection-android-customer10-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_10_EN_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_26_EN_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_42_EN_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_58_EN_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_74_EN_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard Customer12">
+		<parameter name="DeviceProfile" value="protection-android-customer12-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_12_EN_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_26_EN_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_44_EN_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_60_EN_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_76_EN_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard Customer14">
+		<parameter name="DeviceProfile" value="protection-android-customer14-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_14_EN_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_28_EN_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_46_EN_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_62_EN_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_78_EN_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard Customer16">
+		<parameter name="DeviceProfile" value="protection-android-customer16-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_16_EN_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_32_EN_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_48_EN_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_64_EN_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_80_EN_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard TH Customer4">
+		<parameter name="DeviceProfile" value="otection-android-customer04-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_04_TH_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_20_TH_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_36_TH_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_52_TH_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_68_TH_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardTHRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard TH Customer5">
+		<parameter name="DeviceProfile" value="protection-android-customer05-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_05_TH_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_69_TH_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardTHRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard TH Customer6">
+		<parameter name="DeviceProfile" value="protection-android-customer06-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_06_TH_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_22_TH_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_38_TH_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_54_TH_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_70_TH_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardTHRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard TH Customer8">
+		<parameter name="DeviceProfile" value="protection-android-customer08-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_08_TH_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_24_TH_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_40_TH_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_56_TH_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_72_TH_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardTHRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard TH Customer10">
+		<parameter name="DeviceProfile" value="protection-android-customer10-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_10_TH_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_26_TH_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_42_TH_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_58_TH_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_74_TH_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardTHRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard TH Customer12">
+		<parameter name="DeviceProfile" value="protection-android-customer12-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_12_TH_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_28_TH_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_44_TH_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_60_TH_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_76_TH_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardTHRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard TH Customer14">
+		<parameter name="DeviceProfile" value="protection-android-customer14-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_14_TH_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_30_TH_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_46_TH_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_62_TH_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_78_TH_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardTHRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Life Dashboard TH Customer16">
+		<parameter name="DeviceProfile" value="protection-android-customer16-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Life_16_TH_Life Dashboard - Life Coverage Mile stone"/>
+				<include name="Life_32_TH_Life Dashboard - Calculate General Death coverage"/>
+				<include name="Life_48_TH_Life Dashboard - Calculate Accidental Death coverage"/>
+				<include name="Life_64_TH_Life Dashboard - Death coverage recommendation"/>
+				<include name="Life_80_TH_Life Dashboard - Life Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.LifeDashboardTHRunner"/>
+		</classes>
+	</test>
+
+</suite>

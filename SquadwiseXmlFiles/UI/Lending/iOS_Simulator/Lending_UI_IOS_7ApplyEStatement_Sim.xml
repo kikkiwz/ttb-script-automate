@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation-Testing" >
+	<listeners>
+		<listener class-name="com.ttbbank.oneapp.scenario.lending.iosUtil.ExReport">
+		</listener>
+	</listeners>
+	<test name="Lending_iOS_Apply_Estatement_CreditCard">
+		<parameter name="DeviceProfile" value="lending_ios_sim"/>
+		<groups>
+			<run>
+				<include name="Lending_iOS_Apply_Estatement_CreditCard"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+	<test name="Lending_iOS_Apply_Estatement_C2G">
+		<parameter name="DeviceProfile" value="lending_ios_sim"/>
+		<groups>
+			<run>
+				<include name="Lending_iOS_Apply_Estatement_C2G"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+	<test name="Lending_iOS_Apply_Estatement_FlashCard">
+		<parameter name="DeviceProfile" value="lending_ios_sim"/>
+		<groups>
+			<run>
+				<include name="Lending_iOS_Apply_Estatement_FlashCard"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+</suite>

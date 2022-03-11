@@ -1,0 +1,266 @@
+{
+  "TC_ONEAPP_13732_Add_Favorite_via_account_0001": {
+    "ScenarioName": "Add Favorite Success",
+    "Description" : "Add favorite with an account in case of customer never have any exist favorite which include amount, category and note",
+    "ExpectedResult": {
+      "favorite_nickname": "เที่ยวรอบโลก",
+      "favorite_type": "00",
+      "favorite_number": "5014117514",
+      "favorite_amount": 100000.00,
+      "favorite_note": "Add Favorite_0001"
+    },
+    "TestData": {
+
+      "crm_id": "001100000000000000000006201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+
+      "module": "account",
+      "favorite_name": "เที่ยวรอบโลก",
+      "function": "add",
+      "account": {
+        "account_no": "5014117514",
+        "bank_code": "14",
+        "amount": 100000.00,
+        "category": "02",
+        "note": "Add Favorite_0001"
+      }
+    }
+  },
+  "ResponseBody": {
+    "data": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-ex-service",
+        "description": "success"
+      },
+      "data": {
+        "message": "Favorite Added Successfully"
+      }
+    }
+  },
+  "TC_ONEAPP_13732_Add_Favorite_via_account_0002": {
+    "ScenarioName": "Add Favorite Success",
+    "Description" : "Add favorite with an account in case of customer have exist favorite which not included amount, category and note.",
+    "ExpectedResult": {
+      "favorite_nickname": "Travelling",
+      "favorite_type": "00",
+      "favorite_number": "1010000113",
+      "favorite_amount" : "100000.00",
+      "favorite_note": "Add Favorite_0002"
+
+    },
+    "TestData": {
+
+      "crm_id": "001100000000000000000006201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+
+      "module": "account",
+      "favorite_name": "Travelling",
+      "function": "add",
+      "account": {
+        "account_no": "1010000113",
+        "bank_code": "02",
+        "amount": 100000.00,
+        "category": "02",
+        "note": "Add Favorite_0002"
+      }
+    }
+  },
+  "ResponseBody": {
+    "data": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-ex-service",
+        "description": "success"
+      },
+      "data": {
+        "message": "Favorite Added Successfully"
+      }
+    }
+  },
+  "TC_ONEAPP_13732_Add_Favorite_via_account_0003": {
+    "ScenarioName": "Add Favorite Fail",
+    "Description" : "Add favorite via account with duplicate favorite nickname.",
+
+    "TestData": {
+
+      "crm_id": "001100000000000000000006201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+
+      "module": "account",
+      "favorite_name": "Travelling",
+      "function": "add",
+      "account": {
+        "account_no": "1010000113",
+        "bank_code": "02",
+        "amount": 100000.00,
+        "category": "02",
+        "note": "Add Favorite_0003"
+      }
+    }
+  },
+  "ResponseBody": {
+    "data": {
+      "status": {
+        "code": "1000039",
+        "message": "Duplicate \"Favorite_Nickname",
+        "service": "customers-ex-service",
+        "description": "Duplicate \"Favorite_Nickname"
+      },
+      "data": null
+    }
+  },
+  "TC_ONEAPP_13732_Add_Favorite_via_account_0004": {
+    "ScenarioName": "Add Favorite Fail",
+    "Description" : "Add favorite via account with duplicate favorite account.",
+
+    "TestData": {
+
+      "crm_id": "001100000000000000000006201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+
+      "module": "account",
+      "favorite_name": "AddFav004",
+      "function": "add",
+      "account": {
+        "account_no": "5014117514",
+        "bank_code": "14",
+        "amount": 100000.00,
+        "category": "02",
+        "note": "Add Favorite_0004"
+      }
+    }
+  },
+  "ResponseBody": {
+    "data": {
+      "status": {
+        "code": "1000040",
+        "message": "Duplicate - Account_no",
+        "service": "customers-ex-service",
+        "description": "Duplicate - Account_no"
+      },
+      "data": null
+    }
+  },
+  "TC_ONEAPP_13732_Uodate_Favorite_via_account_0005": {
+    "ScenarioName": "Update Favorite Success",
+    "Description" : "Update new favorite_Nickname with an account success ",
+    "ExpectedResult": {
+      "favorite_nickname": "Update_FavNickname_005",
+      "favorite_type": "00",
+      "favorite_number": "5014117514",
+      "favorite_amount": 100000.00,
+      "favorite_note": "Add Favorite_0001"
+    },
+    "TestData": {
+
+      "crm_id": "001100000000000000000006201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+
+      "module": "account",
+      "favorite_name": "Update_FavNickname_005",
+      "function": "update",
+      "account": {
+        "account_no": "5014117514",
+        "bank_code": "14",
+        "amount": 100000.00,
+        "category": "02",
+        "note": "Add Favorite_0001"
+      }
+    }
+  },
+  "ResponseBody": {
+    "data": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-ex-service",
+        "description": "success"
+      },
+      "data": {
+        "message": "Updated Favorite Successfully"
+      }
+    }
+  },
+  "TC_ONEAPP_13732_Uodate_Favorite_via_account_0006": {
+    "ScenarioName": "Update Favorite Success",
+    "Description" : "Update amount, category and note with an account success ",
+    "ExpectedResult": {
+      "favorite_nickname": "Update_FavNickname_005",
+      "favorite_number": "5014117514",
+      "favorite_amount": 5000.00,
+      "category_id" : "3",
+      "favorite_note": "UpdateFavorite006"
+    },
+    "TestData": {
+
+      "crm_id": "001100000000000000000006201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+
+      "module": "account",
+      "favorite_name": "",
+      "function": "update",
+      "account": {
+        "account_no": "5014117514",
+        "bank_code": "14",
+        "amount": 5000.00,
+        "category": "03",
+        "note": "UpdateFavorite006"
+      }
+    }
+  },
+  "ResponseBody": {
+    "data": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-ex-service",
+        "description": "success"
+      },
+      "data": {
+        "message": "Updated Favorite Successfully"
+      }
+    }
+  },
+  "TC_ONEAPP_13732_Uodate_Favorite_via_account_0007": {
+    "ScenarioName": "Delete Favorite Success",
+    "Description" : "Delete favorite with an account success ",
+    "TestData": {
+
+      "crm_id": "001100000000000000000006201576",
+      "user_name": "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParams": {
+
+      "favorite_id": "210000003314",
+      "favorite_type": "account"
+    }
+  },
+  "ResponseBody": {
+    "data": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-ex-service",
+        "description": "success"
+      },
+      "data": {
+        "message": "Deleted Favorite Successfully"
+      }
+    }
+  }
+}

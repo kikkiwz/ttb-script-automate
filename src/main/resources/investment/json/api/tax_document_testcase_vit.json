@@ -1,0 +1,21 @@
+{
+  "TC_OneApp_Investment_Tax_Document_0001": {
+    "ScenarioName": "Verify tax document Service",
+    "Description": "Verify tax document ",
+    "ExpectedResult": [
+      "The response of tax document is return data are correctly base on base64",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "TMBBFRMF",
+      "unitHolderNo": "PT000000000000000066"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

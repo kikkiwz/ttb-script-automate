@@ -1,0 +1,19 @@
+{
+  "TC_OneApp_Investment_Funds_Category_0001": {
+    "ScenarioName": "Verify Fund Category Service",
+    "Description": "Verify Fund Category service",
+    "ExpectedResult": [
+      "The response of Fund Category return the data correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

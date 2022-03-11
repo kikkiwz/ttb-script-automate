@@ -1,0 +1,19 @@
+{
+  "TC_OneApp_Investment_Fund_Available_Summary_0001": {
+    "ScenarioName": "Funds Available Summary",
+    "Description": "Verify Funds Available Summary service",
+    "ExpectedResult": [
+      "Validate response Funds Available Summary in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "processType" : "4",
+      "unitHolderNo": [
+        "PT000000000001829800",
+        "PT000000000001829798"
+      ]
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="1">
+<parameter name="ReportName" value="FirstTime_User"/>
+
+ <test name="First Time User">
+	   <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-Samsung_FirstTimeUser"/>  
+	
+	
+		<groups>
+                <run>
+                    <include name="First Time User validation"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.FirstTimeUserRunner"/>
+		</classes>
+	</test> 
+
+<!--  <test name="Change Language from English to thai and Thai to English">
+	   <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-Samsung_ChangeLanguage"/>  
+	 
+	
+		<groups>
+                <run>
+                    <include name="Change Language from English to thai and Thai to English"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.ChangeLanguage_Runner"/>
+		</classes>
+	</test> -->
+
+
+
+	
+	 <!-- <test name="Change Mobile Number">
+	   <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-Samsung_ChangeLanguage"/>  
+	
+	
+		<groups>
+                <run>
+                    <include name="KYC verify with change mobile number"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.KYC_Review_Change_MobileNumber_Runner"/>
+		</classes>
+	</test>  -->
+	
+ 	<!--  <test name="KYC with flag B">
+	   <parameter name="DeviceProfile" value="android.EM4"/>  
+		<groups>
+                <run>
+                    <include name="KYC verify after login with flag B"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.KYC_AfterLogin_Flag_B_Runner"/>
+		</classes>
+	</test>  -->  	
+  
+  <!--  <test name="KYC with flag I">
+	   <parameter name="DeviceProfile" value="android.EM41"/>  
+		<groups>
+                <run>
+                    <include name="KYC verify after login with flag I"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.KYC_AfterLogin_Flag_I_Runner"/>
+		</classes>
+	</test>   -->	
+  
+   <!-- <test name="KYC with flag B invalid Data">
+	   <parameter name="DeviceProfile" value="android.EM42"/>  
+		<groups>
+                <run>
+                    <include name="KYC Verify after login with invalid data with flag B"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.KYC_AfterLogin_InvaildData_Flag_B_Runner"/>
+		</classes>
+	</test>  	
+  
+	 -->
+	
+	
+	
+	
+	
+	
+	<!--  <test name="Change Language from English to thai and Thai to English">
+	   <parameter name="DeviceProfile" value="android.EM4"/>  
+	 
+	
+		<groups>
+                <run>
+                    <include name="Change Language from English to thai and Thai to English"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.ChangeLanguage_Runner"/>
+		</classes>
+	</test>  -->
+	
+	   <!-- <test name="Validation of More button and linkage">
+	   <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-Samsung_MoreButton"/>  
+	 
+	
+		<groups>
+                <run>
+                    <include name="More Button Validation"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.More_Button_Validation_Runner"/>
+		</classes>
+	</test>  -->
+	
+	 <!--
+	
+	  <test name="Change Language from English to thai and Thai to English">
+	   <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-Samsung"/>  
+	 
+	
+		<groups>
+                <run>
+                    <include name="Change Language from English to thai and Thai to English"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.ChangeLanguage_Runner"/>
+		</classes>
+	</test> 
+	
+	
+	
+	<test name="KYC Validation after login with flag B">
+	   <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-SamsungKYCB"/>  
+	 
+	
+		<groups>
+                <run>
+                    <include name="KYC verify after login with flag B"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.KYC_AfterLogin_Flag_B_Runner"/>
+		</classes>
+	</test>
+	
+	<test name="KYC Validation after login with flag I">
+	   <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-SamsungKYCI"/>  
+	 <parameter name="DeviceProfile" value="android.EM4"/>
+	
+		<groups>
+                <run>
+                    <include name="KYC verify after login with flag I"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.KYC_AfterLogin_Flag_I_Runner"/>
+		</classes>
+	</test>
+	
+	<test name="KYC Validation after login with flag B Invalid Data">
+	   <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-SamsungKYCID"/>  
+	
+		<groups>
+                <run>
+                    <include name="KYC Verify after login with invalid data with flag B"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.KYC_AfterLogin_InvaildData_Flag_B_Runner"/>
+		</classes>
+	</test>
+	
+ -->		
+
+	
+	
+	<!-- <test name="Generic Error Common Screen on both Android">
+	  <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-Samsung"/> 
+	 <parameter name="DeviceProfile" value="android.EM4"/>
+	
+		<groups>
+                <run>
+                    <include name="Generic Error Common Screen on both Android and iOS"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.GenericError_CommonScreen_Runner"/>
+		</classes>
+	</test> -->
+	
+	
+	<!-- <test name="No Internet connection verify on android">
+	 <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-Samsung"/> 
+	
+		<groups>
+                <run>
+                    <include name="No Internet Connection Screen on both Android and iOS"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.No_InternetConnectionScreen_Runner"/>
+		</classes>
+	</test>
+	   -->
+	
+	
+	
+	
+	
+
+	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+	
+</suite>
+

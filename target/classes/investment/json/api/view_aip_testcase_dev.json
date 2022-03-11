@@ -1,0 +1,62 @@
+{
+  "TC_OneApp_Investment_View_AIP_0001": {
+    "ScenarioName": "View AIP Service",
+    "Description": "Validate View AIP By CRMId",
+    "ExpectedResult": [
+      "The response of View AIP is return the data as filter by CrmId correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "",
+      "getFlag": "1",
+      "portfolioList": ""
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_View_AIP_0002": {
+    "ScenarioName": "View AIP Service",
+    "Description": "Validate View AIP By Portfolio",
+    "ExpectedResult": [
+      "The response of View AIP is return the data as filter by Portfolio correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "",
+      "getFlag": "2",
+      "portfolioList": "PT000000000001829798"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_View_AIP_0003": {
+    "ScenarioName": "View AIP Service",
+    "Description": "Validate View AIP By Fund Code",
+    "ExpectedResult": [
+      "The response of View AIP is return the data as filter by Fund Code correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "TESCHINAA",
+      "getFlag": "2",
+      "portfolioList": "PT000000000001829798"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "TC_OneApp_Investment_Statement_0001": {
+    "ScenarioName": "Verify Statement",
+    "Description": "Verify Statement By All",
+    "ExpectedResult": [
+      "The response of Statement return data by all",
+      "The record of statement should not more than rowEnd",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "statementType": "1",
+      "fundCode": "",
+      "fundType": "0",
+      "tranType": "0",
+      "rowStart": "1",
+      "rowEnd": "20"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Statement_0002": {
+    "ScenarioName": "Verify Statement",
+    "Description": "Verify Statement By Statement Type is Pending",
+    "ExpectedResult": [
+      "The response of Statement should return the data by statement type as pending",
+      "The record of statement should not more than rowEnd",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "statementType": "2",
+      "fundCode": "",
+      "fundType": "0",
+      "tranType": "0",
+      "rowStart": "1",
+      "rowEnd": "20"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Statement_0003": {
+    "ScenarioName": "Verify Statement",
+    "Description": "Verify Statement By Statement Type is Cancel",
+    "ExpectedResult": [
+      "The response of Statement should return the data by statement type as Cancel",
+      "The record of statement should not more than rowEnd",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "statementType": "3",
+      "fundCode": "",
+      "fundType": "0",
+      "tranType": "0",
+      "rowStart": "1",
+      "rowEnd": "20"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Statement_0004": {
+    "ScenarioName": "Verify Statement",
+    "Description": "Verify Statement By specific Fund Code",
+    "ExpectedResult": [
+      "The response of Statement should return the data by statement type as Cancel",
+      "The record of statement should not more than rowEnd",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "statementType": "1",
+      "fundCode": "TESCHINAA",
+      "fundType": "0",
+      "tranType": "0",
+      "rowStart": "1",
+      "rowEnd": "20"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Statement_0005": {
+    "ScenarioName": "Verify Statement",
+    "Description": "Verify Statement By Fund Type is MF, LTF, RMF or SSF",
+    "ExpectedResult": [
+      "The response of Statement should return the data by fund type as MF, LTF, RMF or SSF",
+      "The record of statement should not more than rowEnd",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "statementType": "1",
+      "fundCode": "",
+      "fundType": "1",
+      "tranType": "0",
+      "rowStart": "1",
+      "rowEnd": "20"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Statement_0006": {
+    "ScenarioName": "Verify Statement",
+    "Description": "Verify Statement By Fund Type is ttb Smart port (TSP)",
+    "ExpectedResult": [
+      "The response of Statement should return the data by fund type as ttb Smart port (TSP)",
+      "The record of statement should not more than rowEnd",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "statementType": "1",
+      "fundCode": "",
+      "fundType": "2",
+      "tranType": "0",
+      "rowStart": "1",
+      "rowEnd": "20"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Statement_0007": {
+    "ScenarioName": "Verify Statement",
+    "Description": "Verify Statement By Transaction Type is Buy",
+    "ExpectedResult": [
+      "The response of Statement should return the data by transaction type as buy",
+      "The record of statement should not more than rowEnd",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "statementType": "1",
+      "fundCode": "TMB50",
+      "fundType": "0",
+      "tranType": "1",
+      "rowStart": "1",
+      "rowEnd": "20"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Statement_0008": {
+    "ScenarioName": "Verify Statement",
+    "Description": "Verify Statement By Transaction Type is Sell",
+    "ExpectedResult": [
+      "The response of Statement should return the data by transaction type as Sell",
+      "The record of statement should not more than rowEnd",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "statementType": "2",
+      "fundCode": "",
+      "fundType": "0",
+      "tranType": "2",
+      "rowStart": "1",
+      "rowEnd": "20"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Statement_0009": {
+    "ScenarioName": "Verify Statement",
+    "Description": "Verify Statement By Transaction Type is Switch",
+    "ExpectedResult": [
+      "The response of Statement should return the data by transaction type as Switch",
+      "The record of statement should not more than rowEnd",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "statementType": "2",
+      "fundCode": "",
+      "fundType": "0",
+      "tranType": "3",
+      "rowStart": "1",
+      "rowEnd": "20"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Statement_0010": {
+    "ScenarioName": "Verify Statement",
+    "Description": "Verify Statement By Transaction Type is DCA(AIP)",
+    "ExpectedResult": [
+      "The response of Statement should return the data by transaction type as DCA(AIP)",
+      "The record of statement should not more than rowEnd",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "statementType": "1",
+      "fundCode": "",
+      "fundType": "0",
+      "tranType": "4",
+      "rowStart": "1",
+      "rowEnd": "20"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

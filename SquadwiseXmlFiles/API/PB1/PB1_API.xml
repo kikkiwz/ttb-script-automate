@@ -1,0 +1,77 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" >
+<listeners> <listener class-name="com.tmb.automation.helper.ExtentListeners"> </listener> </listeners>
+<parameter name="DeviceProfile" value="API" />
+
+<test name="TestPB1 001"> <classes> <class name="com.tmb.automation.test.pb1.se5985.API_TC01_CustomerProfile"/> </classes> </test>
+<test name="TestPB1 002"> <classes> <class name="com.tmb.automation.test.pb1.se5985.API_TC02_CustomerProfileFail"/> </classes> </test>
+<test name="TestPB1 003"> <classes> <class name="com.tmb.automation.test.pb1.se5991.API_TC01_SelectProduct"/> </classes> </test>
+<test name="TestPB1 004"> <classes> <class name="com.tmb.automation.test.pb1.se6055.API_TC01_VerifyMethod"/> </classes> </test>
+<test name="TestPB1 005"> <classes> <class name="com.tmb.automation.test.pb1.se6057.API_TC01_NDIDVerifyViaBank"/> </classes> </test>
+<test name="TestPB1 006"> <classes> <class name="com.tmb.automation.test.pb1.se6057.API_TC02_NDIDVerifyViaBankNoAccount"/> </classes> </test>
+<test name="TestPB1 007"> <classes> <class name="com.tmb.automation.test.pb1.se6786.API_TC01_CitizenAndPictureScan"/> </classes> </test>
+<test name="TestPB1 008"> <classes> <class name="com.tmb.automation.test.pb1.se6788.API_TC01_FATCAanswer"/> </classes> </test>
+<test name="TestPB1 009"> <classes> <class name="com.tmb.automation.test.pb1.se7891.API_TC01_UpdateAddress"/> </classes> </test>
+<test name="TestPB1 010"> <classes> <class name="com.tmb.automation.test.pb1.se7891.API_TC02_SearchProspectAddress"/> </classes> </test>
+<test name="TestPB1 011"> <classes> <class name="com.tmb.automation.test.pb1.se7891.API_TC03_AddressListEn"/> </classes> </test>
+<test name="TestPB1 012"> <classes> <class name="com.tmb.automation.test.pb1.se7891.API_TC04_AddressListTh"/> </classes> </test>
+<test name="TestPB1 013"> <classes> <class name="com.tmb.automation.test.pb1.se7891.API_TC05_AddressListFail"/> </classes> </test>
+<test name="TestPB1 014"> <classes> <class name="com.tmb.automation.test.pb1.se7892.API_TC01_PinSetupPass"/> </classes> </test>
+<test name="TestPB1 015"> <classes> <class name="com.tmb.automation.test.pb1.se7892.API_TC02_PinSetupInvalid"/> </classes> </test>
+<test name="TestPB1 016"> <classes> <class name="com.tmb.automation.test.pb1.se7892.API_TC03_PinSetupFail"/> </classes> </test>
+<test name="TestPB1 017"> <classes> <class name="com.tmb.automation.test.pb1.se7906.API_TC01_SearchProspect"/> </classes> </test>
+<test name="TestPB1 018"> <classes> <class name="com.tmb.automation.test.pb1.se7906.API_TC02_Biometric"/> </classes> </test>
+<test name="TestPB1 019"> <classes> <class name="com.tmb.automation.test.pb1.se8086.API_TC01_FaceDetectMotion"/> </classes> </test>
+<test name="TestPB1 020"> <classes> <class name="com.tmb.automation.test.pb1.se8392.API_TC01_CreateProspect"/> </classes> </test>
+<test name="TestPB1 021"> <classes> <class name="com.tmb.automation.test.pb1.se9373.API_TC01_NDIDRequestBank"/> </classes> </test>
+<!-- <test name="TestPB1 022"> <classes> <class name="com.tmb.automation.test.pb1.se9373.API_TC02_VerifyStatusPending"/> </classes> </test> -->
+<!-- <test name="TestPB1 023"> <classes> <class name="com.tmb.automation.test.pb1.se9373.API_TC03_VerifyStatusFail"/> </classes> </test> -->
+<!-- <test name="TestPB1 024"> <classes> <class name="com.tmb.automation.test.pb1.se9373.API_TC04_VerifyStatusTimeOut"/> </classes> </test> -->
+<!-- <test name="TestPB1 025"> <classes> <class name="com.tmb.automation.test.pb1.se9373.API_TC05_VerifyStatusBiometricFail"/> </classes> </test> -->
+<!-- <test name="TestPB1 026"> <classes> <class name="com.tmb.automation.test.pb1.se9373.API_TC06_VerifyStatusPass"/> </classes> </test> -->
+<test name="TestPB1 027"> <classes> <class name="com.tmb.automation.test.pb1.se9605.API_TC01_NDID_Timeout"/> </classes> </test>
+<test name="TestPB1 028"> <classes> <class name="com.tmb.automation.test.pb1.se10014.API_TC01_GetTitle"/> </classes> </test>
+<test name="TestPB1 029"> <classes> <class name="com.tmb.automation.test.pb1.se10691.API_TC01_CancelRequest"/> </classes> </test>
+<test name="TestPB1 030"> <classes> <class name="com.tmb.automation.test.pb1.se10691.API_TC02_CancelRequestWrongProspect"/> </classes> </test>
+<test name="TestPB1 031"> <classes> <class name="com.tmb.automation.test.pb1.se10691.API_TC03_CancelRequestWrongRef"/> </classes> </test>
+<test name="TestPB1 032"> <classes> <class name="com.tmb.automation.test.pb1.se11413.API_TC01_UpdateProspectFlowState"/> </classes> </test>
+<test name="TestPB1 033"> <classes> <class name="com.tmb.automation.test.pb1.se11413.API_TC02_UpdateProspectVerifyMethod"/> </classes> </test>
+<test name="TestPB1 034"> <classes> <class name="com.tmb.automation.test.pb1.se11911.API_TC01_CustomerInfoPass"/> </classes> </test>
+<test name="TestPB1 035"> <classes> <class name="com.tmb.automation.test.pb1.se11911.API_TC02_CustomerInfoRisk"/> </classes> </test>
+<test name="TestPB1 036"> <classes> <class name="com.tmb.automation.test.pb1.se12721.API_TC01_GetDataList"/> </classes> </test>
+<test name="TestPB1 037"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC01_ActivityLogSelectMethod"/> </classes> </test>
+<test name="TestPB1 038"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC02_ActivityLogAddressInfo"/> </classes> </test>
+<test name="TestPB1 039"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC03_ActivityLogPersonalInfo"/> </classes> </test>
+<test name="TestPB1 040"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC04_ActivityLogCreatePIN"/> </classes> </test>
+<test name="TestPB1 041"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC05_ActivityLogCreatePINMatch"/> </classes> </test>
+<test name="TestPB1 042"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC06_ActivityLogOpenAccount"/> </classes> </test>
+<test name="TestPB1 043"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC07_ActivityLogSelectProduct"/> </classes> </test>
+<test name="TestPB1 044"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC08_ActivityLogGetMobileNo"/> </classes> </test>
+<test name="TestPB1 045"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC09_ActivityLogAcceptTC"/> </classes> </test>
+<test name="TestPB1 046"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC10_ActivityLogScanID"/> </classes> </test>
+<test name="TestPB1 047"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC11_ActivityLogReviewID"/> </classes> </test>
+<test name="TestPB1 048"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC12_ActivityLogFATCA"/> </classes> </test>
+<test name="TestPB1 049"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC13_ActivityLogSaveProspect"/> </classes> </test>
+<test name="TestPB1 050"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC14_ActivityLogNDIDConsent"/> </classes> </test>
+<test name="TestPB1 051"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC15_ActivityLogSelectBank"/> </classes> </test>
+<test name="TestPB1 052"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC16_ActivityLogCheckStatus"/> </classes> </test>
+<test name="TestPB1 053"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC17_ActivityLogCancelRequest"/> </classes> </test>
+<test name="TestPB1 054"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC18_ActivityLogNewCustomer"/> </classes> </test>
+<test name="TestPB1 055"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC19_ActivityLogTCScreen"/> </classes> </test>
+<test name="TestPB1 056"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC20_ActivityLogCheckCustomerProduct"/> </classes> </test>
+<test name="TestPB1 057"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC21_ActivityLogSendOTP"/> </classes> </test>
+<test name="TestPB1 058"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC22_ActivityLogConfirmOTP"/> </classes> </test>
+<test name="TestPB1 059"> <classes> <class name="com.tmb.automation.test.pb1.se15250.API_TC23_ActivityLogTimeout"/> </classes> </test>
+
+
+<test name="TestPB1 101"> <classes> <class name="com.tmb.automation.test.pb1.c14814.API_TC01_AccountList"/> </classes> </test>
+<test name="TestPB1 102"> <classes> <class name="com.tmb.automation.test.pb1.c14814.API_TC02_CardlessModule"/> </classes> </test>
+<test name="TestPB1 103"> <classes> <class name="com.tmb.automation.test.pb1.c14814.API_TC03_CardlessActivityLog"/> </classes> </test>
+<test name="TestPB1 104"> <classes> <class name="com.tmb.automation.test.pb1.c14814.API_TC04_CRMProfile"/> </classes> </test>
+<test name="TestPB1 105"> <classes> <class name="com.tmb.automation.test.pb1.c12545.API_TC01_CreateWithdrawalCode"/> </classes> </test>
+<test name="TestPB1 106"> <classes> <class name="com.tmb.automation.test.pb1.c14817.API_TC01_DeactivateWithdrawalCode"/> </classes> </test>
+<test name="TestPB1 107"> <classes> <class name="com.tmb.automation.test.pb1.c16768.API_TC01_DailyCardlessLimit"/> </classes> </test>
+
+
+
+</suite>

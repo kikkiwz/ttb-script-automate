@@ -1,0 +1,19 @@
+{
+  "TC_OneApp_Investment_Fund_Summary_0001": {
+    "ScenarioName": "Verify Fund Summary Service",
+    "Description": "Verify Fund Summary service in case success",
+    "ExpectedResult": [
+      "The response of Fund Summary service return correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "product-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

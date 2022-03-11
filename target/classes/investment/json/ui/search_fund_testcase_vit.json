@@ -1,0 +1,15 @@
+{
+  "TC_OneApp_Fund_Summary_Screen_0001": {
+    "ScenarioName": "Fund Summary Screen",
+    "Description": "Validate Fund Summary Screen",
+    "ExpectedResult": [
+      "Fund Summary Screen should be display correctly"
+    ],
+    "TestData": {
+
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+
+}

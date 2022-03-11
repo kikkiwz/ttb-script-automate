@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="5" data-provider-thread-count="6">
+
+
+
+	<test name="AutoLoan Account Detail android">
+		<parameter name="DeviceProfile" value="AutoLoan-android-oneapp-772-vit-hauwie.Receipt"/>
+		<groups>
+			<run>
+				<include name="Activate new flow"/>
+				<include name="Enter Loan Home"/>
+				<include name="Receipt Tax Invoice Pay By TTB account"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.autoloan.AutoloanReceiptPayByTTBRunner"/>
+		</classes>
+	</test>
+
+	<test name="AutoLoan Account Detail ios">
+		<parameter name="DeviceProfile" value="AutoLoan-iOS-Sim-Iphone12ProMax-Receipt"/>
+		<groups>
+			<run>
+				<include name="Activate new flow"/>
+				<include name="Enter Loan Home"/>
+				<include name="Receipt Tax Invoice Pay By TTB account"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.autoloan.AutoloanReceiptPayByTTBRunner"/>
+		</classes>
+	</test>
+
+
+
+</suite>
+

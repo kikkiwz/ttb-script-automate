@@ -1,0 +1,261 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+<!--    <test name="Android/iOS Activation success">-->
+<!--        <parameter name="DeviceProfile" value="platform1-android"/>-->
+<!--        &lt;!&ndash;			<parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>&ndash;&gt;-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Launch App Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.LaunchAppRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Activation success">-->
+<!--        <parameter name="DeviceProfile" value="platform1-android"/>-->
+<!--        <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Reactivation Group"/>-->
+<!--                <include name="Activation Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.ActivationRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Prospect">-->
+<!--        <parameter name="DeviceProfile" value="platform1-android"/>-->
+<!--        &lt;!&ndash;		<parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>&ndash;&gt;-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="HomeScreen Prospect Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.HomeScreenProspectRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Android/iOS AccountSummary">-->
+<!--        <parameter name="DeviceProfile" value="platform1-android"/>-->
+<!--        &lt;!&ndash;				<parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>&ndash;&gt;-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="AccountSummary Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.ProspectAccountSummaryRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Android/iOS Prospect walkthrough">-->
+<!--        &lt;!&ndash;		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="ServiceScreen Prospect Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.ServiceScreenRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Prospect More Screen success">-->
+<!--        &lt;!&ndash;		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Prospect walk through Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.ProspectToMoreDiscoverRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Login With Pin">-->
+<!--        &lt;!&ndash;		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Login With Pin Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.LoginWithPinRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Pin Lock">-->
+<!--        <parameter name="DeviceProfile" value="platform1-android"/>-->
+<!--        &lt;!&ndash; <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/> &ndash;&gt;-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="PinLock Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.PinLockRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Unlock pin">-->
+<!--        <parameter name="DeviceProfile" value="platform1-android"/>-->
+<!--        &lt;!&ndash;			<parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>&ndash;&gt;-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Unlock pin Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.UnlockPinRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Forgot pin">-->
+<!--        &lt;!&ndash;		 <parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Forgot pin Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.ForgotPinRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Account Summary Deposit">-->
+<!--        &lt;!&ndash;		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Account Summary Deposit Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.AccountSummaryDepositRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Setting list">-->
+<!--        &lt;!&ndash;		 	<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Setting list Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.MoreDiscoverToSettingRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Customer More Screen">-->
+<!--        <parameter name="DeviceProfile" value="platform1-android"/>-->
+<!--        <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Customer More Screen Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.CustomerToMoreDiscoverRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Setting to Quick Balance">-->
+<!--        &lt;!&ndash; <parameter name="DeviceProfile" value="platform1-android"/> &ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Setting to Quick Balance Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.SettingToQuickBalanceRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Android/iOS International Address">-->
+<!--        <parameter name="DeviceProfile" value="platform1-android"/>-->
+<!--        &lt;!&ndash;					<parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>&ndash;&gt;-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="International Address Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.InternationalAddressCustomerRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Change Access Pin">-->
+<!--        &lt;!&ndash;        <parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="ChangePin Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.ChangePinRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Manage Widget">-->
+<!--        <parameter name="DeviceProfile" value="platform1-android"/>-->
+<!--        &lt;!&ndash;            <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>&ndash;&gt;-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Setting Manage Widget Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.SettingManageWidgetRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Account Summary Card">-->
+<!--        &lt;!&ndash;		 <parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Account Summary Card Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.AccountSummaryCardRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Android/iOS Account Summary Card">-->
+<!--        &lt;!&ndash;<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Account Summary Card Product Introduction Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.AccountSummaryCardIntroductionRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Android/iOS Account Summary Card">-->
+<!--        <parameter name="DeviceProfile" value="platform1-android"/>-->
+<!--        &lt;!&ndash;		<parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>&ndash;&gt;-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Prospect Account Summary Card Group"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.platform1.ProspectAccountSummaryCardRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+	<test name="Android/iOS Home Quick Balance">
+		<parameter name="DeviceProfile" value="platform1-android"/>
+		<!--		<parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+		<groups>
+			<run>
+				<include name="Home Quick Balance Group"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.platform1.HomeQuickBalanceCustomerRunner"/>
+		</classes>
+	</test>
+</suite>

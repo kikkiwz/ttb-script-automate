@@ -1,0 +1,60 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5">
+<parameter name="ReportName" value="UAT_CustomerCare_SmokeSuite_Report"/>
+<listeners>
+    <listener class-name="com.tmb.automation.helper.TestFilterListener"/>
+</listeners>
+
+<test name="Product Info">
+		<classes>
+			<class name="com.tmb.automation.test.it4it.sprint21.s7419.EditProductInfo" />
+				<class name="com.tmb.automation.test.it4it.sprint20.s1332.PublishProductInfo" />
+		</classes>
+	</test>
+<test name="Bank Info">
+		<classes>
+			<class
+				name="com.tmb.automation.test.it4it.sprint32.s22389.BankInfo_Dashboard" />
+				<class
+				name="com.tmb.automation.test.it4it.sprint32.s22394.BankInfo_CreateandEdit" />
+		</classes>
+	</test> 
+	<test name="Product Icon">
+		<classes>
+			<class
+				name="com.tmb.automation.test.it4it.sprint33.Producticon.ProductIcon" />
+		</classes>
+	</test>
+	<test name="Product Shortcut">	
+		<classes>
+			<class
+				name="com.tmb.automation.test.it4it.sprint22.s8275.CreateProductShortcut" />
+				<class
+				name="com.tmb.automation.test.it4it.sprint22.s8276.EditProductShortcut" />
+		</classes>
+	</test>
+	<test name="T-Phrases">
+		<classes>
+			<class name="com.tmb.automation.test.it4it.sprint23.s9641.PhraseListDashboard" />
+				<class name="com.tmb.automation.test.it4it.sprint24.s9640.CreateandEditPhrases" />
+				<class name="com.tmb.automation.test.it4it.sprint24.s11076.Approve_Publish_Phrases" />
+		</classes>		
+	</test> 
+	<test name="Product terms and condition">
+		<classes>
+			<class name="com.tmb.automation.test.it4it.sprint27.s12208.Create_Terms_and_condition" />
+				<class name="com.tmb.automation.test.it4it.sprint27.s13190.Approve_Terms_and_condition" />
+		</classes>
+	</test>
+	
+	<test name="Product Brief">
+		<classes>
+			<class name="com.tmb.automation.test.it4it.sprint34.ProductBrief.ProductBrief" />
+				
+		</classes>
+	</test>  
+	
+  
+</suite>
+

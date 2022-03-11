@@ -1,0 +1,389 @@
+{
+  "businesstype": {
+    "description": "businesstype",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/criteria/businesstype",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      },
+      "data": [
+        {
+          "activeStatus": "1",
+          "categoryCode": "BUSINESS_TYPE",
+          "entryCode": "A",
+          "entryID": "67538",
+          "entryName": "A - การเกษตร  การเลี้ยงสัตว์  การประมง  การป่าไม้",
+          "entryName2": "A - การเกษตร  การเลี้ยงสัตว์  การประมง  การป่าไม้",
+          "entrySource": "HOST",
+          "extValue1": "AB060000",
+          "extValue2": "",
+          "groupId": "",
+          "refEntryCode": ""
+        }
+      ]
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "unauthorized",
+        "error_description": "Full authentication is required to access this resource"
+      }
+    }
+  },
+  "entrycode": {
+    "description": "entrycode",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/criteria/businesstype/:entryCode",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "country": {
+    "description": "country",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/criteria/country",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "income": {
+    "description": "income",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/criteria/income/:entryCode",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "status": {
+    "description": "status",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/criteria/status",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "status_entrycode": {
+    "description": "status_entrycode",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/criteria/status/:entrycode",
+    "header": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-working-info_countryincome": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/fetch-working-info?countryofincome=TH&occupationcode=304&businesstypecode=A",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-business-type": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/fetch-business-type",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-business-type_entrycode": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/fetch-business-type/:entrycode",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-working-income_entrycode": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/fetch-working-income/:entrycode",
+    "header": {"x-crmid": "001100000000000000000018593707"},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-working-info": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "https://apis-portal.oneapp.tmbbank.local/apis/products/fetch-working-info",
+    "header": {"x-crmid": "001100000000000000000018593707"},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-working-status": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/fetch-working-status",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-working-status_entrycode": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/fetch-working-status",
+    "header": {"x-crmid": "001100000000000000000018593707"},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "zipcode": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/zipcode?code=10900",
+    "header": {"x-crmid": "001100000000000000000018593707"},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "common",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+
+  "UI" : {
+    "test1" : {
+      "mockMenu" : "flexi loan",
+      "pin" : "010203",
+      "cardname": "ทีทีบี แคชทูโก",
+      "rmid": "001100000000000000000018593709"
+    },
+    "test2": {
+      "mockMenu" : "flexi Loan",
+      "pin" : "010203",
+      "cardname": "แฟลซ",
+      "rmid": "001100000000000000000018593709"
+    },
+    "test3" : {
+      "mockMenu" : "flexi Loan",
+      "pin" : "010203",
+      "cardname": "ทีทีบี รีเซิร์ฟ ซิกเนเจอร์",
+      "rmid": "001100000000000000000018593709"
+    },
+    "test4" : {
+      "mockMenu" : "flexi Loan",
+      "pin" : "010203",
+      "cardname": "ทีทีบี โซ ชิลล์",
+      "rmid": "001100000000000000000018593709"
+    },
+    "test5" : {
+      "mockMenu" : "flexi Loan",
+      "pin" : "010203",
+      "cardname": "ทีทีบี รีเซิร์ฟ อินฟินิท",
+      "rmid": "001100000000000000000018593709"
+    }
+  }
+}

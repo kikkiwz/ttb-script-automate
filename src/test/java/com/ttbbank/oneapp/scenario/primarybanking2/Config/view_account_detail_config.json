@@ -1,0 +1,22 @@
+{
+  "view-account-detail-config":{
+    "description": "View account details",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "apis/customer/accounts/details/",
+    "header":{
+      "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866"
+    }
+  },
+  "view-account-detail-config-uat":{
+    "description": "View account details",
+    "method": "POST",
+    "hostname": "https://oneapp-uat2.tau2904.com",
+    "path": "apis/customer/accounts/details/",
+    "header":{
+      "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866"
+    }
+
+  }
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+
+<!--    <test name="Android NDID Reject">-->
+<!--        <parameter name="DeviceProfile" value="customer-service-android-Samsung-A51-NDID-saucelabs"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Activate new flow"/>-->
+<!--                <include name="Enter Service Screen Dev Latest" />-->
+<!--                <include name="Customer Service NDID pending RP Request list Reject"/>-->
+<!--                <include name="Customer Service select request aal 2.2"/>-->
+<!--                <include name="Customer Service Reject Request NDID"/>-->
+<!--                <include name="Customer Service Successful Reject authentication NDID"/>-->
+<!--                <include name="Customer Service verify card history reject"/>-->
+<!--                <include name="Customer Service verify authentication history reject"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.customerservice.sprint32.NdidRejectRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="iOS NDID Reject">
+        <parameter name="DeviceProfile" value="customer-service-ios-oneapp-sim-iphone12-pro-max-ndid-saucelabs"/>
+        <groups>
+            <run>
+                <include name="Activate new flow"/>
+                <include name="Enter Service Screen Dev Latest" />
+                <include name="Enter Service Screen Dev Latest" />
+                <include name="Customer Service NDID pending RP Request list Reject"/>
+                <include name="Customer Service select request aal 2.2"/>
+                <include name="Customer Service Reject Request NDID"/>
+                <include name="Customer Service Successful Reject authentication NDID"/>
+                <include name="Customer Service verify card history reject"/>
+                <include name="Customer Service verify authentication history reject"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.customerservice.sprint32.NdidRejectRunner"/>
+        </classes>
+    </test>
+
+</suite>

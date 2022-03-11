@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite Investment">
+    <test name="Investment1">
+        <parameter name="testCaseId" value="TC_OneApp_Investment_LogIn_Api_0001"/>
+        <classes>
+            <class name="com.tmb.automation.api.investment.LoginSuccessTest"/>
+            <!--            <class name="com.tmb.automation.api.investment.FundSummaryTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.AccountDetailTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.SearchFundTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.FundListBySuitScoreTest"/>-->
+            <class name="com.tmb.automation.api.investment.FundListTest"/>
+            <!--            <class name="com.tmb.automation.api.investment.FundCategoryTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.FundFactSheetTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.AipOrderTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.StatementTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.FundInfoTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.SuitabilityInquiryTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.SuitabilityQuestionTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.SuitabilityAnswerTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.ViewAIPTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.SuggestAllocationTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.PastPerformanceTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.CreateFavoriteFundTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.UpdateFavoriteFundTest"/>-->
+            <!--            <class name="com.tmb.automation.api.investment.EditPortfolioNicknameTest"/>-->
+        </classes>
+    </test>
+    <!--    <test name="Investment2">-->
+    <!--        <parameter name="testCaseId" value="TC_OneApp_Investment_LogIn_Api_0002"/>-->
+    <!--        <classes>-->
+    <!--            <class name="com.tmb.automation.api.investment.LoginSuccessTest"/>-->
+    <!--            <class name="com.tmb.automation.api.investment.TaxDocumentTest"/>-->
+    <!--            <class name="com.tmb.automation.api.investment.TaxSummaryTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="Open Portfolio Existing">-->
+    <!--        <parameter name="testCaseId" value="TC_OneApp_Investment_LogIn_Api_0001"/>-->
+    <!--        <classes>-->
+    <!--            <class name="com.tmb.automation.api.investment.LoginSuccessTest"/>-->
+    <!--            <class name="com.tmb.automation.api.investment.OpenPortfolioTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test name="Open Portfolio New">-->
+    <!--        <parameter name="testCaseId" value="TC_OneApp_Investment_LogIn_Api_0001"/>-->
+    <!--        <classes>-->
+    <!--            <class name="com.tmb.automation.api.investment.LoginSuccessTest"/>-->
+    <!--            <class name="com.tmb.automation.api.investment.OpenPortfolioTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+</suite>

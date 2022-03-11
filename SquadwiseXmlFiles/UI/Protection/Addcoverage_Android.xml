@@ -1,0 +1,64 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation-Testing" verbose="5" thread-count="4" data-provider-thread-count="6">
+
+	<test name="Protection: Add Coverage Customer4">
+		<parameter name="DeviceProfile" value="protection-android-customer04"/>
+		<groups>
+			<run>
+				<include name="Add_Coverage_01_Health coverage - new coverage less than recommended coverage"/>
+				<include name="Add_Coverage_09_Health coverage - input new coverage value less than current coverage value"/>
+				<include name="Add_Coverage_17_Health coverage - new coverage more than recommended coverage"/>
+				<include name="Add_Coverage_25_Wealth coverage - new coverage less than recommended coverage"/>
+				<include name="Add_Coverage_33_Wealth coverage - input new coverage value less than current coverage value"/>
+				<include name="Add_Coverage_41_Wealth coverage - new coverage more than recommended coverage"/>
+				<include name="Add_Coverage_49_Life coverage - new coverage less than recommended coverage"/>
+				<include name="Add_Coverage_57_Life coverage - input new coverage value less than current coverage value"/>
+				<include name="Add_Coverage_65_Life coverage - new coverage more than recommended coverage"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.AddCoverageRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Add Coverage Customer6">
+		<parameter name="DeviceProfile" value="protection-android-customer06"/>
+		<groups>
+			<run>
+				<include name="Add_Coverage_06_Health coverage - new coverage less than recommended coverage"/>
+				<include name="Add_Coverage_14_Health coverage - input new coverage value less than current coverage value"/>
+				<include name="Add_Coverage_22_Health coverage - new coverage more than recommended coverage"/>
+				<include name="Add_Coverage_30_Wealth coverage - new coverage less than recommended coverage"/>
+				<include name="Add_Coverage_38_Wealth coverage - input new coverage value less than current coverage value"/>
+				<include name="Add_Coverage_46_Wealth coverage - new coverage more than recommended coverage"/>
+				<include name="Add_Coverage_54_Life coverage - new coverage less than recommended coverage"/>
+				<include name="Add_Coverage_62_Life coverage - input new coverage value less than current coverage value"/>
+				<include name="Add_Coverage_70_Life coverage - new coverage more than recommended coverage"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.AddCoverageRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Add Coverage Customer8">
+		<parameter name="DeviceProfile" value="protection-android-customer08"/>
+		<groups>
+			<run>
+				<include name="Add_Coverage_08_Health coverage - new coverage less than recommended coverage"/>
+				<include name="Add_Coverage_16_Health coverage - input new coverage value less than current coverage value"/>
+				<include name="Add_Coverage_24_Health coverage - new coverage more than recommended coverage"/>
+				<include name="Add_Coverage_32_Wealth coverage - new coverage less than recommended coverage"/>
+				<include name="Add_Coverage_40_Wealth coverage - input new coverage value less than current coverage value"/>
+				<include name="Add_Coverage_48_Wealth coverage - new coverage more than recommended coverage"/>
+				<include name="Add_Coverage_56_Life coverage - new coverage less than recommended coverage"/>
+				<include name="Add_Coverage_64_Life coverage - input new coverage value less than current coverage value"/>
+				<include name="Add_Coverage_72_Life coverage - new coverage more than recommended coverage"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.AddCoverageRunner"/>
+		</classes>
+	</test>
+
+</suite>

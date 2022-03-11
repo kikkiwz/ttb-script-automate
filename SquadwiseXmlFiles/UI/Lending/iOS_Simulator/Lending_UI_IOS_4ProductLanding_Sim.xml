@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation-Testing" >
+	<listeners>
+		<listener class-name="com.ttbbank.oneapp.scenario.lending.iosUtil.ExReport">
+		</listener>
+	</listeners>
+	<test name="Lending_iOS_PRODUCT_LANDING_CARD">
+		<parameter name="DeviceProfile" value="lending_ios_sim"/>
+		<groups>
+			<run>
+				<include name="Lending_iOS_PRODUCT_LANDING_CARD"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+	<test name="Lending_iOS_PRODUCT_LANDING_C2G">
+		<parameter name="DeviceProfile" value="lending_ios_sim"/>
+		<groups>
+			<run>
+				<include name="Lending_iOS_PRODUCT_LANDING_C2G"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+	<test name="Lending_iOS_PRODUCT_LANDING_BPlus">
+		<parameter name="DeviceProfile" value="lending_ios_sim"/>
+		<groups>
+			<run>
+				<include name="Lending_iOS_PRODUCT_LANDING_BPlus"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+	<test name="Lending_iOS_PRODUCT_LANDING_HomeLoan">
+		<parameter name="DeviceProfile" value="lending_ios_sim"/>
+		<groups>
+			<run>
+				<include name="Lending_iOS_PRODUCT_LANDING_HomeLoan"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+</suite>

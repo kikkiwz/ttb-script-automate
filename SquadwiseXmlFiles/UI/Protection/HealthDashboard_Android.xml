@@ -1,0 +1,126 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation-Testing" verbose="5" thread-count="4" data-provider-thread-count="6">
+
+	<test name="Protection: Health Dashboard Customer4">
+		<parameter name="DeviceProfile" value="protection-android-customer04-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Health_04_EN_Health Dashboard - Display Medical Expense value"/>
+				<include name="Health_12_EN_Health Dashboard - Display CI Expense Value"/>
+				<include name="Health_20_EN_Health Dashboard - Hospital Benefit MEB"/>
+				<include name="Health_28_EN_Health Dashboard - Dislplay Health Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.HealthDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Health Dashboard Customer5">
+		<parameter name="DeviceProfile" value="protection-android-customer05-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Health_05_EN_Health Dashboard - Display Medical Expense value"/>
+				<include name="Health_13_EN_Health Dashboard - Display CI Expense Value"/>
+				<include name="Health_21_EN_Health Dashboard - Hospital Benefit MEB"/>
+				<include name="Health_29_EN_Health Dashboard - Dislplay Health Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.HealthDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Health Dashboard Customer6">
+		<parameter name="DeviceProfile" value="protection-android-customer06-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Health_06_EN_Health Dashboard - Display Medical Expense value"/>
+				<include name="Health_14_EN_Health Dashboard - Display CI Expense Value"/>
+				<include name="Health_22_EN_Health Dashboard - Hospital Benefit MEB"/>
+				<include name="Health_30_EN_Health Dashboard - Dislplay Health Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.HealthDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Health Dashboard Customer8">
+		<parameter name="DeviceProfile" value="protection-android-customer08-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Health_08_EN_Health Dashboard - Display Medical Expense value"/>
+				<include name="Health_16_EN_Health Dashboard - Display CI Expense Value"/>
+				<include name="Health_24_EN_Health Dashboard - Hospital Benefit MEB"/>
+				<include name="Health_28_EN_Health Dashboard - Dislplay Health Policy List tab"/>
+
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.HealthDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Health Dashboard TH Customer4">
+		<parameter name="DeviceProfile" value="protection-android-customer04-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Health_04_TH_Health Dashboard - Display Medical Expense value"/>
+				<include name="Health_12_TH_Health Dashboard - Display CI Expense Value"/>
+				<include name="Health_20_TH_Health Dashboard - Hospital Benefit MEB"/>
+				<include name="Health_28_TH_Health Dashboard - Dislplay Health Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.HealthDashboardTHRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Health Dashboard TH Customer5">
+		<parameter name="DeviceProfile" value="protection-android-customer05-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Health_05_TH_Health Dashboard - Display Medical Expense value"/>
+				<include name="Health_13_TH_Health Dashboard - Display CI Expense Value"/>
+				<include name="Health_21_TH_Health Dashboard - Hospital Benefit MEB"/>
+				<include name="Health_29_TH_Health Dashboard - Dislplay Health Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.HealthDashboardTHRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Health Dashboard TH  Customer6">
+		<parameter name="DeviceProfile" value="protection-android-customer06-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Health_06_TH_Health Dashboard - Display Medical Expense value"/>
+				<include name="Health_14_TH_Health Dashboard - Display CI Expense Value"/>
+				<include name="Health_22_TH_Health Dashboard - Hospital Benefit MEB"/>
+				<include name="Health_30_TH_Health Dashboard - Dislplay Health Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.HealthDashboardTHRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Health Dashboard TH Customer8">
+		<parameter name="DeviceProfile" value="protection-android-customer08-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Health_08_TH_Health Dashboard - Display Medical Expense value"/>
+				<include name="Health_16_TH_Health Dashboard - Display CI Expense Value"/>
+				<include name="Health_24_TH_Health Dashboard - Hospital Benefit MEB"/>
+				<include name="Health_28_TH_Health Dashboard - Dislplay Health Policy List tab"/>
+
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.HealthDashboardTHRunner"/>
+		</classes>
+	</test>
+
+</suite>

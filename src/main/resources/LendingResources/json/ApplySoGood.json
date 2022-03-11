@@ -1,0 +1,182 @@
+{
+  "fetch-installment-plan": {
+    "description": "Fetch Installment Plan",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/fetch-installment-plan",
+    "header": {
+      "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866"
+    },
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      },
+      "data": [
+        {
+          "planSeqId": null,
+          "installmentsPlan": "IPP001",
+          "planDesc": "3 MONTHS IPP - 0%",
+          "paymentTerm": "3",
+          "interestRate": "0",
+          "merchantNo": "",
+          "channel": "01",
+          "planStatus": "01"
+        },
+        {
+          "planSeqId": null,
+          "installmentsPlan": "IPP062",
+          "planDesc": "6 MONTHS IPP - 0.69%",
+          "paymentTerm": "6",
+          "interestRate": "0.69",
+          "merchantNo": "",
+          "channel": "01",
+          "planStatus": "01"
+        },
+        {
+          "planSeqId": null,
+          "installmentsPlan": "IPP063",
+          "planDesc": "10 MONTHS IPP - 0.69%",
+          "paymentTerm": "10",
+          "interestRate": "0.69",
+          "merchantNo": "",
+          "channel": "01",
+          "planStatus": "01"
+        },
+        {
+          "planSeqId": null,
+          "installmentsPlan": "XXX063",
+          "planDesc": "[Fail]10 MONTHS IPP - 0.69%",
+          "paymentTerm": "10",
+          "interestRate": "0.69",
+          "merchantNo": "",
+          "channel": "01",
+          "planStatus": "01"
+        }
+      ]
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzczMzQ1OSwic3NpZCI6IjAwMDAwMDAwMDA3MDI1LXRucm9wYWptIiwianRpIjoiMTJkYjNjYWMtYjZiYy00MzIxLWFmOGEtNmJjODQ3NmJlNDBkIiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.XX-JO0N7flG5ERB0-SYNxKdoseax2dbE46fbbEWkPDk"
+      }
+    }
+  },
+  "get-campaign-transactions": {
+    "description": "Get Campaign Transaction",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/creditcard/get-campaign-transactions",
+    "header": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "account_id": "0000000050078360018000175",
+      "more_records": "N",
+      "search_keys": ""
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      },
+      "data": {
+        "status": {
+          "status_code": "0"
+        },
+        "card_statement": {
+          "statement_transactions": [
+            {
+              "transaction_code": 5,
+              "transaction_amounts": 15000.00,
+              "posted_date": "2022-07-22",
+              "transaction_date": "2022-07-13",
+              "mcc_code": "0000",
+              "transaction_description": "ONLINE PAYMENT VIA MIB/ IB           TH",
+              "transaction_key": "T0000041180000002"
+            },
+            {
+              "transaction_code": 5,
+              "transaction_amounts": 15000.00,
+              "posted_date": "2022-07-22",
+              "transaction_date": "2022-07-07",
+              "mcc_code": "0000",
+              "transaction_description": "ONLINE PAYMENT VIA MIB/ IB           TH",
+              "transaction_key": "T0000041160000002"
+            }
+          ]
+        },
+        "total_records": 0,
+        "max_records": 2,
+        "more_records": "N",
+        "search_keys": ""
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzczODIwMywic3NpZCI6IjAwMDAwMDAwMDA3MDI1LWt0cXJ6a3lvIiwianRpIjoiZWZjZjgwMDYtZjA3ZS00NjE4LTgzOGQtNDQxYTc2MGFlYTA5IiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.fwo3H9nm1HSyiwDaT1FiBAfWMdyf86vDOvJFDx8KzLQ"
+      }
+    }
+  },
+  "card-installment-confirm": {
+    "description": "Get Campaign Transaction",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/creditcard/card-installment-confirm",
+    "header": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "account_id": "0000000050078360018000175",
+      "card_installment": {
+        "model_type": "IP",
+        "amounts": 1201.00,
+        "transaction_key": "T0000037940000002",
+        "promotion_model_no": "IPP001",
+        "interest": 1000,
+        "monthly_installments": 1220
+      }
+    },
+    "expected1": {},
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzc0MzIxOSwic3NpZCI6IjAwMDAwMDAwMDA3MDI1LXBpbmtteW5zIiwianRpIjoiNmIwMDVjODctYTM0Mi00Njg3LTllMDYtNTY2NzkzMmRhZGJjIiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.wGz2s13aWcW7zi4-VgAVFO5aw8ocmSMrPyuVYfoMKWc"
+      }
+    }
+  },
+  "UI": {
+    "Test1": {
+
+    },
+    "Test2": {
+
+    }
+  }
+}
+
+

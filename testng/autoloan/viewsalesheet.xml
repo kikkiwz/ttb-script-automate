@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite TescoLotusMoney">
+    <test verbose="2" preserve-order="true" name="/Users/sakchai/work/TescoLotusMoney/src">
+        <classes>
+            <class name="com.tmb.automation.autoloan.ViewSaleSheet.ExistingViewSaleSheetAndroidEN"/>
+            <class name="com.tmb.automation.autoloan.ViewSaleSheet.ExistingViewSaleSheetAndroidTH"/>
+            <class name="com.automation.api.platform2.LoginSuccessTest"/>
+            <class name="com.automation.api.platform2.SearchSuccessTest"/>
+            <class name="com.automation.api.platform2.SearchFailedTest"/>
+
+        </classes>
+    </test>
+</suite>

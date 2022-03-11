@@ -1,0 +1,66 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="1" parallel="tests" thread-count="1" data-provider-thread-count="1">
+<listeners> <listener class-name="com.tmb.automation.helper.ExtentListeners"> </listener> </listeners>
+
+<parameter name="DeviceProfile" value="PB1-iOS-saucelabs" />
+
+	<test name="PB1 FromAccountEn">
+		<groups>
+			<run>
+				<include name="PB1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.pb1.UIc25480.TC07_CardlessFromAccountEnIOS" />
+		</classes>
+	</test>
+
+	<test name="PB1 FromAccountTh"> 
+		<groups>
+			<run>
+				<include name="PB1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.pb1.UIc25480.TC08_CardlessFromAccountThIOS" />
+		</classes>
+	</test>
+
+	<test name="PB1 FromHomeEn">
+		<groups>
+			<run>
+				<include name="PB1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.pb1.UIc25481.TC11_CardlessFromHomeEnIOS" />
+		</classes>
+	</test>
+
+	<test name="PB1 FromHomeTh">
+		<groups>
+			<run>
+				<include name="PB1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.pb1.UIc25481.TC12_CardlessFromHomeThIOS" />
+		</classes>
+	</test>
+
+<!-- 	<test name="PB1 eKYC WiFiOnIOS"> -->
+<!-- 	<parameter name="DeviceProfile" value="PB1-IOS" /> -->
+<!-- 	<groups> -->
+<!-- 		<run> -->
+<!-- 			<include name="PB1" /> -->
+<!-- 		</run> -->
+<!-- 	</groups> -->
+<!-- 	<classes> -->
+<!-- 		<class name="com.ttbbank.oneapp.pb1.UIe11750.TC11_eKYC_WiFiOnIOS" /> -->
+<!-- 	</classes> -->
+<!-- </test> -->
+
+
+</suite>
+

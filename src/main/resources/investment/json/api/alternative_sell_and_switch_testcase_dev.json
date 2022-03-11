@@ -1,0 +1,16 @@
+{
+  "TC_OneApp_Investment_Alternative_Sell_And_Switch_0001": {
+    "ScenarioName": "Alternative Sell And Switch",
+    "Description": "Verify Alternative Sell And Switch service",
+    "ExpectedResult": [
+      "Validate response Alternative Sell And Switch in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "orderType": "2",
+      "crmId": "00000018592884"
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

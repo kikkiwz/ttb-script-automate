@@ -1,0 +1,1626 @@
+{
+  "TC_OneApp_Investment_Fund_List_0001": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List All",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0002": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as Bought Flag is Y",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": [
+        {
+          "fundHouseCode": "TMBAM",
+          "fundCode": "TMB50",
+          "fundShortName": "TMB50",
+          "fundNameEn": "TMB SET50 FUND",
+          "fundNameTh": "กองทุนเปิดทหารไทย SET50",
+          "riskRate": "06",
+          "allotType": "1",
+          "fundTypeL1": "Thai Equity - Large Cap",
+          "fundTypeL2": "D",
+          "reserved1": "",
+          "reserved2": "",
+          "reserved3": "",
+          "reserved4": "",
+          "reserved5": "",
+          "fxRisk": "N",
+          "allowAipFlag": "Y",
+          "ipoDateFrom": "2001-03-16",
+          "ipoDateTo": "2001-03-28",
+          "dateAfterIpo": "2001-03-29",
+          "ipoFlag": "N",
+          "inceptionDate": "2001-03-29",
+          "return1Day": 0.78698,
+          "return1Month": 6.31761,
+          "return3Month": 1.90089,
+          "return6Month": 6.09026,
+          "returnYTD": 8.01308,
+          "return1Year": 13.47620,
+          "return3Year": -3.25913,
+          "return5Year": 1.89224,
+          "inceptionSinceReturn": 11.73174,
+          "smartPortFlag": "N",
+          "recommendFlag": "N",
+          "followingFlag": "N",
+          "boughtFlag": "Y",
+          "navAsOfDate": "2021-08-27",
+          "nav": "96.29420",
+          "fundTypeGroup": "Regular Mutual Fund",
+          "customTag": "USA",
+          "fundclassCode": "400",
+          "secid": "F000000QSX",
+          "fundclassCodeHub": "TMB_MS_LOCALEQUITY",
+          "fundclassNameEnHub": "Equity",
+          "fundclassNameThHub": "กองทุนหุ้น",
+          "termfundFlag": "N"
+        }
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0003": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as following Flag is Y",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": [
+        {
+          "fundHouseCode": "TFUND",
+          "fundCode": "TCASH",
+          "fundShortName": "T-CASH",
+          "fundNameEn": "THANACHART CASH MANAGEMENT FUND",
+          "fundNameTh": "กองทุนเปิดธนชาตบริหารเงิน",
+          "riskRate": "01",
+          "allotType": "1",
+          "fundTypeL1": "Thai Money Market",
+          "fundTypeL2": "A",
+          "reserved1": "",
+          "reserved2": "",
+          "reserved3": "",
+          "reserved4": "",
+          "reserved5": "",
+          "fxRisk": "N",
+          "allowAipFlag": "Y",
+          "ipoDateFrom": "2005-08-18",
+          "ipoDateTo": "2005-08-26",
+          "dateAfterIpo": "2006-10-27",
+          "ipoFlag": "N",
+          "inceptionDate": "2005-08-31",
+          "return1Day": 0.00293,
+          "return1Month": 0.02348,
+          "return3Month": 0.08736,
+          "return6Month": 0.18813,
+          "returnYTD": 0.20507,
+          "return1Year": 0.37771,
+          "return3Year": 0.88310,
+          "return5Year": 0.97965,
+          "inceptionSinceReturn": 1.95725,
+          "smartPortFlag": "N",
+          "recommendFlag": "Y",
+          "followingFlag": "Y",
+          "boughtFlag": "N",
+          "navAsOfDate": "2021-08-27",
+          "nav": "13.63320",
+          "fundTypeGroup": "Regular Mutual Fund",
+          "customTag": "China",
+          "fundclassCode": "100",
+          "secid": "F000000RJK",
+          "fundclassCodeHub": "TMB_MS_LOCALFIXEDINCOME",
+          "fundclassNameEnHub": "Fixed Income",
+          "fundclassNameThHub": "กองทุนตราสารหนี้",
+          "termfundFlag": "N"
+        }
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0004": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as Bought Flag is N",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": [
+        {
+          "fundHouseCode": "TFUND",
+          "fundCode": "TESGSBOND",
+          "fundShortName": "T-ES-GSBOND",
+          "fundNameEn": "Thanachart Eastspring Global Smart Bond Fund",
+          "fundNameTh": "กองทุนเปิดธนชาต อีสท์สปริง Global Smart Bond",
+          "riskRate": "05",
+          "allotType": "1",
+          "fundTypeL1": "Foreign Balanced",
+          "fundTypeL2": "B2",
+          "reserved1": "",
+          "reserved2": "",
+          "reserved3": "",
+          "reserved4": "",
+          "reserved5": "",
+          "fxRisk": "Y",
+          "allowAipFlag": "N",
+          "ipoDateFrom": "2020-03-23",
+          "ipoDateTo": "2020-03-31",
+          "dateAfterIpo": "2020-04-03",
+          "ipoFlag": "N",
+          "inceptionDate": "2020-04-02",
+          "return1Day": 0.10997,
+          "return1Month": -0.25966,
+          "return3Month": 0.57325,
+          "return6Month": 1.68958,
+          "returnYTD": 3.02431,
+          "return1Year": 5.69436,
+          "return3Year": null,
+          "return5Year": null,
+          "inceptionSinceReturn": 10.94032,
+          "smartPortFlag": "N",
+          "recommendFlag": "N",
+          "followingFlag": "N",
+          "boughtFlag": "N",
+          "navAsOfDate": "2021-08-26",
+          "nav": "11.56180",
+          "fundTypeGroup": "Regular Mutual Fund",
+          "customTag": "China",
+          "fundclassCode": "200",
+          "secid": "F0000151BH",
+          "fundclassCodeHub": "TMB_MS_FOREIGNFIXEDINCOME",
+          "fundclassNameEnHub": "FIF Fixed Income",
+          "fundclassNameThHub": "กองทุนตราสารหนี้ที่ลงทุนต่างประเทศ",
+          "termfundFlag": "N"
+        }
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0005": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as following Flag flag N",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": [
+        {
+          "fundHouseCode": "TFUND",
+          "fundCode": "TESCHINAA",
+          "fundShortName": "T-ES-CHINA A",
+          "fundNameEn": "Thanachart Eastspring China A Active Fund",
+          "fundNameTh": "กองทุนเปิดธนชาต อีสท์สปริง China A Active",
+          "riskRate": "06",
+          "allotType": "1",
+          "fundTypeL1": "Global Equity",
+          "fundTypeL2": "B3",
+          "reserved1": "",
+          "reserved2": "",
+          "reserved3": "",
+          "reserved4": "",
+          "reserved5": "",
+          "fxRisk": "Y",
+          "allowAipFlag": "Y",
+          "ipoDateFrom": "2020-02-24",
+          "ipoDateTo": "2020-03-03",
+          "dateAfterIpo": "2020-03-06",
+          "ipoFlag": "N",
+          "inceptionDate": "2020-03-05",
+          "return1Day": -2.46899,
+          "return1Month": -11.45956,
+          "return3Month": -21.20208,
+          "return6Month": -23.98078,
+          "returnYTD": -19.85442,
+          "return1Year": -8.75574,
+          "return3Year": null,
+          "return5Year": null,
+          "inceptionSinceReturn": 5.79816,
+          "smartPortFlag": "N",
+          "recommendFlag": "N",
+          "followingFlag": "N",
+          "boughtFlag": "Y",
+          "navAsOfDate": "2021-08-26",
+          "nav": "10.86710",
+          "fundTypeGroup": "Regular Mutual Fund",
+          "customTag": "China",
+          "fundclassCode": "500",
+          "secid": "F000014WV1",
+          "fundclassCodeHub": "TMB_MS_FOREIGNEQUITY",
+          "fundclassNameEnHub": "FIF Equity",
+          "fundclassNameThHub": "กองทุนหุ้นที่ลงทุนในต่างประเทศ",
+          "termfundFlag": "N"
+        }
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0006": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by category of Type Of Fund is \"Regular Mutual Fund\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Regular Mutual Fund"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0007": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by category of Type Of Fund is \"Trigger Fund\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Trigger Fund"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0008": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by category of Type Of Fund is \"Term Fund\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Term Fund"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0009": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by category of Type Of Fund is \"Long Term Equity Fund\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Long Term Equity Fund"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0010": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by category of Type Of Fund is \"Retirement Mutual Fund\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Retirement Mutual Fund"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0011": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by category of Type Of Fund is \"Rollover Fund\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Rollover Fund"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0012": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class is \"ttb smart port\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Rollover Fund"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0013": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class is \"Fixed Income\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Rollover Fund"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0014": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [TH] is \"กองทุนตราสารหนี้\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "กองทุนตราสารหนี้"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0015": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"FIF Fixed Income\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "FIF Fixed Income"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0016": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"กองทุนตราสารหนี้ที่ลงทุนต่างประเทศ\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "กองทุนตราสารหนี้ที่ลงทุนต่างประเทศ"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0017": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"Balanced\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Balanced"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0018": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"กองทุนผสม\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "กองทุนผสม"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0019": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"Equity\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Equity"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0020": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"กองทุนหุ้น\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "กองทุนหุ้น"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0021": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"FIF Equity\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "FIF Equity"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0022": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"กองทุนหุ้นที่ลงทุนในต่างประเทศ\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "กองทุนหุ้นที่ลงทุนในต่างประเทศ"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0023": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"Others\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Others"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0024": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"อื่นๆ\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "อื่นๆ"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0025": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"Super Savings Fund(SSF)/LTF\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Super Savings Fund(SSF)/LTF"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0026": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"Retirement Mutual Fund\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Retirement Mutual Fund"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0027": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"กองทุนรวมเพื่อการเลี้ยงชีพ\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "กองทุนรวมเพื่อการเลี้ยงชีพ"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0028": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"FIF Balanced\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "FIF Balanced"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0029": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Asset Class [EN] is \"กองทุนผสมที่ลงทุนในต่างประเทศ\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "กองทุนผสมที่ลงทุนในต่างประเทศ"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0030": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Fund House is \"TMBAM\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "TMBAM"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0031": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Fund House is \"TFUND\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "TFUND"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0032": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Fund House is \"TISCOASSET\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "TISCOASSET"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0033": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Fund House is \"UOBAMTH\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "UOBAMTH"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0034": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Fund House is \"PRINCIPAL\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "PRINCIPAL"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0035": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Fund House is \"ABERDEEN\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "ABERDEEN"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0036": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Fund House is \"KWIAM\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "KWIAM"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0037": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Fund House is \"ONEAM\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "ONEAM"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0038": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Fund House is \"KASSET\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "KASSET"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0039": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Fund House is \"KTAM\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "KTAM"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0040": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Fund House is \"KSAM\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "KSAM"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0041": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Custom is \"China\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "China"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0042": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Custom is \"EU\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "EU"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0043": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Custom is \"Japan\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Japan"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0044": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Custom is \"Thailand\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "Thailand"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_0045": {
+    "ScenarioName": "Verify Fund List Service",
+    "Description": "Verify Fund List as filter by Custom is \"USA\"",
+    "ExpectedResult": [
+      "The response of Fund List is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001834698",
+        "PT000000000001834843",
+        "PT000000000001834862",
+        "PT000000000001834869",
+        "PT000000000001834871",
+        "PT000000000001834873",
+        "PT000000000001834875",
+        "PT000000000001834877",
+        "PT000000000001835057"
+      ]
+    },
+    "ResponseData": {
+      "data": []
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "products-exp-service",
+      "success",
+      "USA"
+    ],
+    "IsSkip": false
+  }
+}
+
+

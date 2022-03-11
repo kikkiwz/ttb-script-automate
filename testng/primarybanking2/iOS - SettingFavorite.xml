@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="1" parallel="tests" thread-count="1" data-provider-thread-count="1">
+
+ 	<test name="iOS_SettingFavorite">
+ 		<parameter name="DeviceProfile" value="pb2-ios-iphone11ProMax" />
+ 		<groups>
+ 			<run>
+				<include name="SettingFavorite"/>
+
+ 			</run>
+ 		</groups>
+ 		<classes>
+ 			<class
+ 				name="com.ttbbank.oneapp.runner.primarybanking2.TestRunner" />
+ 		</classes>
+ 	</test>
+
+</suite>

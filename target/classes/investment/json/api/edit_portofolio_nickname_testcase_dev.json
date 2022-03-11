@@ -1,0 +1,59 @@
+{
+  "TC_OneApp_Edit_Portfolio_Nickname_0001": {
+    "ScenarioName": "Edit Portfolio Nickname Service",
+    "Description": "Verify Portfolio Nickname input by Thai language",
+    "ExpectedResult": [
+      "Validate response Portfolio Nickname in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "portfolioNickName": "ชื่อภาษาไทย",
+      "portfolioNo": "PT000000000001829798"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Edit_Portfolio_Nickname_0002": {
+    "ScenarioName": "Edit Portfolio Nickname Service",
+    "Description": "Verify Portfolio Nickname input by English language",
+    "ExpectedResult": [
+      "Validate response Portfolio Nickname in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "portfolioNickName": "English name",
+      "portfolioNo": "PT000000000001829798"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Edit_Portfolio_Nickname_0003": {
+    "ScenarioName": "Edit Portfolio Nickname Service",
+    "Description": "Verify Portfolio Nickname input by mix thai and english language",
+    "ExpectedResult": [
+      "Validate response Portfolio Nickname in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "portfolioNickName": "ชื่อภาษา English",
+      "portfolioNo": "PT000000000001829798"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

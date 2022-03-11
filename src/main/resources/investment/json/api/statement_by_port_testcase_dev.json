@@ -1,0 +1,18 @@
+{
+  "TC_OneApp_Investment_Statement_By_Port_0001": {
+    "ScenarioName": "Statement By Port",
+    "Description": "Validate Statement By Port",
+    "ExpectedResult": [
+      "Validate response Statement By Port in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "portfolioNumber": "PT000000000001829798",
+      "fundCode": "TMBAALF",
+      "rowEnd": "5",
+      "rowStart": "1"
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "TC_OneApp_Investment_Payment_Detail_0001": {
+    "ScenarioName": "Payment Detail",
+    "Description": "Validate Payment Detail",
+    "ExpectedResult": [
+      "Validate response Fund Summary in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "crmId": "00000018592884",
+      "fundCode": "TMONEY",
+      "fundHouseCode":"TFUND",
+      "tranType":"1"
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

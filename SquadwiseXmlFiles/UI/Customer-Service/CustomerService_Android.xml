@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5">
+
+	<test name="Android Virtual Passbook">
+		<parameter name="DeviceProfile" value="customer-service-android-saucelabs-galaxym50"/>
+		<groups>
+			<run>
+				<include name="Enter Home Screen Dev Latest"/>
+				<include name="Enter Service Screen Dev Latest" />
+				<include name="Customer Service Virtual Passbook"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.customerservice.VirtualPassbookRunner"/>
+		</classes>
+	</test>
+		<!-- <test preserve-order="true"  name="MutualFund_TH">	
+		<classes>
+            <class name="com.tmb.automation.test.customerservice.sprint25.MutualFund_TH"/>           
+        </classes>
+	</test> 	 -->
+</suite>

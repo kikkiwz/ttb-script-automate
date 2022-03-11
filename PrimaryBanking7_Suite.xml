@@ -1,0 +1,108 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="1" parallel="tests" thread-count="1" data-provider-thread-count="1">
+<!--	<test name="Android/iOS Prospect">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="Pocahontas-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="TopUp OneTwoCall Success"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking7.TopUpOneTwoCallSuccessRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+
+<!--	<test name="Android/iOS Prospect">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="Pocahontas-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="TopUp TrueMoney Success"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking7.TopUpTrueMoneySuccessRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+
+<!--	<test name="Android/iOS Prospect">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="Pocahontas-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="TopUp EasyPass Success"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking7.TopUpEasyPassRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+
+<!--	<test name="Android/iOS Prospect">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="Pocahontas-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="TopUp schedule 1-2-call once success"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking7.TopUpScheduleOneTwoCallOnceRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+
+	<test name="Android/iOS Prospect">
+		<!--    		<parameter name="DeviceProfile" value="platform1-android"/>-->
+		<parameter name="DeviceProfile" value="Pocahontas-ios-oneapp-sim-iphone12-pro-max-kai"/>
+		<groups>
+			<run>
+				<include name="Topup schedule true weekly end date success"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.primarybanking7.TopUpScheduleTrueWeeklyEndDateRunner"/>
+		</classes>
+	</test>
+
+<!--	<test name="Android/iOS Prospect">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="Pocahontas-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Topup schedule TrueH weekly times success"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking7.TopUpScheduleTrueHWeeklyTimesRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+
+<!--	<test name="Android/iOS Prospect">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="Pocahontas-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Topup schedule dtac monthly times success"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking7.TopUpScheduleDtacMonthlyTimesRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+
+<!--	<test name="Android/iOS Prospect">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="Pocahontas-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Topup schedule true monthly end date success"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking7.TopUpScheduleTrueMonthlyEndDateRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+
+</suite>

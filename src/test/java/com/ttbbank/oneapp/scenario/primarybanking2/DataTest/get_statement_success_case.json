@@ -1,0 +1,32 @@
+{
+
+  "TS_OneApp_API_VIEW_ACCOUNT_001": {
+    "Description": "Verify Account Detail with All Free (SDA)",
+    "ExpectedResult":{
+
+    },
+    "TestData": {
+      "crm_id": "6201576",
+      "user_name" : "IDSF/MWukeTNqyxKz3sXs/DgNW/gWtXBRgCjplBhE5tDiwojx8Quok8oWxbfD1Vnr0EQbP1yQnTqSX88eUkbtkvZGWteEQqgwj7G5iR2YpZ+tbTDRG2ytxNIZVjUwXbv4l9pP20/OE5IjwXoR0y3GzzaklyuBTSrfatjjEEPUmId92E5pveNT5J7Cm4YUsfb86D4JRBIo8C8oexWQyJTMVuXmk7v2AQnKgkOzlUQEdb2243nVVp+wKYDVJrjSoarfN7Sraj8A2DEu1TZdhvkOaO/bNbMs6925viUOiMx/XCzofQ56ohCX+wvvMY7WzmP5/bj2CtyxZLknSugEDuI7w=="
+    },
+    "RequestParamsAllFree" : {
+      "account_no": "0019684927",
+      "account_type": "SDA"
+    },
+    "ExpectedResultKey": [
+      ""
+    ],
+    "ResponseBody": {
+      "data": {
+        "status": {
+          "code": "0000",
+          "message": "success",
+          "service": "customers-ex-service",
+          "description": "success"
+        }
+      }
+    },
+    "IsSkip": false
+  }
+
+}

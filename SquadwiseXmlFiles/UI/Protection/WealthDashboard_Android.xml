@@ -1,0 +1,73 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation-Testing" verbose="5" thread-count="4" data-provider-thread-count="6">
+
+	<test name="Protection: Wealth Dashboard Customer4">
+		<parameter name="DeviceProfile" value="protection-android-oneapp-vit-redmi"/>
+		<groups>
+			<run>
+				<include name="Wealth_04_EN_Wealth Dashboard - Display Current Retirement Planning value"/>
+				<include name="Wealth_12_EN_Wealth Dashboard - Display Retirement plan recommendation"/>
+				<include name="Wealth_20_EN_Wealth Dashboard - Dislplay Wealth Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.WealthDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Wealth Dashboard Customer6">
+		<parameter name="DeviceProfile" value="protection-android-customer06-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Wealth_06_EN_Wealth Dashboard - Display Current Retirement Planning value"/>
+				<include name="Wealth_14_EN_Wealth Dashboard - Display Retirement plan recommendation"/>
+				<include name="Wealth_22_EN_Wealth Dashboard - Dislplay Wealth Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.WealthDashboardRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Wealth Dashboard TH Customer4">
+		<parameter name="DeviceProfile" value="protection-android-customer04-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Wealth_04_TH_Wealth Dashboard - Display Current Retirement Planning value"/>
+				<include name="Wealth_12_TH_Wealth Dashboard - Display Retirement plan recommendation"/>
+				<include name="Wealth_20_TH_Wealth Dashboard - Dislplay Wealth Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.WealthDashboardTHRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Wealth Dashboard TH Customer5">
+		<parameter name="DeviceProfile" value="protection-android-customer05-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Wealth_05_TH_Wealth Dashboard - Display Current Retirement Planning value"/>
+				<include name="Wealth_13_TH_Wealth Dashboard - Display Retirement plan recommendation"/>
+				<include name="Wealth_21_TH_Wealth Dashboard - Dislplay Wealth Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.WealthDashboardTHRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Wealth Dashboard TH Customer6">
+		<parameter name="DeviceProfile" value="protection-android-customer06-saucelabs"/>
+		<groups>
+			<run>
+				<include name="Wealth_06_TH_Wealth Dashboard - Display Current Retirement Planning value"/>
+				<include name="Wealth_14_TH_Wealth Dashboard - Display Retirement plan recommendation"/>
+				<include name="Wealth_22_TH_Wealth Dashboard - Dislplay Wealth Policy List tab"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.WealthDashboardTHRunner"/>
+		</classes>
+	</test>
+</suite>

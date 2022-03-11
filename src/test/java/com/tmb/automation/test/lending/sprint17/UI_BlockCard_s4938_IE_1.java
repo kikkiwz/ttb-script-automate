@@ -1,0 +1,92 @@
+package com.tmb.automation.test.lending.sprint17;
+
+import com.tmb.automation.helper.ExtentListeners;
+import com.tmb.automation.helper.Helper;
+import com.tmb.automation.pages.lending.ActivateCardPage;
+import com.tmb.automation.pages.lending.BlockCardPage;
+import com.tmb.automation.util.Base;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import java.io.IOException;
+
+/**
+ * "Validate Screen load
+1. Validate screen label.
+2. Click back iCon
+3. Click Enter card number button"
+
+====
+"1. System display
+     1.1. System display static taxt ""Activate card""
+     1.2 System display static taxt ""Welcome, K.$customerNameEN, please have your card handy. Activate now to enjoy the privileges and benefits of your $productNameEN card.""
+      1.3 System display Back icon as ""<"" on the upper left of screen
+      1.4 System display button with static text as ""Scan card"" 
+      1.5 System display button with static text as ""Enter card number"" 
+2.System navigate back to 'Home' screen
+3. System navigate back to ""Enter Card Numbe"" screen successfully"
+
+ * @author oneapp-qa
+ *
+ */
+
+public class UI_BlockCard_s4938_IE_1 extends Base {
+	@Parameters({"DeviceProfile" })
+	@BeforeMethod(groups= {"android", "lending", "Sprint15", "4938"})
+	public void BeforeTest(String deviceProfile) {
+		Helper.CONFIG_PROFILE =deviceProfile;
+		Base.appiumCapabilities();
+		ExtentListeners.setDriver(appiumDriver);
+		mapData = Helper.getExcelData("TestData_lending", "TestData_4938", this.getClass().getSimpleName());
+	}
+
+	@AfterMethod(groups= {"android", "lending", "Sprint15", "4938"})
+	public void teardown() {
+		Base.driverQuit();
+	}
+	
+	@Test(groups = {"android", "lending", "Sprint15", "4938"})
+	public void ADTest001() throws IOException {
+		log("------------Start "+this.getClass().getSimpleName());
+	
+		BlockCardPage ld = new BlockCardPage(appiumDriver);
+		UI_Lending_Common.navigateToHomeScreen_ios(mapData);
+		UI_Lending_Common.navigateToBlockCard_ios();
+		UI_Lending_Common.navigateToEnterAccountId(mapData);
+		sleep();
+
+		ld.setWebview();
+		ld.waitVisible(ld.swLbBC_Title);
+		ld.assertText(ld.fX(ld.swLbBC_Title).getText(), mapData.get("Title"));
+		ld.assertText(ld.fX(ld.swLbBC_Desc1).getText(), mapData.get("Desc1"));
+		ld.assertText(ld.fX(ld.swLbBC_Desc2).getText(), mapData.get("Desc2"));
+		ld.assertText(ld.fX(ld.swLbBC_Desc3).getText(), mapData.get("Desc3"));
+//		ld.assertText(ld.fX(ld.swLbBC_Address).getText(), mapData.get("Address"));
+		ld.assertText(ld.fX(ld.swLbBC_Info).getText(), mapData.get("Info"));
+		ld.assertText(ld.fX(ld.swBtnBC_Confirm).getText(), mapData.get("Confirm"));
+		log("Click Confirm button");
+		ld.click(ld.swBtnBC_Confirm);
+		
+		sleep(1);
+		ActivateCardPage la = new ActivateCardPage(appiumDriver);
+		sleep(1);
+		ld.setNative();
+		ld.writeLog();
+		log("Enter Pin="+mapData.get("Pin"));
+		ld.EnterConfirmPin(mapData.get("Pin"));
+		ld.waitInVisible(la.siBtnCF_Pin1);
+		sleep(1);
+		ld.setWebview();
+		ld.waitVisible(ld.swLbBC_FinishComplete_Title);
+		ld.assertText(ld.fX(ld.swLbBC_FinishComplete_Title).getText(), mapData.get("FinishComplete_Title"));
+		ld.assertContain(ld.fX(ld.swLbBC_FinishComplete_Desc1).getText(), mapData.get("FinishComplete_Desc1"));
+		ld.assertContain(ld.fX(ld.swLbBC_FinishComplete_Desc2).getText(), mapData.get("FinishComplete_Desc2"));
+//		ld.assertText(ld.fX(ld.swLbBC_FinishComplete_TransactionDate).getText(), mapData.get(""));
+//		ld.assertText(ld.fX(ld.swLbBC_FinishComplete_TransactionTime).getText(), mapData.get(""));
+		ld.assertText(ld.fX(ld.swLbBC_Finish_BacktoMainPage).getText(), mapData.get("BackToMainPage"));
+		ld.click(ld.swLbBC_Finish_BacktoMainPage);
+		sleep(1);
+	}
+}

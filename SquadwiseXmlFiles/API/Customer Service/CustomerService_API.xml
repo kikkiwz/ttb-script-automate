@@ -1,0 +1,102 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5">
+	<listeners>
+		<listener
+			class-name="com.tmb.automation.helper.ExtentListeners">
+
+		</listener>
+	</listeners>
+
+
+	<test name="CustomerService -API Testing 1">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint18.ApplicationStatusTracking" />
+		</classes>
+	</test>
+	<test name="CustomerService -API Testing 2">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint18.FirstTimeUsage" />
+		</classes>
+	</test>
+	
+	<test name="CustomerService -API Testing 3">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint19.CustomerInfoValidetion" />
+		</classes>
+	</test>
+	<test name="CustomerService -API Testing 4">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint19.EligibilityAcc" />
+		</classes>
+	</test>
+	
+	<test name="CustomerService -API Testing 5 ">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint19.PaymentConfirm" />
+		</classes>
+	</test>
+	<test name="CustomerService -API Testing 6">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint19.TermAndCondition" />
+		</classes>
+	</test>
+	
+	
+	
+		<test name="CustomerService -API Testing 7">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint21.AdvisorInfo" />
+		</classes>
+	</test>
+	<test name="CustomerService -API Testing 8">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint21.BiometricConsent" />
+		</classes>
+	</test>
+	
+	<test name="CustomerService -API Testing 9">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint21.IdpConsent" />
+		</classes>
+	</test>
+	<test name="CustomerService -API Testing 10">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint21.NdidAcceptance" />
+		</classes>
+	</test>
+	
+	<test name="CustomerService -API Testing 11">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint21.NdidAuthen" />
+		</classes>
+	</test>
+	<test name="CustomerService -API Testing 12">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint21.NdidEligibile" />
+		</classes>
+	</test>
+	<test name="CustomerService -API Testing 13">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint21.NdidUserData" />
+		</classes>
+	</test>
+	
+	<test name="CustomerService -API Testing 14">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint25.Deposit" />
+		</classes>
+	</test>
+	<test name="CustomerService -API Testing 15">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint25.GeneratePDF" />
+		</classes>
+	</test>
+	<test name="CustomerService -API Testing 16">
+		<classes>
+			<class name="com.tmb.automation.api.customerservice.sprint25.Mutualfund" />
+		</classes>
+	</test>
+
+
+</suite>

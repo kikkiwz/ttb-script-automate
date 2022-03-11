@@ -1,0 +1,77 @@
+{
+  "creditcard-billed-statement-period": {
+    "description": "Lending-CreditCard-Billed-Statement-Period",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/creditcard-billed-statement-period",
+    "header": {
+      "accept": "*/*",
+      "X-Correlation-ID": "32fbd3b2-3f97-4a89-ar39-b4f628fbc8da"
+    },
+    "body": {
+      "accountId": "0000000050078680472000929",
+      "more_records": "",
+      "period_statement": "2",
+      "search_keys": "N"
+    },
+    "expected1": {
+      "status": {
+        "code": "0010",
+        "message": "Failed",
+        "service": "product-exp-service",
+        "description": {
+          "en": "Invalid Request",
+          "th": "Invalid Request"
+        }
+      },
+      "data": null
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "unauthorized",
+        "error_description": "Full authentication is required to access this resource"
+      }
+    }
+  },
+  "creditcard-unbilled-statement-period": {
+    "description": "Lending-CreditCard-Billed-Statement-Period",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/creditcard-unbilled-statement-period",
+    "header": {
+      "accept": "*/*",
+      "X-Correlation-ID": "32fbd3b2-3f97-4a89-ar39-b4f628fbc8da"
+    },
+    "body": {
+      "accountId": "0000000050078680472000929",
+      "more_records": "",
+      "period_statement": "2",
+      "search_keys": "N"
+    },
+    "expected1": {
+      "timestamp": 1623747351413,
+      "status": 404,
+      "error": "Not Found",
+      "message": "",
+      "path": "/apis/products/creditcard-unbilled-statement-period"
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzc0MzkyNywic3NpZCI6IjAwMDAwMDAwMDA3MDI1LXp1anh1a2ttIiwianRpIjoiNTJkMDI1ZjUtZDYzNi00NGM2LWJmMWEtMTNjZGU1MTY0YmE3IiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.ZICZCNTeP9TkXCykhc_sRwwWTwEMAni2jEeohmtboxg"
+      }
+    }
+  }
+}

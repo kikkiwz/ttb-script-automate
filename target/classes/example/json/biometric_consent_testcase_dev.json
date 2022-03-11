@@ -1,0 +1,122 @@
+{
+  "TC_OneApp1682_CC_BiometricConsent_0001": {
+    "ScenarioName": "Verify Biometric Consent successfully",
+    "Description": "[Biometric Consent Page]-[Verify Service]-[Given:Verify biometric consent service, When:User input username/password and click 'Login' button, Then: Should be login success]-(acceptance: Y)",
+    "ExpectedResult": [
+      "1. Biometric Consent success",
+      "2. Activity Log '9001001'",
+      "3. Activity Log Description 'Log in - OneApp'"
+    ],
+    "TestData": {
+      "body": {
+        "acceptance": "Y",
+        "version": "1.00"
+      },
+      "headers": {
+      }
+    },
+    "ExpectedResultKey": [
+      "200"
+    ],
+    "ResponseBody": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-service",
+        "description": "success"
+      }
+    },
+      "MongoDBLogs": [
+        {
+          "activity_type_id": "9001001",
+          "activity_type": "LOG IN - CUSTOMERCARE",
+          "activitydescription": [
+            {
+              "flex": "LOGIN"
+            }
+          ]
+        }
+      ],
+      "IsSkip": false
+    },
+  "TC_OneApp1682_CC_BiometricConsent_0002": {
+    "ScenarioName": "Verify Biometric Consent successfully",
+    "Description": "[Biometric Consent Page]-[Verify Service]-[Given:Verify biometric consent service, When:User input username/password and click 'Login' button, Then: Should be login success]-(acceptance: Y)",
+    "ExpectedResult": [
+      "1. Biometric Consent success",
+      "2. Activity Log '9001001'",
+      "3. Activity Log Description 'Log in - OneApp'"
+    ],
+    "TestData": {
+      "body": {
+        "acceptance": "Y",
+        "version": "1.00"
+      },
+      "headers": {
+      }
+    },
+    "ExpectedResultKey": [
+      "200"
+    ],
+    "ResponseBody": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-service",
+        "description": "success"
+      }
+    },
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9001001",
+        "activity_type": "LOG IN - CUSTOMERCARE",
+        "activitydescription": [
+          {
+            "flex": "LOGIN"
+          }
+        ]
+      }
+    ],
+    "IsSkip": true
+  },
+  "TC_OneApp1682_CC_BiometricConsent_0003": {
+    "ScenarioName": "Verify Biometric Consent unsuccessfully",
+    "Description": "[Biometric Consent Page]-[Verify Service]-[Given:Verify biometric consent service, When:User input username/password and click 'Login' button, Then: Should be login success]-(acceptance: Y)",
+    "ExpectedResult": [
+      "1. Biometric Consent unsuccessfully",
+      "2. Activity Log '9001001'",
+      "3. Activity Log Description 'Log in - OneApp'"
+    ],
+    "TestData": {
+      "body": {
+        "acceptance": "Y",
+        "version": "1.00"
+      },
+      "headers": {
+      }
+    },
+    "ExpectedResultKey": [
+      "400"
+    ],
+    "ResponseBody": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-service",
+        "description": "success"
+      }
+    },
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9001001",
+        "activity_type": "LOG IN - CUSTOMERCARE",
+        "activitydescription": [
+          {
+            "flex": "LOGIN"
+          }
+        ]
+      }
+    ],
+    "IsSkip": false
+  }
+}

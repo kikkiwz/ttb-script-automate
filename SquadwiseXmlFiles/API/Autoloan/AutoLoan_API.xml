@@ -1,0 +1,90 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" >
+	<listeners>
+		<listener
+			class-name="com.tmb.automation.helper.ExtentListeners">
+
+		</listener>
+	</listeners>
+
+
+	<test name="AutoLoan -API 1">
+		<parameter name="DeviceProfile" value="API" />
+		<classes>
+			<class name="com.tmb.automation.autoloan.APITest.APIEnoti" />
+			
+		</classes>
+	</test>
+	<test name="AutoLoan -API 2">
+		<parameter name="DeviceProfile" value="API" />
+		<classes>
+		
+			<class name="com.tmb.automation.autoloan.APITest.APITestAddress" />
+		</classes>
+	</test>
+	<test name="AutoLoan -API 3">
+		<parameter name="DeviceProfile" value="API" />
+		<classes>
+		
+			<class name="com.tmb.automation.autoloan.APITest.APITestCustomerProfile" />
+		</classes>
+	</test>
+	<test name="AutoLoan -API 4">
+		<parameter name="DeviceProfile" value="API" />
+		<classes>
+		
+			<class name="com.tmb.automation.autoloan.APITest.APITestGetBranch" />
+		</classes>
+	</test>
+	<test name="AutoLoan -API 5">
+		<parameter name="DeviceProfile" value="API" />
+		<classes>
+		
+			<class name="com.tmb.automation.autoloan.APITest.APITestCarTransferForm" />
+		</classes>
+	</test>
+	<test name="AutoLoan -API 6">
+		<parameter name="DeviceProfile" value="API" />
+		<classes>
+		
+			<class name="com.tmb.automation.autoloan.APITest.APITestCopyOfContract" />
+		</classes>
+	</test>
+	<test name="AutoLoan -API 7">
+		<parameter name="DeviceProfile" value="API" />
+		<classes>
+		
+			<class name="com.tmb.automation.autoloan.APITest.APITestGetListOfReceipt" />
+		</classes>
+	</test>
+	<test name="AutoLoan -API 8">
+		<parameter name="DeviceProfile" value="API" />
+		<classes>
+		
+			<class name="com.tmb.automation.autoloan.APITest.APITestGetSRTrackingList" />
+		</classes>
+	</test>
+	<test name="AutoLoan -API 9">
+		<parameter name="DeviceProfile" value="API" />
+		<classes>
+		
+			<class name="com.tmb.automation.autoloan.APITest.APITestGetSRTrackingListDetail" />
+		</classes>
+	</test>
+	<test name="AutoLoan -API 10">
+		<parameter name="DeviceProfile" value="API" />
+		<classes>
+		
+			<class name="com.tmb.automation.autoloan.APITest.APITestSetRequestForPayment" />
+		</classes>
+	</test>
+	<test name="AutoLoan -API 11">
+		<parameter name="DeviceProfile" value="API" />
+		<classes>
+		
+			<class name="com.tmb.automation.autoloan.APITest.APITestViewCarRegistrationBook" />
+		</classes>
+	</test>
+	</suite>
+

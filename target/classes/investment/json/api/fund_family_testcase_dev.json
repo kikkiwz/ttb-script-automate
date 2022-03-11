@@ -1,0 +1,15 @@
+{
+  "TC_OneApp_Investment_Funds_Family_0001": {
+    "ScenarioName": "Funds Family",
+    "Description": "Verify Funds Family service",
+    "ExpectedResult": [
+      "Validate response Funds Family in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "TESCHINAA"
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

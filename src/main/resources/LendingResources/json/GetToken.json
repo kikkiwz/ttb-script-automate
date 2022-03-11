@@ -1,0 +1,19 @@
+{
+  "token": {
+    "description": "get-token",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/auth/token",
+    "key": "oneapp-dev",
+    "Authorization": "4Od1045RewUrGux8aj1oXzzrXOonyG7oOSIhERTL27W2tYIkDON6PXlIHGkv26I2",
+    "headers": {
+      "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866"
+    },
+    "body": {
+      "grant_type": "password",
+      "username": "YindE6oB1+/78ZAc6GP9EB2pS5YzZQTMA6Fq8VYDi9Z9Vwyuw7KqbkDbiqhWQcsQ9wIBGoRSdl5XO9e3Nh215hJ+yhskFc6u0fVV8gyHSFVw5u8RhiQmDLVt65+NKRvCLMnWQSfgGylRCh0CJ+LH+QqgNrBa7iMOSnKHN0+l38tF2ecc+hX4TndPrShaTxKGdIQ0jyYMwTZ7wF1DQIvH2rj/Qlf6zLNuzaSrfYTEdIihfVL0bm11NPmTaXsAUZoF2sl6gs4i5f5rhyJnsu0ibKZIuYFacKXGRD97waz4f8vhl97uUS2ax0J67dXyWyfrz6uk2R62kTNyi7KaXnue8Q==",
+      "password": "WfR5cuIdLh/GY9d9LME+SpKawy+LUToauMWCF+F87GGLCka6IlTP1Q7qnOVmYxl0jZGusmFNK/bICIUJA1ro2AhQXYaTKgs5mOJEO0DDEYla7vvXaLYZP1l2E57Yyk5r/iIxP/EdhuV6wIi/wmeGDM6jWgwtI9SisCq5Mcf1rvXHpBb6Dz/K9ppUrkGeyh24QdHoGxsPhi98mE8XB9jy5bWFf2fUtCNZzsFY5oLj+9PcHv+t9iS1H11SNN6nqJvCErlAGRIRoV5LxEOVuZ2rh8AO4Dy4CDUpCE8EPVRlvwbMndgiCaOGc3NAt5fs0Dbh+HZ8w0K8mQiTdx7lrRyVfA==",
+      "scope": "mobile"
+    }
+  }
+}

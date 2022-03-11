@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation-Testing" verbose="5" thread-count="4" data-provider-thread-count="6">
+
+	<test name="Protection: Policy Details Customer4">
+		<parameter name="DeviceProfile" value="protection-android-customer04"/>
+		<groups>
+			<run>
+				<include name="Policy_Details_04_EN_Health product and renewable"/>
+				<include name="Policy_Details_11_EN_Health product and unrenewable"/>
+				<include name="Policy_Details_18_EN_Wealth product and renewable"/>
+				<include name="Policy_Details_25_EN_Wealth product and unrenewable"/>
+				<include name="Policy_Details_32_EN_Life product and renewable"/>
+				<include name="Policy_Details_39_EN_Life product and unrenewable"/>
+				<include name="Policy_Details_46_EN_UL product and renewable"/>
+				<include name="Policy_Details_53_EN_UL product and unrenewable"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.PolicyDetailsRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Policy Details Customer6">
+		<parameter name="DeviceProfile" value="protection-android-customer06"/>
+		<groups>
+			<run>
+				<include name="Policy_Details_06_EN_Health product and renewable"/>
+				<include name="Policy_Details_13_EN_Health product and unrenewable"/>
+				<include name="Policy_Details_20_EN_Wealth product and renewable"/>
+				<include name="Policy_Details_27_EN_Wealth product and unrenewable"/>
+				<include name="Policy_Details_34_EN_Life product and renewable"/>
+				<include name="Policy_Details_41_EN_Life product and unrenewable"/>
+				<include name="Policy_Details_48_EN_UL product and renewable"/>
+				<include name="Policy_Details_55_EN_UL product and unrenewable"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.PolicyDetailsRunner"/>
+		</classes>
+	</test>
+
+</suite>

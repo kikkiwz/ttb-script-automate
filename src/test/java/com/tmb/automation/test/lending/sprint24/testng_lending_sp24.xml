@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+	<listeners>
+		<listener class-name="com.tmb.automation.helper.ExtentReport4">
+		</listener>
+	</listeners>
+	<test name="Lending_API_Spring24">
+		<classes>
+ 		 	<class name="com.tmb.automation.test.lending.sprint24.API_CashForYou_1" />
+			<class name="com.tmb.automation.test.lending.sprint24.API_CashTransfer_1" />
+		</classes>
+	</test>
+
+<!--	<test name="Lending_UI_Spring24">
+		<classes>
+			<class name="com.tmb.automation.test.lending.sprint23.UI_PersonalInformation_IE_1" />
+			<class name="com.tmb.automation.test.lending.sprint23.UI_PersonalInformation_AE_2" />
+		</classes>
+	</test>-->
+
+
+</suite>
+

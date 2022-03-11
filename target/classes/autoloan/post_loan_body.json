@@ -1,0 +1,4 @@
+{
+  "keep_session_deep_link_url": "tmbtouch:\\keepalive",
+  "close_deep_link_url": "tmbtouch:\\close"
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing-API" >
+	<parameter name="environment" value="dev"/>
+	<parameter name="generateExportExcelFile" value="true"/>
+	<parameter name="sendExportEmail" value="true"/>
+	<parameter name="projectName" value="OneApp"/>
+	<parameter name="teamName" value="ExampleTeam"/>
+	<test name="Login">
+		<classes>
+<!--			<class name="com.ttbbank.oneapp.runner.platform2.api.LoginTest"/>-->
+			<class name="com.ttbbank.oneapp.runner.platform2.api.LoginOneAppTest"/>
+
+<!--			<class name="com.ttbbank.oneapp.runner.platform2.api.BiometricConsent"/>-->
+		</classes>
+	</test>
+
+</suite>
+

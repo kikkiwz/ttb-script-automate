@@ -1,0 +1,87 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation-Testing" verbose="5" thread-count="4" data-provider-thread-count="6">
+	<test name="Protection: Access to Insurance Hub">
+		<parameter name="DeviceProfile" value="protection-android-P30Pro"/>
+		<groups>
+			<run>
+				<include name="Activate new flow"/>
+				<include name="Activate application"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.ActivateAppRunner"/>
+		</classes>
+	</test>
+	<test name="Protection: Add Coverage">
+		<parameter name="DeviceProfile" value="protection-android-P30Pro"/>
+		<groups>
+			<run>
+				<include name="Activate application"/>
+				<include name="Health Protection Add Coverage"/>
+				<include name="Retirement Add Coverage"/>
+				<include name="Loss of life Add Coverage"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.AddCoverageRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Update infomation">
+		<parameter name="DeviceProfile" value="protection-android-P30Pro"/>
+		<groups>
+			<run>
+				<include name="Activate new flow"/>
+				<include name="Protection Update Info"/>
+				<include name="Protection Update Info of Health Coverage Info"/>
+				<include name="Protection Update Info of Loss of Life Info"/>
+				<include name="Protection Update Info of Retirement Planning Info"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.UpdateInfoRunner"/>
+		</classes>
+	</test>
+	<test name="Protection: Contact an Expert">
+		<parameter name="DeviceProfile" value="protection-android-P30Pro"/>
+		<groups>
+			<run>
+				<include name="Activate new flow"/>
+				<include name="Health Protection Contact an Expert"/>
+				<include name="Retirement Contact an Expert"/>
+				<include name="Loss of Life Contact an Expert"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.ContactExpertRunner"/>
+		</classes>
+	</test>
+	<test name="Protection: My Policies">
+		<parameter name="DeviceProfile" value="protection-android-P30Pro"/>
+		<groups>
+			<run>
+				<include name="Activate new flow"/>
+				<include name="Activate application"/>
+				<include name="Health Protection My Policies"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.MyPoliciesRunner"/>
+		</classes>
+	</test>
+	<test name="Protection: Coverage Summary">
+		<parameter name="DeviceProfile" value="protection-android-oneapp-vit-redmi"/>
+		<groups>
+			<run>
+				<include name="Activate new flow"/>
+				<include name="Activate application"/>
+				<include name="Health Protection Coverage Summary"/>
+				<include name="Retirement Coverage Summary"/>
+				<include name="Loss of life Coverage Summary"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.CoverageSummaryRunner"/>
+		</classes>
+	</test>
+</suite>

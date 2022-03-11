@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation-Testing" >
+	<listeners>
+		<listener class-name="com.ttbbank.oneapp.scenario.lending.iosUtil.ExReport">
+		</listener>
+	</listeners>
+	<test name="Lending_iOS_Change_Usage_Limit_PRI">
+		<parameter name="DeviceProfile" value="lending_ios_saucelabs"/>
+		<groups>
+			<run>
+				<include name="Lending_iOS_Change_Usage_Limit_PRI"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+
+	<test name="Lending_iOS_Change_Usage_Limit_SUP">
+		<parameter name="DeviceProfile" value="lending_ios_saucelabs"/>
+		<groups>
+			<run>
+				<include name="Lending_iOS_Change_Usage_Limit_SUP"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+
+	<test name="Lending_iOS_Change_Usage_Temp_Limit_PRI">
+		<parameter name="DeviceProfile" value="lending_ios_saucelabs"/>
+		<groups>
+			<run>
+				<include name="Lending_iOS_Change_Usage_Temp_Limit_PRI"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.lending.LendingIOSRunner"/>
+		</classes>
+	</test>
+</suite>

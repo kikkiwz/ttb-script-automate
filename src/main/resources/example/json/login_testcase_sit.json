@@ -1,0 +1,106 @@
+{
+  "TC_OneApp1682_CC_LogIn_0001": {
+    "ScenarioName": "Verify Login success",
+    "Description": "[Login Page]-[Verify Service]-[Given:Verify Login service, When:User input username/password and click 'Login' button, Then: Should be login success]-(username: occ_040)",
+    "ExpectedResult": [
+      "1. Login success",
+      "2. Activity Log '9001001'",
+      "3. Activity Log Description 'Log in - OneApp'"
+    ],
+    "TestData": {
+      "body": {
+        "username": "B/Ex3/9yeQgSYtMEsErSdyH255bXTp2/U5eQvCxExJrei0rEawINd0FntP1DQktID74Kvd2jF6JIw9P3Jx/iJBhRLSBlwr9HYmmFMKj5L9KO33+D2/AXgrnOaWRNZCz+7X8UkHigYzwS6+TVPHtnH342m0n23DOvQVWrGJuITInNh7Hj97PKn5ZNIlXBU+rl9kLccOTdQ5zmpDMngFuLFTYJ49YJ3OjS2NyT4IYK4z5jFfB5Ql7484MEd1P9t//ahedXWi0KnF/6W9nRB4WNqf/muDWkwQ7TTrJarJRGQfqoookPRt9mYsFF5NCInElJTXFFZM6ONd3TXYveq0OdQA==",
+        "password": "WfR5cuIdLh/GY9d9LME+SpKawy+LUToauMWCF+F87GGLCka6IlTP1Q7qnOVmYxl0jZGusmFNK/bICIUJA1ro2AhQXYaTKgs5mOJEO0DDEYla7vvXaLYZP1l2E57Yyk5r/iIxP/EdhuV6wIi/wmeGDM6jWgwtI9SisCq5Mcf1rvXHpBb6Dz/K9ppUrkGeyh24QdHoGxsPhi98mE8XB9jy5bWFf2fUtCNZzsFY5oLj+9PcHv+t9iS1H11SNN6nqJvCErlAGRIRoV5LxEOVuZ2rh8AO4Dy4CDUpCE8EPVRlvwbMndgiCaOGc3NAt5fs0Dbh+HZ8w0K8mQiTdx7lrRyVfA==",
+        "grant_type": "password",
+        "scope": "mobile"
+      },
+      "headers": {
+      }
+    },
+    "ExpectedResultKey": [
+      "200"
+    ],
+    "ResponseBody": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "oneapp-ex-gw-service",
+        "description": "success"
+      },
+      "data": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMTg1OTI4ODQiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyOTIxMDc2MCwic3NpZCI6IjAwMDAwMDE4NTkyODg0LXNqcW9ucWx1IiwianRpIjoiNTNlMmZkZGMtOWUxNC00NTdhLTk0MmItNzVmN2U2NmZmOTA4IiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.tkPSBvM_F0sXSYRnD9q9Z8EvzwWcSnWEXgUtVfKNNyk",
+        "token_type": "bearer",
+        "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMTg1OTI4ODQiLCJzY29wZSI6WyJtb2JpbGUiXSwiYXRpIjoiNTNlMmZkZGMtOWUxNC00NTdhLTk0MmItNzVmN2U2NmZmOTA4IiwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyOTIxNDA2MCwic3NpZCI6IjAwMDAwMDE4NTkyODg0LXNqcW9ucWx1IiwianRpIjoiODM1MDk4OTgtYjdhNi00MjhjLWIwZDQtNWEwZjQ4NTc2OWMzIiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.tFbI0pclJfT_zIGYhnl9LRPnDP0hY2CZWXKXrX5V5wQ",
+        "expires_in": 299,
+        "scope": "mobile",
+        "channel": "mbl",
+        "ssid": "00000018592884-sjqonqlu",
+        "jti": "53e2fddc-9e14-457a-942b-75f7e66ff908"
+      }
+    },
+      "MongoDBLogs": [
+        {
+          "activity_type_id": "9001001",
+          "activity_type": "LOG IN - CUSTOMERCARE",
+          "activitydescription": [
+            {
+              "flex": "LOGIN"
+            }
+          ]
+        }
+      ],
+      "IsSkip": false
+    },
+  "TC_OneApp1682_CC_LogIn_0002": {
+    "ScenarioName": "Verify Login success",
+    "Description": "[Login Page]-[Verify Service]-[Given:Verify Login service, When:User input username/password and click 'Login' button, Then: Should be login success]-(username: occ_040)",
+    "ExpectedResult": [
+      "1. Login success",
+      "2. Activity Log '9001001'",
+      "3. Activity Log Description 'Log in - OneApp'"
+    ],
+    "TestData": {
+      "body": {
+        "username": "B/Ex3/9yeQgSYtMEsErSdyH255bXTp2/U5eQvCxExJrei0rEawINd0FntP1DQktID74Kvd2jF6JIw9P3Jx/iJBhRLSBlwr9HYmmFMKj5L9KO33+D2/AXgrnOaWRNZCz+7X8UkHigYzwS6+TVPHtnH342m0n23DOvQVWrGJuITInNh7Hj97PKn5ZNIlXBU+rl9kLccOTdQ5zmpDMngFuLFTYJ49YJ3OjS2NyT4IYK4z5jFfB5Ql7484MEd1P9t//ahedXWi0KnF/6W9nRB4WNqf/muDWkwQ7TTrJarJRGQfqoookPRt9mYsFF5NCInElJTXFFZM6ONd3TXYveq0OdQA==",
+        "password": "WfR5cuIdLh/GY9d9LME+SpKawy+LUToauMWCF+F87GGLCka6IlTP1Q7qnOVmYxl0jZGusmFNK/bICIUJA1ro2AhQXYaTKgs5mOJEO0DDEYla7vvXaLYZP1l2E57Yyk5r/iIxP/EdhuV6wIi/wmeGDM6jWgwtI9SisCq5Mcf1rvXHpBb6Dz/K9ppUrkGeyh24QdHoGxsPhi98mE8XB9jy5bWFf2fUtCNZzsFY5oLj+9PcHv+t9iS1H11SNN6nqJvCErlAGRIRoV5LxEOVuZ2rh8AO4Dy4CDUpCE8EPVRlvwbMndgiCaOGc3NAt5fs0Dbh+HZ8w0K8mQiTdx7lrRyVfA==",
+        "grant_type": "password",
+        "scope": "mobile"
+      },
+      "headers": {
+      }
+    },
+    "ExpectedResultKey": [
+      "200"
+    ],
+    "ResponseBody": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "oneapp-ex-gw-service",
+        "description": "success"
+      },
+      "data": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMTg1OTI4ODQiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyOTIxMDc2MCwic3NpZCI6IjAwMDAwMDE4NTkyODg0LXNqcW9ucWx1IiwianRpIjoiNTNlMmZkZGMtOWUxNC00NTdhLTk0MmItNzVmN2U2NmZmOTA4IiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.tkPSBvM_F0sXSYRnD9q9Z8EvzwWcSnWEXgUtVfKNNyk",
+        "token_type": "bearer",
+        "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMTg1OTI4ODQiLCJzY29wZSI6WyJtb2JpbGUiXSwiYXRpIjoiNTNlMmZkZGMtOWUxNC00NTdhLTk0MmItNzVmN2U2NmZmOTA4IiwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyOTIxNDA2MCwic3NpZCI6IjAwMDAwMDE4NTkyODg0LXNqcW9ucWx1IiwianRpIjoiODM1MDk4OTgtYjdhNi00MjhjLWIwZDQtNWEwZjQ4NTc2OWMzIiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.tFbI0pclJfT_zIGYhnl9LRPnDP0hY2CZWXKXrX5V5wQ",
+        "expires_in": 299,
+        "scope": "mobile",
+        "channel": "mbl",
+        "ssid": "00000018592884-sjqonqlu",
+        "jti": "53e2fddc-9e14-457a-942b-75f7e66ff908"
+      }
+    },
+    "MongoDBLogs": [
+      {
+        "activity_type_id": "9001001",
+        "activity_type": "LOG IN - CUSTOMERCARE",
+        "activitydescription": [
+          {
+            "flex": "LOGIN"
+          }
+        ]
+      }
+    ],
+    "IsSkip": true
+  }
+  }

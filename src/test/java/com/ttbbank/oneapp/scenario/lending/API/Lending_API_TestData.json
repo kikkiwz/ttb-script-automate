@@ -1,0 +1,1518 @@
+{
+  "token": {
+    "description": "get-token",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/auth/token",
+    "key": "oneapp-dev",
+    "Authorization": "4Od1045RewUrGux8aj1oXzzrXOonyG7oOSIhERTL27W2tYIkDON6PXlIHGkv26I2",
+    "headers": {
+      "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866"
+    },
+    "body": {
+      "grant_type": "password",
+      "username": "DQI0R3b4fdfb4SNaX7/EDfJjCc8FEOK622e6lzotEQ5ujsJOjGYtUCgPU9GeJCxJlwTSaw52yaCv66MLj9EiUOdQYQr2aA6Lv2x71FVn/+61tsavT4VUWyTqwYcooYfMFaQ5Tck+JHPgFPy9SHznYh6H56pCaT3mE0Ie0c1iJ6nOVgogH+NoCeU6KIkG5zvJ2+MLE3dcLDaHikweFqG4jskArMLfeybNqsMbDRxboF04rBFWvns3r6sIURxEPhsSk6OZ+agEbwHUqR6iU4n4S5miVuaHF+lzgJizXXU/rQbun+1MVV7kUnZWHLTSthib+sZVicoPiD45swiR80SeqA==",
+      "password": "WfR5cuIdLh/GY9d9LME+SpKawy+LUToauMWCF+F87GGLCka6IlTP1Q7qnOVmYxl0jZGusmFNK/bICIUJA1ro2AhQXYaTKgs5mOJEO0DDEYla7vvXaLYZP1l2E57Yyk5r/iIxP/EdhuV6wIi/wmeGDM6jWgwtI9SisCq5Mcf1rvXHpBb6Dz/K9ppUrkGeyh24QdHoGxsPhi98mE8XB9jy5bWFf2fUtCNZzsFY5oLj+9PcHv+t9iS1H11SNN6nqJvCErlAGRIRoV5LxEOVuZ2rh8AO4Dy4CDUpCE8EPVRlvwbMndgiCaOGc3NAt5fs0Dbh+HZ8w0K8mQiTdx7lrRyVfA==",
+      "scope": "mobile"
+    }
+  },
+  "fetch-installment-plan": {
+    "description": "Fetch Installment Plan",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/fetch-installment-plan",
+    "header": {
+      "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866"
+    },
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      },
+      "data": [
+        {
+          "planSeqId": null,
+          "installmentsPlan": "IPP001",
+          "planDesc": "3 MONTHS IPP - 0%",
+          "paymentTerm": "3",
+          "interestRate": "0",
+          "merchantNo": "",
+          "channel": "01",
+          "planStatus": "01"
+        },
+        {
+          "planSeqId": null,
+          "installmentsPlan": "IPP062",
+          "planDesc": "6 MONTHS IPP - 0.69%",
+          "paymentTerm": "6",
+          "interestRate": "0.69",
+          "merchantNo": "",
+          "channel": "01",
+          "planStatus": "01"
+        },
+        {
+          "planSeqId": null,
+          "installmentsPlan": "IPP063",
+          "planDesc": "10 MONTHS IPP - 0.69%",
+          "paymentTerm": "10",
+          "interestRate": "0.69",
+          "merchantNo": "",
+          "channel": "01",
+          "planStatus": "01"
+        },
+        {
+          "planSeqId": null,
+          "installmentsPlan": "XXX063",
+          "planDesc": "[Fail]10 MONTHS IPP - 0.69%",
+          "paymentTerm": "10",
+          "interestRate": "0.69",
+          "merchantNo": "",
+          "channel": "01",
+          "planStatus": "01"
+        }
+      ]
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzczMzQ1OSwic3NpZCI6IjAwMDAwMDAwMDA3MDI1LXRucm9wYWptIiwianRpIjoiMTJkYjNjYWMtYjZiYy00MzIxLWFmOGEtNmJjODQ3NmJlNDBkIiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.XX-JO0N7flG5ERB0-SYNxKdoseax2dbE46fbbEWkPDk"
+      }
+    }
+  },
+  "get-campaign-transactions": {
+    "description": "Get Campaign Transaction",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/creditcard/get-campaign-transactions",
+    "header": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "account_id": "0000000050078360018000175",
+      "more_records": "N",
+      "search_keys": ""
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      },
+      "data": {
+        "status": {
+          "status_code": "0"
+        },
+        "card_statement": {
+          "statement_transactions": [
+            {
+              "transaction_code": 5,
+              "transaction_amounts": 15000.00,
+              "posted_date": "2022-07-22",
+              "transaction_date": "2022-07-13",
+              "mcc_code": "0000",
+              "transaction_description": "ONLINE PAYMENT VIA MIB/ IB           TH",
+              "transaction_key": "T0000041180000002"
+            },
+            {
+              "transaction_code": 5,
+              "transaction_amounts": 15000.00,
+              "posted_date": "2022-07-22",
+              "transaction_date": "2022-07-07",
+              "mcc_code": "0000",
+              "transaction_description": "ONLINE PAYMENT VIA MIB/ IB           TH",
+              "transaction_key": "T0000041160000002"
+            }
+          ]
+        },
+        "total_records": 0,
+        "max_records": 2,
+        "more_records": "N",
+        "search_keys": ""
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzczODIwMywic3NpZCI6IjAwMDAwMDAwMDA3MDI1LWt0cXJ6a3lvIiwianRpIjoiZWZjZjgwMDYtZjA3ZS00NjE4LTgzOGQtNDQxYTc2MGFlYTA5IiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.fwo3H9nm1HSyiwDaT1FiBAfWMdyf86vDOvJFDx8KzLQ"
+      }
+    }
+  },
+  "card-installment-confirm": {
+    "description": "Get Campaign Transaction",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/creditcard/card-installment-confirm",
+    "header": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "account_id": "0000000050078360018000175",
+      "card_installment": {
+        "model_type": "IP",
+        "amounts": 1201.00,
+        "transaction_key": "T0000037940000002",
+        "promotion_model_no": "IPP001",
+        "interest": 1000,
+        "monthly_installments": 1220
+      }
+    },
+    "expected1": {},
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzc0MzIxOSwic3NpZCI6IjAwMDAwMDAwMDA3MDI1LXBpbmtteW5zIiwianRpIjoiNmIwMDVjODctYTM0Mi00Njg3LTllMDYtNTY2NzkzMmRhZGJjIiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.wGz2s13aWcW7zi4-VgAVFO5aw8ocmSMrPyuVYfoMKWc"
+      }
+    }
+  },
+
+  "creditcard-billed-statement-period": {
+    "description": "Lending-CreditCard-Billed-Statement-Period",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/creditcard-billed-statement-period",
+    "header": {
+      "accept": "*/*",
+      "X-Correlation-ID": "32fbd3b2-3f97-4a89-ar39-b4f628fbc8da"
+    },
+    "body": {
+      "accountId": "0000000050078680472000929",
+      "more_records": "",
+      "period_statement": "2",
+      "search_keys": "N"
+    },
+    "expected1": {
+      "status": {
+        "code": "0010",
+        "message": "Failed",
+        "service": "product-exp-service",
+        "description": {
+          "en": "Invalid Request",
+          "th": "Invalid Request"
+        }
+      },
+      "data": null
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "unauthorized",
+        "error_description": "Full authentication is required to access this resource"
+      }
+    }
+  },
+  "creditcard-unbilled-statement-period": {
+    "description": "Lending-CreditCard-Billed-Statement-Period",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/creditcard-unbilled-statement-period",
+    "header": {
+      "accept": "*/*",
+      "X-Correlation-ID": "32fbd3b2-3f97-4a89-ar39-b4f628fbc8da"
+    },
+    "body": {
+      "accountId": "0000000050078680472000929",
+      "more_records": "",
+      "period_statement": "2",
+      "search_keys": "N"
+    },
+    "expected1": {
+      "timestamp": 1623747351413,
+      "status": 404,
+      "error": "Not Found",
+      "message": "",
+      "path": "/apis/products/creditcard-unbilled-statement-period"
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzc0MzkyNywic3NpZCI6IjAwMDAwMDAwMDA3MDI1LXp1anh1a2ttIiwianRpIjoiNTJkMDI1ZjUtZDYzNi00NGM2LWJmMWEtMTNjZGU1MTY0YmE3IiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.ZICZCNTeP9TkXCykhc_sRwwWTwEMAni2jEeohmtboxg"
+      }
+    }
+  },
+
+  "get-e-statement" : {
+    "description": "Get e-statement",
+    "method": "POST",
+    "hostname": "https://apis-portal.oneapp.tmbbank.local",
+    "path": "/apis/products/credit-card/get-e-statement",
+    "header": {"X-CRMID":"001100000000000000000012004013",
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da"},
+    "header_fail": {
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da"},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      },
+      "data": {
+        "status": {
+          "code": "0000",
+          "description": "Success"
+        },
+        "customer": {
+          "profile": {
+            "cc_id": "3083458854",
+            "rm_id": "001100000000000000000012004013"
+          },
+          "statement_flag": {
+            "create_date": "2014-05-20T00:00:00",
+            "create_by": "AAN31252",
+            "update_date": "2020-06-15T00:00:00",
+            "update_by": "AAN31252",
+            "e_consolidate_statement_flag": "N",
+            "e_creditcard_statement_flag": "N",
+            "e_ready_cash_statement_flag": "N",
+            "e_cash_to_go_statement_flag": "N",
+            "w_consolidate_statement_flag": "N",
+            "e_lending_statement_flag": "N",
+            "e_mutual_fund_statement_flag": "N",
+            "e_bancassurance_statement_flag": "N"
+          }
+        }
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0001",
+        "message": "failed",
+        "service": "products-exp-service"
+      }
+    }
+  },
+  "fetch-card-details" : {
+    "description": "Get fetch-card-details",
+    "method": "POST",
+    "hostname": "https://apis-portal.oneapp.tmbbank.local",
+    "path": "/apis/products/credit-card/fetch-card-details",
+    "header": {
+      "X-CRMID":"001100000000000000000018593707",
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da",
+      "Content-Type": "application/json"
+    },
+    "header_fail": {
+      "X-CRMID":"101100000000000000000018593707",
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da",
+      "Content-Type": "application/json"
+    },
+    "body": {  "account_id": "0000000050078360018000167"},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      },
+      "data": {
+        "status": {
+          "status_code": 0
+        },
+        "credit_card": {
+          "card_id": "477025XXXXXX0167",
+          "account_id": "0000000050078360018000167",
+          "product_id": "VSOCHI",
+          "direct_deposit_account": 0,
+          "direct_deposit_bank": "",
+          "customer": {
+            "rm_id": "001100000000000000000000611330",
+            "cc_id": "3008801375",
+            "birthdate": "1979-05-31",
+            "identification_id": "8555542357601"
+          },
+          "card_info": {
+            "billing_cycle": 20,
+            "card_embossing_name1": "TEST JAIDEE",
+            "card_embossing_name2": "",
+            "issued_by": "2006",
+            "expired_by": "3006",
+            "last_update_date": "2021-07 08",
+            "effective_date": "0000-00-00",
+            "created_date": "2022-07-22"
+          },
+          "card_phones": [
+            {
+              "phone_type": "",
+              "phone_no": "",
+              "phone_extension": ""
+            },
+            {
+              "phone_type": "",
+              "phone_no": "",
+              "phone_extension": ""
+            },
+            {
+              "phone_type": "",
+              "phone_no": "",
+              "phone_extension": ""
+            },
+            {
+              "phone_type": "",
+              "phone_no": "",
+              "phone_extension": ""
+            },
+            {
+              "phone_type": "",
+              "phone_no": "",
+              "phone_extension": ""
+            },
+            {
+              "phone_type": "",
+              "phone_no": "",
+              "phone_extension": ""
+            },
+            {
+              "phone_type": "",
+              "phone_no": "",
+              "phone_extension": ""
+            },
+            {
+              "phone_type": "",
+              "phone_no": "",
+              "phone_extension": ""
+            },
+            {
+              "phone_type": "",
+              "phone_no": "",
+              "phone_extension": ""
+            },
+            {
+              "phone_type": "",
+              "phone_no": "",
+              "phone_extension": ""
+            }
+          ],
+          "card_addresses": {
+            "city": "สันกำแพงงงงงงงงงงง",
+            "postal_code": "50130",
+            "country": "TH",
+            "state_code": "C12000",
+            "state_txt": "นนทบุรี",
+            "address_1": "เลขที่ 999 อ./มบ. IBIZA CONDOO",
+            "address_2": "ซ. ซ.ศูนย์วิจัย ตำบล บางกะปิ",
+            "address_3": ""
+          },
+          "card_email": {
+            "email_address": "mibvitomega@gmail.com",
+            "email_eStatementFlag": "Y"
+          },
+          "balance_points": {
+            "point_earned": 0.00,
+            "point_used": 0.00,
+            "point_available": 0.00,
+            "point_remain": 0.00,
+            "expiry_points": 0.00,
+            "expiry_date": ""
+          },
+          "card_points": null,
+          "card_status": {
+            "stop_code": 0,
+            "stop_code_desc": "",
+            "account_status": "000",
+            "account_agree_status": "009",
+            "activated_date": "0000-00-00",
+            "block_code": "",
+            "previous_expiry_date": "2506",
+            "application_type": "B",
+            "stop_date": "",
+            "card_ploan_flag": "1",
+            "card_active_flag": "ACTIVE",
+            "card_role": null
+          },
+          "card_balances": {
+            "current_balance": -75067.49,
+            "ledger_balance": -185112.77,
+            "available_cash_advance": 45000.00,
+            "available_credit_allowance": 101249.57,
+            "last_payment_amount": -1004.00,
+            "last_payment_date": "2022-07-23",
+            "eptb_installment_available": 25311.81,
+            "epai_installment_available": 0.00,
+            "balance_credit_limit": {
+              "total": 90000.00,
+              "available_to_transfer": 101249.57,
+              "available": null,
+              "current": 90000.00
+            },
+            "balance_credit_line": {
+              "total": 135000.00,
+              "available_to_transfer": null,
+              "available": 228192.60,
+              "current": 135000.00
+            }
+          },
+          "card_credit_limit": {
+            "permanent_credit_limit": 90000,
+            "temporary_credit_limit": {
+              "amounts": 0,
+              "effective_date": "0000-00-00",
+              "expiry_date": "0000-00-00",
+              "request_reason": "",
+              "previous_credit_limit": 90000,
+              "max_temp_allowance": 135000,
+              "max_temp_increase": 50
+            }
+          },
+          "customer_supp": {
+            "rm_id": "000000000000000000000000000000",
+            "cc_id": "0",
+            "birthdate": "",
+            "identification_id": ""
+          },
+          "card_cash_advance": {
+            "cash_adv_fee_rate": 3.000,
+            "cash_adv_fee_fixed_amt": 0.00,
+            "cash_adv_fee_model": "1",
+            "cash_adv_int_rate": 16.000,
+            "cash_adv_fee_VAT_rate": 7.000
+          }
+        },
+        "product_code_data": {
+          "product_name_th": "โซ ชิลล์",
+          "product_name_en": "So Chill Credit Card",
+          "icon_id": "https://storage.googleapis.com/oneapp-vit.appspot.com/product/credit_card/cards_sochill.png"
+        },
+        "estatement_detail": {
+          "statement_flag": {
+            "create_date": "2014-05-20T00:00:00",
+            "create_by": "AAN31252",
+            "update_date": "2020-06-15T00:00:00",
+            "update_by": "AAN31252",
+            "e_consolidate_statement_flag": "N",
+            "e_creditcard_statement_flag": "N",
+            "e_ready_cash_statement_flag": "N",
+            "e_cash_to_go_statement_flag": "N",
+            "w_consolidate_statement_flag": "N",
+            "e_lending_statement_flag": "N",
+            "e_mutual_fund_statement_flag": "N",
+            "e_bancassurance_statement_flag": "N"
+          },
+          "email_address": "areewan.tan@tmbbank.com",
+          "email_verify_flag": "Y"
+        }
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0001",
+        "message": "general error",
+        "service": "products-exp-service",
+        "description": null
+      },
+      "data": null
+    }
+  },
+  "update-e-statement" : {
+    "description": "Get fetch-card-details",
+    "method": "POST",
+    "hostname": "https://apis-portal.oneapp.tmbbank.local",
+    "path": "/apis/products/credit-card/update-e-statement",
+    "header": {
+      "X-CRMID":"001100000000000000000011004078",
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da",
+      "Content-Type": "application/json"
+    },
+    "header_fail": {
+      "X-CRMID":"101100000000000000000011004078",
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "account_id": "0000000050078690141000144",
+      "email": "a@b.com"
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      },
+      "data": null
+    },
+    "expected2": {
+      "status": {
+        "code": "0001",
+        "message": "failed",
+        "service": "products-exp-service",
+        "description": "feign.FeignException$BadRequest: [400] during [GET] to [http://customers-service.dev1-oneapp.svc/apis/customers/profile/get-e-statement] [CustomerServiceClient#getCustomerEStatement(String,String)]: []"
+      },
+      "data": null
+    }
+  },
+
+  "get-loan-statement": {
+    "description": "Get Campaign Transaction",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/creditcard/card-installment-confirm",
+    "header": {
+      "accept": "application/json",
+      "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "account_id": "0000000050078360414020372",
+      "end_date": "2021-08-25",
+      "start_date": "2020-03-01"
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      },
+      "data": {
+        "status": {},
+        "additional_status": [
+          {
+            "status_code": "0",
+            "server_status_code": "",
+            "severity": "Info",
+            "status_desc": "Success"
+          },
+          {
+            "status_code": "0",
+            "server_status_code": "0",
+            "severity": "Info",
+            "status_desc": "TRANSACTION PROCESSING COMPLETE."
+          }
+        ],
+        "account": {
+          "id": "00015719933001",
+          "statements": [
+            {
+              "sequence_no": "1",
+              "transaction_date": "2021-03-15",
+              "transaction_code": "CR/TR",
+              "loan_balance_amount": "0.00",
+              "interest_amount": "100.00",
+              "transaction_amount": "100.00",
+              "interest_rate": "0.000",
+              "outstanding_balance": "267706.70",
+              "outstanding_interest": "806.80",
+              "fee_amount": ""
+            }
+          ]
+        }
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzc1MDE3Mywic3NpZCI6IjAwMDAwMDAwMDA3MDI1LXpqcGRoZWRiIiwianRpIjoiZTk4Mzk3YjEtODQ0OS00ZGRmLTgwOWMtODYxNDgxNzg0NDFmIiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.Zd29-qZJPuS_Tf9OBXvq_qu2QdBWdJUKfex_2PeGzoQ"
+      }
+    }
+  },
+  "get-account-detail" : {
+    "description": "Get Account Detail",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/loan/get-account-detail",
+    "header": {
+      "accept": "application/json",
+      "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "account_id": "0000000050078670143000945"
+    }
+  ,
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      },
+      "data": {
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzc1MDE3Mywic3NpZCI6IjAwMDAwMDAwMDA3MDI1LXpqcGRoZWRiIiwianRpIjoiZTk4Mzk3YjEtODQ0OS00ZGRmLTgwOWMtODYxNDgxNzg0NDFmIiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.Zd29-qZJPuS_Tf9OBXvq_qu2QdBWdJUKfex_2PeGzoQ"
+      }
+    }
+  },
+
+  "businesstype": {
+    "description": "businesstype",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/criteria/businesstype",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      },
+      "data": [
+        {
+          "activeStatus": "1",
+          "categoryCode": "BUSINESS_TYPE",
+          "entryCode": "A",
+          "entryID": "67538",
+          "entryName": "A - การเกษตร  การเลี้ยงสัตว์  การประมง  การป่าไม้",
+          "entryName2": "A - การเกษตร  การเลี้ยงสัตว์  การประมง  การป่าไม้",
+          "entrySource": "HOST",
+          "extValue1": "AB060000",
+          "extValue2": "",
+          "groupId": "",
+          "refEntryCode": ""
+        }
+      ]
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "unauthorized",
+        "error_description": "Full authentication is required to access this resource"
+      }
+    }
+  },
+  "entrycode": {
+    "description": "entrycode",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/criteria/businesstype/:entryCode",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "country": {
+    "description": "country",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/criteria/country",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "income": {
+    "description": "income",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/criteria/income/:entryCode",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "status": {
+    "description": "status",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/criteria/status",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "status_entrycode": {
+    "description": "status_entrycode",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/criteria/status/:entrycode",
+    "header": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-working-info_countryincome": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/lending-service/fetch-working-info?countryofincome=TH&occupationcode=304&businesstypecode=A",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-business-type": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/fetch-business-type",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-business-type_entrycode": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/fetch-business-type/:entrycode",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-working-income_entrycode": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/fetch-working-income/:entrycode",
+    "header": {"x-crmid": "001100000000000000000018593707"},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-working-info": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "https://apis-portal.oneapp.tmbbank.local/apis/products/fetch-working-info",
+    "header": {"x-crmid": "001100000000000000000018593707"},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-working-status": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/fetch-working-status",
+    "header": {},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "fetch-working-status_entrycode": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/fetch-working-status",
+    "header": {"x-crmid": "001100000000000000000018593707"},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+  "zipcode": {
+    "description": "",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/products/zipcode?code=10900",
+    "header": {"x-crmid": "001100000000000000000018593707"},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "common",
+        "description": "success"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      }
+    }
+  },
+
+  "get-staging-bar": {
+    "description": "Get Staging Bar",
+    "method": "POST",
+    "hostname": "https://apis-portal.oneapp.tmbbank.local",
+    "path": "/apis/products/loan/get-staging-bar",
+    "header": {},
+    "body": {
+      "loan_type":"flexi",
+      "product_header_key" : "apply-personal-loan"
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+        "description": "success"
+      },
+      "data": {
+        "id": "612c92bc8eb66bb3eb7c7157",
+        "loan_type": "flexi",
+        "product_header_key": "apply-personal-loan",
+        "product_header_th": "สมัครสินเชื่อบุคคล",
+        "staging_details": [
+          {
+            "stage_no": "1",
+            "stage_key": "loan-cal",
+            "stage_th": "วงเงินสินเชื่อและระยะเวลาผ่อน"
+          },
+          {
+            "stage_no": "2",
+            "stage_key": "loan-detail",
+            "stage_th": "ข้อมูลสินเชื่อ"
+          },
+          {
+            "stage_no": "3",
+            "stage_key": "personal-detail",
+            "stage_th": "ข้อมูลส่วนตัว"
+          },
+          {
+            "stage_no": "4",
+            "stage_key": "work-detail",
+            "stage_th": "ข้อมูลการทำงาน"
+          },
+          {
+            "stage_no": "5",
+            "stage_key": "term-and-conditions",
+            "stage_th": "ข้อตกลงและเงื่อนไข"
+          },
+          {
+            "stage_no": "6",
+            "stage_key": "letter-of-consent",
+            "stage_th": "ความยินยอมในการเปิดเผยข้อมูล"
+          },
+          {
+            "stage_no": "7",
+            "stage_key": "final-approval",
+            "stage_th": "ผลการอนุมัติสินเชื่อ"
+          }
+        ],
+        "stages_count": "7"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0010",
+        "message": "Failed",
+        "service": "product-exp-service",
+        "description": {
+          "en": "Invalid Request",
+          "th": "Invalid Request"
+        }
+      },
+      "data": null
+    }
+  },
+
+  "product-orientation" : {
+    "description": "Product Orientation",
+    "method": "POST",
+    "hostname": "https://apis-portal.oneapp.tmbbank.local",
+    "path": "/apis/lending-service/loan/product-orientation",
+    "header": {"x-crmid":"001100000000000000000018593706",
+      "x-correlation-id":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da",
+      "Content-Type":  "application/json"},
+    "header_fail": {
+      "x-correlation-id":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da",
+      "Content-Type":  "application/json"
+    },
+    "body": {
+      "product_code":"c2g"
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "lending-service",
+        "description": "success"
+      },
+      "data": {
+        "loan_type": "CREDIT_CARD",
+        "product_code": "c2g",
+        "product_name_th": "ทีทีบี แคชทูโก",
+        "product_name_en": "ทีทีบี แคชทูโก",
+        "already_has_product": false,
+        "flexi_only": false,
+        "content_link": "https://www-uat.tau2904.com/th/personal/loans/personal-loan/cash-2-go?inapp=y&dl=n",
+        "status": "CONTINUE_APPLY",
+        "continue_apply_next_step": "CONFIRMATION",
+        "continue_apply_params": {
+          "ca_id": 2021070604188193,
+          "app_ref_no": "026PL64000615",
+          "title_page": null
+        },
+        "product_data": {
+          "deposit_account_lists": [
+            {
+              "product_code": "0225",
+              "product_nickname": null,
+              "product_name_th": "บัญชีออลล์ฟรี",
+              "product_name_en": "All Free Account",
+              "account_number": "1112469190",
+              "account_status": "ACTIVE",
+              "account_type": "SDA",
+              "account_name": "น.ส. เทส เทส",
+              "branch_code": "0111",
+              "relationship_code": "PRIIND",
+              "allow_from_for_bill_pay_top_up_epayment": "1",
+              "allow_transfer_from_account": "1",
+              "allow_set_quick_balance": "1",
+              "allow_pay_loan_direct_debit": "1",
+              "allow_receive_loan_fund": "1",
+              "waive_fee_for_billpay": "1",
+              "waive_fee_for_prompt_pay": "1",
+              "available_balance": "0.00",
+              "product_icon_url": "https://storage.googleapis.com/oneapp-vit.appspot.com/product/logo/icon_01.png",
+              "product_config_sort_order": "10001"
+            }
+          ],
+          "loan_status_tracking": {
+            "applications": [
+              {
+                "app_ref_no": "026PL64000615",
+                "app_status": "DRAFT",
+                "app_status_desc": "Draft",
+                "app_type": "PL",
+                "applicants": [
+                  {
+                    "applicant_type": "M",
+                    "first_name_en": "FLEXILOAN NA TEETEEBEE",
+                    "first_name_th": "วันแอพสาม",
+                    "products": [
+                      {
+                        "approve_credit_limit": 0.0,
+                        "bank_account_number": "00001112469190",
+                        "card_name": null,
+                        "disburse_bank_code": "011",
+                        "disburse_bank_full_en": "TMBThanachart Bank Public Company Limited (ttb)",
+                        "disburse_bank_full_th": "ธนาคาร ทหารไทยธนชาต จำกัด (มหาชน)",
+                        "disburse_bank_short": "TMB",
+                        "dsr": 0.0,
+                        "dti": 0.0,
+                        "payment_method": "0",
+                        "payment_method_desc_en": "By Cash/MC",
+                        "payment_method_desc_th": "เงินสด/เช็ค",
+                        "pricings": [],
+                        "product_code": "C2G",
+                        "product_desc_en": "ttb cash2go personal loan",
+                        "product_desc_th": "สินเชื่อบุคคล ทีทีบี แคชทูโก",
+                        "sub_product_code": "C2G01",
+                        "sub_product_desc_en": "ttb cash2go personal loan",
+                        "sub_product_desc_th": "สินเชื่อบุคคล ทีทีบี แคชทูโก",
+                        "tenure": 0.0
+                      }
+                    ],
+                    "sur_name_en": "ONEAPPTHREE",
+                    "sur_name_th": "เฟลกซี่โลน ณ ทีทีบี",
+                    "title_en": "MR",
+                    "title_th": "นาย"
+                  }
+                ],
+                "application_date": "2021-07-06T16:39:13.000Z",
+                "instant_applied_step_flag": null,
+                "instant_flag": "U",
+                "is_approved": "N",
+                "is_incomplete_doc_updated": "N",
+                "is_rejected": null,
+                "is_submitted": "N",
+                "last_update_date": 1625564354000,
+                "nature_of_request": "03",
+                "nature_of_request_desc_en": "Apply - Income Reference",
+                "nature_of_request_desc_th": "สมัครบัตรเครดิต - เกณฑ์รายได้",
+                "road_map": [
+                  {
+                    "default_desc_en": "ttb has received your application.",
+                    "default_desc_th": "ธนาคารได้รับใบสมัครจากท่านเรียบร้อยแล้ว",
+                    "default_percent_complete": null,
+                    "group_number": 1
+                  },
+                  {
+                    "default_desc_en": "Verifing Information and document in progress.",
+                    "default_desc_th": "อยู่ระหว่างการตรวจสอบข้อมูลและเอกสาร",
+                    "default_percent_complete": null,
+                    "group_number": 2
+                  },
+                  {
+                    "default_desc_en": "Approval process in progress.",
+                    "default_desc_th": "อยู่ระหว่างการพิจารณาอนุมัติสินเชื่อ",
+                    "default_percent_complete": null,
+                    "group_number": 3
+                  },
+                  {
+                    "default_desc_en": "Your application has been approval.",
+                    "default_desc_th": "ท่านได้รับการอนุมัติสินเชื่อเรียบร้อยแล้ว",
+                    "default_percent_complete": null,
+                    "group_number": 4
+                  }
+                ]
+              }
+            ]
+          },
+          "eligible_products": [
+            {
+              "product_category": "loan",
+              "product_code": "C2G01",
+              "product_type": null,
+              "campaign_code": null,
+              "facility_code": "C2G",
+              "product_name_en": "ttb cash2go personal loan",
+              "product_name_th": "สินเชื่อบุคคล ทีทีบี แคชทูโก",
+              "interest_rate": "0.28",
+              "payment_criteria_options": [
+                {
+                  "option_id": "63072",
+                  "option_name_th": "หักบัญชีเต็มจำนวน",
+                  "option_name_en": "Full payment 100%"
+                },
+                {
+                  "option_id": "63071",
+                  "option_name_th": "หักบัญชีขั้นต่ำ (3%)",
+                  "option_name_en": "Minimum Payment 3%"
+                }
+              ],
+              "loan_req_max": "2500000",
+              "loan_req_min": "500000",
+              "os_limit": "null",
+              "source_of_data": "2"
+            },
+            {
+              "product_category": "loan",
+              "product_code": "RC01",
+              "product_type": null,
+              "campaign_code": null,
+              "facility_code": "RC",
+              "product_name_en": "ttb flash card",
+              "product_name_th": "บ้ตรกดเงินสด ทีทีบี แฟลซ",
+              "interest_rate": "0.27",
+              "payment_criteria_options": [
+                {
+                  "option_id": "63072",
+                  "option_name_th": "หักบัญชีเต็มจำนวน",
+                  "option_name_en": "Full payment 100%"
+                },
+                {
+                  "option_id": "63071",
+                  "option_name_th": "หักบัญชีขั้นต่ำ (3%)",
+                  "option_name_en": "Minimum Payment 3%"
+                }
+              ],
+              "loan_req_max": "1500000",
+              "loan_req_min": "500000",
+              "os_limit": "null",
+              "source_of_data": "2"
+            },
+            {
+              "product_category": "credit_card",
+              "product_code": null,
+              "product_type": "VB",
+              "campaign_code": "BB32",
+              "facility_code": null,
+              "product_name_en": "ttb reserve signature credit card",
+              "product_name_th": "บัตรเครดิต ทีทีบี รีเซิร์ฟ ซิกเนเจอร์",
+              "interest_rate": null,
+              "payment_criteria_options": [
+                {
+                  "option_id": "63072",
+                  "option_name_th": "หักบัญชีเต็มจำนวน",
+                  "option_name_en": "Full payment 100%"
+                },
+                {
+                  "option_id": "63070",
+                  "option_name_th": "หักบัญชีขั้นต่ำ (5%)",
+                  "option_name_en": "Minimum Payment 5%"
+                }
+              ],
+              "loan_req_max": "1500000",
+              "loan_req_min": "500000",
+              "os_limit": null,
+              "source_of_data": null
+            },
+            {
+              "product_category": "credit_card",
+              "product_code": null,
+              "product_type": "VH",
+              "campaign_code": "BB32",
+              "facility_code": null,
+              "product_name_en": "ttb so chill credit card",
+              "product_name_th": "บัตรเครดิต ทีทีบี โซ ชิลล์",
+              "interest_rate": null,
+              "payment_criteria_options": [
+                {
+                  "option_id": "63072",
+                  "option_name_th": "หักบัญชีเต็มจำนวน",
+                  "option_name_en": "Full payment 100%"
+                },
+                {
+                  "option_id": "63070",
+                  "option_name_th": "หักบัญชีขั้นต่ำ (5%)",
+                  "option_name_en": "Minimum Payment 5%"
+                }
+              ],
+              "loan_req_max": "1500000",
+              "loan_req_min": "500000",
+              "os_limit": null,
+              "source_of_data": null
+            },
+            {
+              "product_category": "credit_card",
+              "product_code": null,
+              "product_type": "VI",
+              "campaign_code": "BB32",
+              "facility_code": null,
+              "product_name_en": "ttb reserve infinite credit card",
+              "product_name_th": "บัตรเครดิต ทีทีบี รีเซิร์ฟ อินฟินิท",
+              "interest_rate": null,
+              "payment_criteria_options": [
+                {
+                  "option_id": "63072",
+                  "option_name_th": "หักบัญชีเต็มจำนวน",
+                  "option_name_en": "Full payment 100%"
+                },
+                {
+                  "option_id": "63070",
+                  "option_name_th": "หักบัญชีขั้นต่ำ (5%)",
+                  "option_name_en": "Minimum Payment 5%"
+                }
+              ],
+              "loan_req_max": "1500000",
+              "loan_req_min": "500000",
+              "os_limit": null,
+              "source_of_data": null
+            },
+            {
+              "product_category": "credit_card",
+              "product_code": null,
+              "product_type": "VJ",
+              "campaign_code": "BB32",
+              "facility_code": null,
+              "product_name_en": "ttb absolute credit card",
+              "product_name_th": "บัตรเครดิต ทีทีบี แอปโซลูท",
+              "interest_rate": null,
+              "payment_criteria_options": [
+                {
+                  "option_id": "63072",
+                  "option_name_th": "หักบัญชีเต็มจำนวน",
+                  "option_name_en": "Full payment 100%"
+                },
+                {
+                  "option_id": "63070",
+                  "option_name_th": "หักบัญชีขั้นต่ำ (5%)",
+                  "option_name_en": "Minimum Payment 5%"
+                }
+              ],
+              "loan_req_max": "1500000",
+              "loan_req_min": "500000",
+              "os_limit": null,
+              "source_of_data": null
+            },
+            {
+              "product_category": "credit_card",
+              "product_code": null,
+              "product_type": "VM",
+              "campaign_code": "BB32",
+              "facility_code": null,
+              "product_name_en": "ttb so smart credit card",
+              "product_name_th": "บัตรเครดิต ทีทีบี โซ สมาร์ท",
+              "interest_rate": null,
+              "payment_criteria_options": [
+                {
+                  "option_id": "63072",
+                  "option_name_th": "หักบัญชีเต็มจำนวน",
+                  "option_name_en": "Full payment 100%"
+                },
+                {
+                  "option_id": "63070",
+                  "option_name_th": "หักบัญชีขั้นต่ำ (5%)",
+                  "option_name_en": "Minimum Payment 5%"
+                }
+              ],
+              "loan_req_max": "1500000",
+              "loan_req_min": "500000",
+              "os_limit": null,
+              "source_of_data": null
+            },
+            {
+              "product_category": "credit_card",
+              "product_code": null,
+              "product_type": "VP",
+              "campaign_code": "BB32",
+              "facility_code": null,
+              "product_name_en": "ttb so fast credit card",
+              "product_name_th": "บัตรเครดิต ทีทีบี โซ ฟาสต์",
+              "interest_rate": null,
+              "payment_criteria_options": [
+                {
+                  "option_id": "63072",
+                  "option_name_th": "หักบัญชีเต็มจำนวน",
+                  "option_name_en": "Full payment 100%"
+                },
+                {
+                  "option_id": "63070",
+                  "option_name_th": "หักบัญชีขั้นต่ำ (5%)",
+                  "option_name_en": "Minimum Payment 5%"
+                }
+              ],
+              "loan_req_max": "1500000",
+              "loan_req_min": "500000",
+              "os_limit": null,
+              "source_of_data": null
+            }
+          ]
+        }
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0001",
+        "message": "failed",
+        "service": "lending-service",
+        "description": {
+          "en": "We cannot proceed your request right now. Please contact 1428 for more information. Sorry for the inconvenience.",
+          "th": "ไม่สามารถทำรายการได้ ธนาคารขออภัยในความไม่สะดวกมา ณ ที่นี้  สอบถามเพิ่มเติม โทร. 1428"
+        }
+      },
+      "data": null
+    }
+  },
+
+  "capture-installment-plan" : {
+    "description": "Capture Installment Plan",
+    "method": "POST",
+    "hostname": "https://apis-portal.oneapp.tmbbank.local",
+    "path": "/apis/creditcard/capture-installment-plan",
+    "header": {},
+    "header_fail": {},
+    "body": {
+       },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "creditcard-service",
+        "description": "success"
+      }
+
+    },
+    "expected2": {
+      "status": {
+        "code": "0001",
+        "message": "failed",
+        "service": "creditcard-service",
+        "description": null
+      },
+      "data": "Capture installment plan failed"
+    }
+  }
+}
+
+

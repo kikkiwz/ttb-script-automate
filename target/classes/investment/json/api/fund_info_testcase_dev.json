@@ -1,0 +1,20 @@
+{
+  "TC_OneApp_Investment_Fund_Info_0001": {
+    "ScenarioName": "Verify Fund Info Service",
+    "Description": "Verify Fund Info",
+    "ExpectedResult": [
+      "The response of Fund Info is return the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "TESCHINAA"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "product-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

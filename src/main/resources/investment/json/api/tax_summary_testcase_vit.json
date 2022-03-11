@@ -1,0 +1,46 @@
+{
+  "TC_OneApp_Investment_Tax_Summary_0001": {
+    "ScenarioName": "Verify Tax Summary Service",
+    "Description": "Verify Tax Summary in current year",
+    "ExpectedResult": [
+      "The response of Tax Summary is return data are correctly as current year",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "portfolioList": [
+        "PT000000000000000048",
+        "PT000000000000000066"
+      ],
+      "taxYear": "2021"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Tax_Summary_0002": {
+    "ScenarioName": "Verify Tax Summary Service",
+    "Description": "Verify Tax Summary in previous year",
+    "ExpectedResult": [
+      "The response of Tax Summary is return data are correctly as previous year",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "portfolioList": [
+        "PT000000000000000048",
+        "PT000000000000000066"
+      ],
+      "taxYear": "2020"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

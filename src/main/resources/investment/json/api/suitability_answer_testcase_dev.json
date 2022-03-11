@@ -1,0 +1,457 @@
+{
+  "TC_OneApp_Investment_Suitability_Answer_0001": {
+    "ScenarioName": "Suitability Answer Service",
+    "Description": "Validate Suitability Answer Score = 1",
+    "ExpectedResult": [
+      "The response of Suitability Answer is return the data correctly and score should be equal 1",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "answerList": [
+        {
+          "ansCode": "indAgeE",
+          "ansName": "Over60y"
+        },
+        {
+          "ansCode": "indFinLibExpE",
+          "ansName": "MoreThan75"
+        },
+        {
+          "ansCode": "indFinStatusE",
+          "ansName": "LessAsset"
+        },
+        {
+          "ansCode": "indInvExpBankE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indInvExpGovE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indInvExpDebE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indInvExpStockE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indPeriodTargetE",
+          "ansName": "Less1y"
+        },
+        {
+          "ansCode": "indRiskExpeE",
+          "ansName": "VlowRiskVlowPerf"
+        },
+        {
+          "ansCode": "indInvGroupE",
+          "ansName": "Group1"
+        },
+        {
+          "ansCode": "indInvFeelE",
+          "ansName": "Panic"
+        },
+        {
+          "ansCode": "indInvLossE",
+          "ansName": "N5Less"
+        },
+        {
+          "ansCode": "indInvReactE",
+          "ansName": "Panic"
+        },
+        {
+          "ansCode": "indDerivAcceptE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indFxRateRiskE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indCkaDegreeE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indCkaWorkE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indCkaExperienceE",
+          "ansName": "No"
+        }
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Suitability_Answer_0002": {
+    "ScenarioName": "Suitability Answer Service",
+    "Description": "Validate Suitability Answer Score = 2",
+    "ExpectedResult": [
+      "The response of Suitability Answer is return the data correctly and score should be equal 2",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "answerList": [
+        {
+          "ansCode": "indAgeE",
+          "ansName": "N4559y"
+        },
+        {
+          "ansCode": "indFinLibExpE",
+          "ansName": "Between5075"
+        },
+        {
+          "ansCode": "indFinStatusE",
+          "ansName": "EqualAmt"
+        },
+        {
+          "ansCode": "indInvExpBankE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indInvExpGovE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indInvExpDebE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indInvExpStockE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indPeriodTargetE",
+          "ansName": "N1y3y"
+        },
+        {
+          "ansCode": "indRiskExpeE",
+          "ansName": "LimiRiskReasonPerf"
+        },
+        {
+          "ansCode": "indInvGroupE",
+          "ansName": "Group2"
+        },
+        {
+          "ansCode": "indInvFeelE",
+          "ansName": "Worry"
+        },
+        {
+          "ansCode": "indInvLossE",
+          "ansName": "Bet5up10"
+        },
+        {
+          "ansCode": "indInvReactE",
+          "ansName": "Worry"
+        },
+        {
+          "ansCode": "indDerivAcceptE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indFxRateRiskE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indCkaDegreeE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indCkaWorkE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indCkaExperienceE",
+          "ansName": "Yes"
+        }
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Suitability_Answer_0003": {
+    "ScenarioName": "Suitability Answer Service",
+    "Description": "Validate Suitability Answer Score = 3",
+    "ExpectedResult": [
+      "The response of Suitability Answer is return the data correctly and score should be equal 3",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "answerList": [
+        {
+          "ansCode": "indAgeE",
+          "ansName": "N3544y"
+        },
+        {
+          "ansCode": "indFinLibExpE",
+          "ansName": "Between2550"
+        },
+        {
+          "ansCode": "indFinStatusE",
+          "ansName": "MoreAsset"
+        },
+        {
+          "ansCode": "indInvExpBankE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indInvExpGovE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indInvExpDebE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indInvExpStockE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indPeriodTargetE",
+          "ansName": "N3y5y"
+        },
+        {
+          "ansCode": "indRiskExpeE",
+          "ansName": "MedRiskMedPerfPot"
+        },
+        {
+          "ansCode": "indInvGroupE",
+          "ansName": "Group3"
+        },
+        {
+          "ansCode": "indInvFeelE",
+          "ansName": "HoldOn"
+        },
+        {
+          "ansCode": "indInvLossE",
+          "ansName": "Bet10up20"
+        },
+        {
+          "ansCode": "indInvReactE",
+          "ansName": "HoldOn"
+        },
+        {
+          "ansCode": "indDerivAcceptE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indFxRateRiskE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indCkaDegreeE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indCkaWorkE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indCkaExperienceE",
+          "ansName": "No"
+        }
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Suitability_Answer_0004": {
+    "ScenarioName": "Suitability Answer Service",
+    "Description": "Validate Suitability Answer Score = 4",
+    "ExpectedResult": [
+      "The response of Suitability Answer is return the data correctly and score should be equal 4",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "answerList": [
+        {
+          "ansCode": "indAgeE",
+          "ansName": "N3544y"
+        },
+        {
+          "ansCode": "indFinLibExpE",
+          "ansName": "Between2550"
+        },
+        {
+          "ansCode": "indFinStatusE",
+          "ansName": "MoreAsset"
+        },
+        {
+          "ansCode": "indInvExpBankE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indInvExpGovE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indInvExpDebE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indInvExpStockE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indPeriodTargetE",
+          "ansName": "N3y5y"
+        },
+        {
+          "ansCode": "indRiskExpeE",
+          "ansName": "MedRiskMedPerfPot"
+        },
+        {
+          "ansCode": "indInvGroupE",
+          "ansName": "Group3"
+        },
+        {
+          "ansCode": "indInvFeelE",
+          "ansName": "HoldOn"
+        },
+        {
+          "ansCode": "indInvLossE",
+          "ansName": "Bet10up20"
+        },
+        {
+          "ansCode": "indInvReactE",
+          "ansName": "HoldOn"
+        },
+        {
+          "ansCode": "indDerivAcceptE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indFxRateRiskE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indCkaDegreeE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indCkaWorkE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indCkaExperienceE",
+          "ansName": "No"
+        }
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Suitability_Answer_0005": {
+    "ScenarioName": "Suitability Answer Service",
+    "Description": "Validate Suitability Answer Score = 5",
+    "ExpectedResult": [
+      "The response of Suitability Answer is return the data correctly and score should be equal 5",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "answerList": [
+        {
+          "ansCode": "indAgeE",
+          "ansName": "Under35y"
+        },
+        {
+          "ansCode": "indFinLibExpE",
+          "ansName": "LessThan25"
+        },
+        {
+          "ansCode": "indFinStatusE",
+          "ansName": "Enough"
+        },
+        {
+          "ansCode": "indInvExpBankE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indInvExpGovE",
+          "ansName": "No"
+        },
+        {
+          "ansCode": "indInvExpDebE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indInvExpStockE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indPeriodTargetE",
+          "ansName": "Over5y"
+        },
+        {
+          "ansCode": "indRiskExpeE",
+          "ansName": "HighRiskHighPerfPot"
+        },
+        {
+          "ansCode": "indInvGroupE",
+          "ansName": "Group4"
+        },
+        {
+          "ansCode": "indInvFeelE",
+          "ansName": "Confident"
+        },
+        {
+          "ansCode": "indInvLossE",
+          "ansName": "N20up"
+        },
+        {
+          "ansCode": "indInvReactE",
+          "ansName": "Confident"
+        },
+        {
+          "ansCode": "indDerivAcceptE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indFxRateRiskE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indCkaDegreeE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indCkaWorkE",
+          "ansName": "Yes"
+        },
+        {
+          "ansCode": "indCkaExperienceE",
+          "ansName": "Yes"
+        }
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+
+<!--    <test name="Android NDID Request data">-->
+<!--        <parameter name="DeviceProfile" value="customer-service-android-Samsung-A51-NDID-saucelabs"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Activate new flow"/>-->
+<!--                <include name="Enter Service Screen Dev Latest" />-->
+<!--                <include name="Customer Service NDID list request data"/>-->
+<!--                <include name="Customer Service authentication aal 2.1"/>-->
+<!--                <include name="Customer Service review information for ndid"/>-->
+<!--                <include name="Customer Service Successful authentication NDID"/>-->
+<!--                <include name="Customer Service verify history success"/>-->
+<!--                <include name="Customer Service verify authentication history success"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.customerservice.sprint32.NdidReviewInformationRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="iOS NDID Request data">
+        <parameter name="DeviceProfile" value="customer-service-ios-oneapp-sim-iphone12-pro-max-ndid-saucelabs"/>
+        <groups>
+            <run>
+                <include name="Activate new flow"/>
+                <include name="Enter Service Screen Dev Latest" />
+                <include name="Customer Service NDID list request data"/>
+                <include name="Customer Service authentication aal 2.1"/>
+                <include name="Customer Service review information for ndid"/>
+                <include name="Customer Service Successful authentication NDID"/>
+                <include name="Customer Service verify history success"/>
+                <include name="Customer Service verify authentication history success"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.customerservice.sprint32.NdidReviewInformationRunner"/>
+        </classes>
+    </test>
+
+</suite>

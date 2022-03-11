@@ -1,0 +1,974 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" thread-count="4" data-provider-thread-count="6">
+    <!--<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">-->
+
+
+    <!--    <listeners>-->
+    <!--        <listener-->
+    <!--                class-name="com.tmb.automation.helper.ExtentListeners">-->
+    <!--        </listener>-->
+    <!--    </listeners>-->
+
+    <!--    ==========Real and Simulator Device=========-->
+
+    <!--        <test name="[Investment : Android] - Introduction to Investment">-->
+    <!--            <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-huawei-new-customer"/>-->
+    <!--            <groups>-->
+    <!--                <run>-->
+    <!--                    <include name="Activate new flow"/>-->
+    <!--                    <include name="My Account investment"/>-->
+    <!--                    <include name="Click Start Investing With ttb"/>-->
+    <!--                    <include name="Introduction to Investment click search fund"/>-->
+    <!--                </run>-->
+    <!--            </groups>-->
+    <!--            <classes>-->
+    <!--                <class name="com.ttbbank.oneapp.runner.investment.IntroductionToInvestmentRunner"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
+
+    <!--    <test name="[Investment : Android] - Know TTB Smart port">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-766-vit-hauwie"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="My Account investment"/>-->
+    <!--                <include name="Click Start Investing With ttb"/>-->
+    <!--                <include name="Introduction to Investment click know ttb smart port"/>-->
+    <!--                <include name="Click Start Investing"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.KnowTTBSmartPortRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Search Fund">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-766-vit-hauwie"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click Start Investing With ttb"/>-->
+    <!--                <include name="Introduction to Investment click search fund"/>-->
+    <!--                <include name="Click Fund"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.SearchFundFromIntroToInvestRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Fund Information">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-767-dev-hauwie"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click Start Investing With ttb"/>-->
+    <!--                <include name="Introduction to Investment click search fund"/>-->
+    <!--                <include name="Click Fund"/>-->
+    <!--                <include name="Funds Information"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.FundInformationFromSearchFundRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Fund Information from My Mutual Fund">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-1147-vit-huawei-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="buy"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="Click Fund"/>-->
+    <!--                <include name="Funds Information"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.FundInfoFromMyMutualRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : iOS] - Fund Information from My Mutual Fund">-->
+    <!--        <parameter name="DeviceProfile" value="investment-ios-oneapp-580-vit-sim-iphone12-max-pro-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="buy"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="Click Fund"/>-->
+    <!--                <include name="Funds Information"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.FundInfoFromMyMutualRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Search Fund from My Mutual Fund">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-1147-vit-huawei-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="buy"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="Search Fund"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.SearchFundFromMyMutualFundRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--        <test name="[Investment : iOS] - Search Fund from My Mutual Fund">-->
+    <!--            <parameter name="DeviceProfile" value="investment-ios-oneapp-1015-vit-sim-iphone12-max-pro-existing-customer"/>-->
+    <!--            <parameter name="mutualFundMenuItem" value="buy"/>-->
+    <!--            <parameter name="language" value="th"/>-->
+    <!--            <groups>-->
+    <!--                <run>-->
+    <!--                    <include name="Activate new flow"/>-->
+    <!--                    <include name="Click My Mutual Fund"/>-->
+    <!--                    <include name="My Mutual Fund"/>-->
+    <!--                    <include name="My Mutual Fund Menu"/>-->
+    <!--                    <include name="Search Fund"/>-->
+    <!--                </run>-->
+    <!--            </groups>-->
+    <!--            <classes>-->
+    <!--                <class name="com.ttbbank.oneapp.runner.investment.SearchFundFromMyMutualFundRunner"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
+
+
+    <!--    <test name="[Investment : Android] - Fund Fact Sheet">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-sony"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click Start Investing With ttb"/>-->
+    <!--                <include name="Introduction to Investment click search fund"/>-->
+    <!--                <include name="Click Fund"/>-->
+    <!--                <include name="Fund Fact Sheet"/>-->
+    <!--                <include name="Start Open Portfolio"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.FundFactSheetFromFundInfoRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - On Boarding">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-sony"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click Start Investing With ttb"/>-->
+    <!--                <include name="Introduction to Investment click search fund"/>-->
+    <!--                <include name="Click Fund"/>-->
+    <!--                <include name="Funds Information"/>-->
+    <!--                <include name="Fund Fact Sheet"/>-->
+    <!--                <include name="Start Open Portfolio"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.OnBoardingRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Terms and Conditions for Open Portfolio">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-sony"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click Start Investing With ttb"/>-->
+    <!--                <include name="Introduction to Investment click search fund"/>-->
+    <!--                <include name="Click Fund"/>-->
+    <!--                <include name="Funds Information"/>-->
+    <!--                <include name="Fund Fact Sheet"/>-->
+    <!--                <include name="Start Open Portfolio"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.TAndCOpenPortFromOnBoardingRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Information Open Portfolio">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-sony"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click Start Investing With ttb"/>-->
+    <!--                <include name="Introduction to Investment click search fund"/>-->
+    <!--                <include name="Click Fund"/>-->
+    <!--                <include name="Funds Information"/>-->
+    <!--                <include name="Fund Fact Sheet"/>-->
+    <!--                <include name="Start Open Portfolio"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--                <include name="Set Nickname Mix Character"/>-->
+    <!--                <include name="Selected Purpose Of Investment"/>-->
+    <!--                <include name="Enter Position"/>-->
+    <!--                <include name="Information Open Port click Next Button"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.InformationOpenPortRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Terms and Conditions Suitability Test from Open Portfolio">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-sony"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click Start Investing With ttb"/>-->
+    <!--                <include name="Introduction to Investment click search fund"/>-->
+    <!--                <include name="Click Fund"/>-->
+    <!--                <include name="Funds Information"/>-->
+    <!--                <include name="Fund Fact Sheet"/>-->
+    <!--                <include name="Start Open Portfolio"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--                <include name="Set Nickname Mix Character"/>-->
+    <!--                <include name="Selected Purpose Of Investment"/>-->
+    <!--                <include name="Enter Position"/>-->
+    <!--                <include name="Information Open Port click Next Button"/>-->
+    <!--                <include name="Terms and Conditions Suitability test"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.TAndCSuitTestFromOpenPortRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Suitability Test from Open Portfolio">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-sony"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click Start Investing With ttb"/>-->
+    <!--                <include name="Introduction to Investment click search fund"/>-->
+    <!--                <include name="Click Fund"/>-->
+    <!--                <include name="Funds Information"/>-->
+    <!--                <include name="Fund Fact Sheet"/>-->
+    <!--                <include name="Start Open Portfolio"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--                <include name="Set Nickname Mix Character"/>-->
+    <!--                <include name="Selected Purpose Of Investment"/>-->
+    <!--                <include name="Enter Position"/>-->
+    <!--                <include name="Information Open Port click Next Button"/>-->
+    <!--                <include name="Terms and Conditions Suitability test"/>-->
+    <!--                <include name="Suitability Test"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.SuitabilityTestFromOpenPortRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Risk assessment Result">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-sony"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click Start Investing With ttb"/>-->
+    <!--                <include name="Introduction to Investment click search fund"/>-->
+    <!--                <include name="Click Fund"/>-->
+    <!--                <include name="Funds Information"/>-->
+    <!--                <include name="Fund Fact Sheet"/>-->
+    <!--                <include name="Start Open Portfolio"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--                <include name="Set Nickname Mix Character"/>-->
+    <!--                <include name="Selected Purpose Of Investment"/>-->
+    <!--                <include name="Enter Position"/>-->
+    <!--                <include name="Information Open Port click Next Button"/>-->
+    <!--                <include name="Terms and Conditions Suitability test"/>-->
+    <!--                <include name="Suitability Test"/>-->
+    <!--                <include name="Click Confirm Button"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.RiskAssessmentResultFromSuitQuestionRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--        <test name="[Investment : Android] - My Account">-->
+    <!--            <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-sony"/>-->
+    <!--            <parameter name="language" value="th"/>-->
+    <!--            <groups>-->
+    <!--                <run>-->
+    <!--                    <include name="Activate new flow"/>-->
+    <!--                </run>-->
+    <!--            </groups>-->
+    <!--            <classes>-->
+    <!--                <class name="com.ttbbank.oneapp.runner.investment.AccountRunner"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
+
+    <!--    <test name="[Investment : Android] - My Mutual Fund">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-sony"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.MyMutualFundRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - More">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-sony"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="openPort"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.MoreActionRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Terms And Conditions Open Portfolio from more page">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-hauwie"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="openPort"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.TAndCOpenPortFromMoreRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Tax Summary and Tax Document">-->
+    <!--    <parameter name="DeviceProfile" value="investment-android-oneapp-1147-vit-huawei-existing-customer-tax"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="taxDoc"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Tax Summary"/>-->
+    <!--                <include name="Tax document"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.PreviewTaxDocumentRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <test name="[Investment : iOS] - Tax Summary and Tax Document">
+        <parameter name="DeviceProfile"
+                   value="investment-ios-oneapp-1015-vit-sim-iphone12-max-pro-existing-customer-tax"/>
+        <parameter name="mutualFundMenuItem" value="more"/>
+        <parameter name="moreMenuItem" value="taxDoc"/>
+        <parameter name="language" value="th"/>
+        <groups>
+            <run>
+                <include name="Activate new flow"/>
+                <include name="Click My Mutual Fund"/>
+                <include name="My Mutual Fund"/>
+                <include name="My Mutual Fund Menu"/>
+                <include name="More Menu"/>
+                <include name="Tax Summary"/>
+                <include name="Tax document"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.investment.PreviewTaxDocumentRunner"/>
+        </classes>
+    </test>
+
+    <!--    <test name="[Investment : Android] - Information Open Portfolio Existing Customer">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-huawei-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="openPort"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--                <include name="Set Nickname Mix Character"/>-->
+    <!--                <include name="Selected Purpose Of Investment"/>-->
+    <!--                <include name="Enter Position"/>-->
+    <!--                <include name="Information Open Port click Next Button"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.InformationOpenPortExistingRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Information Open Portfolio Existing Customer">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-huawei-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="openPort"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--                <include name="Set Nickname Mix Character"/>-->
+    <!--                <include name="Selected Purpose Of Investment"/>-->
+    <!--                <include name="Enter Position"/>-->
+    <!--                <include name="Information Open Port click Next Button"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.InformationOpenPortExistingRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Current Score Open Portfolio Existing Customer">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-huawei-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="openPort"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--                <include name="Set Nickname Mix Character"/>-->
+    <!--                <include name="Selected Purpose Of Investment"/>-->
+    <!--                <include name="Enter Position"/>-->
+    <!--                <include name="Information Open Port click Next Button"/>-->
+    <!--                <include name="Click Next Button"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.CurrentScoreOpenPortExistingRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Risk Assessment Result Open Portfolio Existing Customer">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-huawei-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="openPort"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--                <include name="Set Nickname Mix Character"/>-->
+    <!--                <include name="Selected Purpose Of Investment"/>-->
+    <!--                <include name="Enter Position"/>-->
+    <!--                <include name="Information Open Port click Next Button"/>-->
+    <!--                <include name="Click Next Button"/>-->
+    <!--                <include name="Click Confirm Button"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.RiskAssessmentResultOpenPortExistingRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--        <test name="[Investment : Android] - Completed Open Portfolio Existing Customer">-->
+    <!--            <parameter name="DeviceProfile" value="investment-android-oneapp-saucelabs-xperia5-existing-customer"/>-->
+    <!--            <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--            <parameter name="moreMenuItem" value="openPort"/>-->
+    <!--            <parameter name="language" value="th"/>-->
+    <!--            <groups>-->
+    <!--                <run>-->
+    <!--                    <include name="Activate new flow"/>-->
+    <!--                    <include name="Click My Mutual Fund"/>-->
+    <!--                    <include name="My Mutual Fund"/>-->
+    <!--                    <include name="More Menu"/>-->
+    <!--                    <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--                    <include name="Set Nickname Mix Character"/>-->
+    <!--                    <include name="Selected Purpose Of Investment"/>-->
+    <!--                    <include name="Enter Position"/>-->
+    <!--                    <include name="Information Open Port click Next Button"/>-->
+    <!--                    <include name="Click Next Button"/>-->
+    <!--                    <include name="Click Confirm Button"/>-->
+    <!--                    <include name="Go Back To Investment"/>-->
+    <!--                </run>-->
+    <!--            </groups>-->
+    <!--            <classes>-->
+    <!--                <class name="com.ttbbank.oneapp.runner.investment.CompletedOpenPortExistingRunner"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
+
+    <!--    <test name="[Investment : iOS] - Completed Open Portfolio Existing Customer">-->
+    <!--        <parameter name="DeviceProfile" value="investment-ios-oneapp-562-vit-sim-iphone12-max-pro-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="openPort"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--                <include name="Set Nickname Mix Character"/>-->
+    <!--                <include name="Selected Purpose Of Investment"/>-->
+    <!--                <include name="Enter Position"/>-->
+    <!--                <include name="Information Open Port click Next Button"/>-->
+    <!--                <include name="Click Next Button"/>-->
+    <!--                <include name="Click Confirm Button"/>-->
+    <!--                <include name="Go Back To Investment"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.CompletedOpenPortExistingRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Suitability Test Current Score">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-huawei-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="suitTest"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Click Reassess My Risk"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.CurrentScoreFromMoreRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+
+    <!--    <test name="[Investment : Android] - Terms and Conditions Suitability Test">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-huawei-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="suitTest"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Click Reassess My Risk"/>-->
+    <!--                <include name="Terms and Conditions Suitability test"/>-->
+
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.TAndCSuitTestFromMoreRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Suitability Test New">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-huawei-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="suitTest"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Click Reassess My Risk"/>-->
+    <!--                <include name="Terms and Conditions Suitability test"/>-->
+    <!--                <include name="Suitability Test"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.SuitabilityTestNewRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Suitability Test New score">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-huawei-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="suitTest"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Click Reassess My Risk"/>-->
+    <!--                <include name="Terms and Conditions Suitability test"/>-->
+    <!--                <include name="Suitability Test"/>-->
+    <!--                <include name="Click Save Button"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.RiskAssessmentResultNewRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Suitability Test Completed">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-772-vit-huawei-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="suitTest"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Click Reassess My Risk"/>-->
+    <!--                <include name="Terms and Conditions Suitability test"/>-->
+    <!--                <include name="Suitability Test Score One"/>-->
+    <!--                <include name="Click Save Button Score one"/>-->
+    <!--                <include name="Click Back To Investment"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.CompletedSuitabilityTestRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--        <test name="[Investment : iOS] - Suitability Test Completed">-->
+    <!--            <parameter name="DeviceProfile" value="investment-ios-oneapp-580-vit-sim-iphone12-max-pro-existing-customer"/>-->
+    <!--            <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--            <parameter name="moreMenuItem" value="suitTest"/>-->
+    <!--            <groups>-->
+    <!--                <run>-->
+    <!--                    <include name="Activate new flow"/>-->
+    <!--                    <include name="Click My Mutual Fund"/>-->
+    <!--                    <include name="My Mutual Fund"/>-->
+    <!--                    <include name="My Mutual Fund Menu"/>-->
+    <!--                    <include name="More Menu"/>-->
+    <!--                    <include name="Click Reassess My Risk"/>-->
+    <!--                    <include name="Terms and Conditions Suitability test"/>-->
+    <!--                    <include name="Suitability Test Score One"/>-->
+    <!--                    <include name="Click Save Button Score one"/>-->
+    <!--                    <include name="Click Back To Investment"/>-->
+    <!--                </run>-->
+    <!--            </groups>-->
+    <!--            <classes>-->
+    <!--                <class name="com.ttbbank.oneapp.runner.investment.CompletedSuitabilityTestRunner"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
+
+    <!--    ==========Sauce Labs Profile=========-->
+
+    <!--     <test name="[Investment : Android-Sauce Labs] - Suitability Test Completed">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-saucelabs-772-vit-xperia5-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="suitTest"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Click Reassess My Risk"/>-->
+    <!--                <include name="Terms and Conditions Suitability test"/>-->
+    <!--                <include name="Suitability Test Score One"/>-->
+    <!--                <include name="Click Save Button Score one"/>-->
+    <!--                <include name="Click Back To Investment"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.CompletedSuitabilityTestRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+
+    <!--    <test name="[Investment : iOS-Sauce Labs] - Suitability Test Completed">-->
+    <!--        <parameter name="DeviceProfile" value="investment-ios-saucelabs-580-vit-iphone12-max-pro-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="suitTest"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Click Reassess My Risk"/>-->
+    <!--                <include name="Terms and Conditions Suitability test"/>-->
+    <!--                <include name="Suitability Test Score One"/>-->
+    <!--                <include name="Click Save Button Score one"/>-->
+    <!--                <include name="Click Back To Investment"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.CompletedSuitabilityTestRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Search Fund from My Mutual Fund">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-saucelabs-1147-vit-xperia5-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="buy"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="Search Fund"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.SearchFundFromMyMutualFundRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Search Fund from My Mutual Fund">-->
+    <!--        <parameter name="DeviceProfile" value="investment-ios-saucelabs-1015-vit-iphone12-max-pro-existing-customer"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="buy"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="Search Fund"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.SearchFundFromMyMutualFundRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Tax Summary and Tax Document">-->
+    <!--        <parameter name="DeviceProfile"-->
+    <!--                   value="investment-android-oneapp-saucelabs-1147-vit-xperia5-existing-customer-tax"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="taxDoc"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Tax Summary"/>-->
+    <!--                <include name="Tax document"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.PreviewTaxDocumentRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : iOS] - Tax Summary and Tax Document">-->
+    <!--        <parameter name="DeviceProfile"-->
+    <!--                   value="investment-ios-saucelabs-1015-vit-iphone12-max-pro-existing-customer-tax"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="taxDoc"/>-->
+    <!--        <parameter name="language" value="th"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Tax Summary"/>-->
+    <!--                <include name="Tax document"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.PreviewTaxDocumentRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+
+    <!--    ==========TBW=========-->
+
+    <!--        <test name="[Investment : iOS] - Open Port New Customer">-->
+    <!--           <parameter name="DeviceProfile" value="investment-ios-oneapp-562-dev-sim-iphone12-max-pro"/>-->
+    <!--           <parameter name="language" value="th"/>-->
+    <!--           <groups>-->
+    <!--               <run>-->
+    <!--                   <include name="Activate new flow"/>-->
+    <!--                   <include name="Click Start Investing With ttb"/>-->
+    <!--                   <include name="Introduction to Investment click search fund"/>-->
+    <!--                   <include name="Search Fund"/>-->
+    <!--                   <include name="Click Fund"/>-->
+    <!--               </run>-->
+    <!--           </groups>-->
+    <!--           <classes>-->
+    <!--               <class name="com.ttbbank.oneapp.runner.investment.SearchFundFromIntroToInvestRunner"/>-->
+    <!--           </classes>-->
+    <!--       </test>-->
+
+    <!--    <test name="[Investment : Android] - Open Port Exiting Customer">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-690-vit-hauwie"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="openPort"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--                <include name="Set Nickname Mix Character"/>-->
+    <!--                <include name="Selected Purpose Of Investment"/>-->
+    <!--                <include name="Enter Position"/>-->
+    <!--                <include name="Information Open Port click Next Button"/>-->
+    <!--                <include name="Click Next Button"/>-->
+    <!--                <include name="Click Confirm Button"/>-->
+    <!--                <include name="Go Back To Investment"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--                <class name="com.ttbbank.oneapp.runner.investment.CompletedOpenPortRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : iOS] - Open Port Exiting Customer">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-690-vit-hauwie"/>-->
+    <!--        <parameter name="mutualFundMenuItem" value="more"/>-->
+    <!--        <parameter name="moreMenuItem" value="openPort"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--                <include name="Terms and Conditions Open Portfolio"/>-->
+    <!--                <include name="Set Nickname Mix Character"/>-->
+    <!--                <include name="Selected Purpose Of Investment"/>-->
+    <!--                <include name="Enter Position"/>-->
+    <!--                <include name="Information Open Port click Next Button"/>-->
+    <!--                <include name="Click Next Button"/>-->
+    <!--                <include name="Click Confirm Button"/>-->
+    <!--                <include name="Go Back To Investment"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.CompletedOpenPortRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+
+    <!--    <test name="[Investment : iOS] - Suitability Test">-->
+    <!--        <parameter name="DeviceProfile" value="investment-ios-oneapp-351-vit-sim-iphone12-max-pro"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Click My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="My Mutual Fund Menu"/>-->
+    <!--                <include name="More Menu"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.SuitabilityTestRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : Android] - Manage DCA">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-541-dev-hauwie"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Enter Home Screen Dev Latest By Investment"/>-->
+    <!--                <include name="Enter Investment Home"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="Manage DCA"/>-->
+    <!--                <include name="Funds"/>-->
+    <!--                <include name="Funds Information"/>-->
+    <!--                <include name="Fund Fact Sheet"/>-->
+    <!--                <include name="Set DCA Plan"/>-->
+    <!--                <include name="Confirmation DCA"/>-->
+    <!--                <include name="Completed DCA"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.CompletedDCARunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="[Investment : iOS] - Manage DCA">-->
+    <!--        <parameter name="DeviceProfile" value="investment-ios-oneapp-395-dev-sim-iphone12-max-pro"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Enter Investment Home"/>-->
+    <!--                <include name="My Mutual Fund"/>-->
+    <!--                <include name="Manage DCA"/>-->
+    <!--                <include name="Funds"/>-->
+    <!--                <include name="Funds Information"/>-->
+    <!--                <include name="Fund Fact Sheet"/>-->
+    <!--                <include name="Set DCA Plan"/>-->
+    <!--                <include name="Confirmation DCA"/>-->
+    <!--                <include name="Completed DCA"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.CompletedDCARunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+
+    <!--========TBC With PO==============-->
+    <!--    <test name="[Investment : Android] - Open Port New Customer come from widget">-->
+    <!--        <parameter name="DeviceProfile" value="investment-android-oneapp-690-vit-hauwie"/>-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="Activate new flow"/>-->
+    <!--                <include name="Home Page"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ttbbank.oneapp.runner.investment.HomeRunner"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+
+</suite>
+

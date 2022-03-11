@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="info">
+  <appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+<!--       <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/> -->
+        <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %c{1} - %msg%n"/>
+    </Console>
+
+    <File name="MyFile" fileName="./target/app.log">
+<!--         <PatternLayout pattern="%d{yyyy-mm-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/> -->
+        <PatternLayout pattern="%d{yyyy-mm-dd HH:mm:ss.SSS} [%t] %-5level %c{1} - %msg%n"/>
+    </File>   
+    
+<!--      <RollingFile 
+        name="Permament" 
+        fileName="./ergo.log"
+        filePattern="./target/rolling_log.%d{yyyy-MM-dd.HH:mm}.log"
+        immediateFlush="true">
+        <PatternLayout pattern="%d{HH:mm:ss.SSS} %5p{length=5} - %c{1} %m %ex%n"/>
+        <Policies>
+            <TimeBasedTriggeringPolicy/>
+        </Policies>
+    </RollingFile>  -->         
+  </appenders>
+
+  <loggers>     
+    <root level="debug">
+      <appender-ref ref="Console" level="debug"/>
+      <appender-ref ref="MyFile" level="debug"/>
+    </root>    
+  </loggers>
+</configuration>

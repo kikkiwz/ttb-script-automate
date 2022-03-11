@@ -1,0 +1,50 @@
+{
+  "token": {
+    "description": "get-token",
+    "method": "POST",
+    "Dev_URL": "https://oneapp-dev1.tau2904.com",
+    "Vit_URL": "https://oneapp-vit1.tau2904.com",
+    "path": "/apis/auth/token",
+    "key": "oneapp-dev",
+    "Authorization": "4Od1045RewUrGux8aj1oXzzrXOonyG7oOSIhERTL27W2tYIkDON6PXlIHGkv26I2",
+    "headers": {
+      "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866"
+    },
+    "body": {
+      "grant_type": "password",
+      "username": "",
+      "password": "WfR5cuIdLh/GY9d9LME+SpKawy+LUToauMWCF+F87GGLCka6IlTP1Q7qnOVmYxl0jZGusmFNK/bICIUJA1ro2AhQXYaTKgs5mOJEO0DDEYla7vvXaLYZP1l2E57Yyk5r/iIxP/EdhuV6wIi/wmeGDM6jWgwtI9SisCq5Mcf1rvXHpBb6Dz/K9ppUrkGeyh24QdHoGxsPhi98mE8XB9jy5bWFf2fUtCNZzsFY5oLj+9PcHv+t9iS1H11SNN6nqJvCErlAGRIRoV5LxEOVuZ2rh8AO4Dy4CDUpCE8EPVRlvwbMndgiCaOGc3NAt5fs0Dbh+HZ8w0K8mQiTdx7lrRyVfA==",
+      "scope": "mobile"
+    },
+    "deviceUID": "a8edfd960edf604cdab37550e18b429fc2993cb707cc153bbd1ea8d56337d08e",
+    "public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgWp5YcdZc1yeLp9q/SroHwEGy9UR5RQsB8xMlZ2qY0zbbKzm/O+KefkK/auYrwKU0Op9UPc1bR2Zd3w24QSRsSFIhAjNZxusRQWkuV2rgiojfqFfBA95YlnHgBoG7Zg6+VnLeqRTb6llP2wguMbL6BgqohWEaNi11F2Oqw+xRMsbDft5AWjsCZ43+LJdvynm0fTkLajvsf3ZYkbRlm7uSOhChi7+ZeGgPyMLlCAyRGfDOCtOr0cmZNQ4Z4dmlMswrgXT0vfFmutLwecqHqR63Olhm44lx2ycqZ8A2GnBFJ+N7Vwxwo7aBGfvVFh9RFnoz5E2ujGbrOPkdJ80AfUU9QIDAQAB"
+  },
+    "get-card-list": {
+    "description": "Get Debit card : Get Card List",
+    "method": "POST",
+    "dev_url": "https://oneapp-dev1.tau2904.com",
+    "vit_url": "https://oneapp-vit1.tau2904.com",
+    "path": "/apis/customer/debit-cards/get-card-list",
+    "header": {
+      "Content-Type": "application/json",
+      "X-CRMID": "001100000000000000000025524191"
+    },
+    "body": {
+    "account_no": "0019765478",
+    "account_type": "SDA"
+},
+    "expected1": {},
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+        "description": "Unauthorized"
+      },
+      "data": {
+        "error": "invalid_token",
+        "error_description": "Access token expired: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib25lYXBwLWRldi1yZXNvdXJjZSJdLCJ1c2VyX25hbWUiOiIwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwMjUiLCJzY29wZSI6WyJtb2JpbGUiXSwiY2hhbm5lbCI6Im1ibCIsImV4cCI6MTYyMzc0MzIxOSwic3NpZCI6IjAwMDAwMDAwMDA3MDI1LXBpbmtteW5zIiwianRpIjoiNmIwMDVjODctYTM0Mi00Njg3LTllMDYtNTY2NzkzMmRhZGJjIiwiY2xpZW50X2lkIjoib25lYXBwLWRldiJ9.wGz2s13aWcW7zi4-VgAVFO5aw8ocmSMrPyuVYfoMKWc"
+      }
+    }
+  }
+}

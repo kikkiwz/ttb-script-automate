@@ -1,0 +1,79 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+	<listeners>
+		<listener
+			class-name="com.tmb.automation.helper.ExtentReport4">
+
+		</listener>
+	</listeners>
+	
+ 	<test name="Lending_s1309_android_English">
+ 	<parameter name="DeviceProfile" value="Saucelabios2" />
+		<groups>
+			<run>
+				<include name="lending" />
+			</run>
+		</groups>
+		
+		<classes>
+ 		 <class name="com.tmb.automation.test.lending.sprint15.UI_ActivateCard_s1309_AE_1" />
+<!-- 		 <class name="com.tmb.automation.test.lending.sprint15.UI_ActivateCard_s1313_AE_1" />-->
+<!-- 		 <class name="com.tmb.automation.test.lending.sprint15.UI_ActivateCard_s3144_AE_1" />-->
+<!-- 		 <class name="com.tmb.automation.test.lending.sprint15.UI_ActivateCard_s3144_AE_2" />-->
+		</classes>
+	</test>
+	
+<!-- 		<test name="Lending_s1309_android_Thai">
+	<parameter name="DeviceProfile" value="android.E4" />
+		<groups>
+			<run>
+				<include name="ios" />
+				<include name="android" />
+			</run>Log.logger.debug("list="+contextNames);
+		</groups>
+		<classes>
+ 		 <class name="com.tmb.automation.test.lending.sprint15.UI_Lending_s1309_AT_1" />
+ 		 <class name="com.tmb.automation.test.lending.sprint15.UI_Lending_s1313_AT_1" />
+ 		 <class name="com.tmb.automation.test.lending.sprint15.UI_Lending_s3144_AT_1" />
+ 		 <class name="com.tmb.automation.test.lending.sprint15.UI_Lending_s3144_AT_2" />
+		</classes>
+	</test> -->
+	
+<!--		<test name="Lending_s1309_iOS_English">
+	<parameter name="DeviceProfile" value="ios.S1" />
+		<groups>
+			<run>
+				<include name="ios" />
+				<include name="android" />
+			</run>
+		</groups>
+		<classes>
+  		 <class name="com.tmb.automation.test.lending.sprint15.UI_ActivateCard_s1309_IE_1" />
+ 		 <class name="com.tmb.automation.test.lending.sprint15.UI_ActivateCard_s1313_IE_1" />
+ 		 <class name="com.tmb.automation.test.lending.sprint15.UI_ActivateCard_s3144_IE_1" />
+ 		 <class name="com.tmb.automation.test.lending.sprint15.UI_ActivateCard_s3144_IE_2" />
+		</classes>
+	</test>-->
+	
+<!-- 		<test name="Lending_s1309_android_Thai">
+	<parameter name="DeviceProfile" value="ios.S1" />
+		<groups>
+			<run>
+				<include name="ios" />
+				<include name="android" />
+			</run>
+		</groups>
+		<classes>
+ 		 <class name="com.tmb.automation.test.lending.sprint15.UI_Lending_s1309_IT_1" />
+ 		 <class name="com.tmb.automation.test.lending.sprint15.UI_ActivateCard_s1313_IT_1" />
+ 		 <class name="com.tmb.automation.test.lending.sprint15.UI_ActivateCard_s3144_IT_1" />
+ 		 <class name="com.tmb.automation.test.lending.sprint15.UI_ActivateCard_s3144_IT_2" />
+		</classes>
+	</test> -->
+	
+<!-- 	=============================== -->
+	
+		
+</suite>
+

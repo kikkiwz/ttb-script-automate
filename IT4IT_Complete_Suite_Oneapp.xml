@@ -1,0 +1,48 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5">
+<parameter name="ReportName" value="UAT_Oneapp_Report"/>
+<listeners>
+    <listener class-name="com.tmb.automation.helper.TestFilterListener"/>
+</listeners>
+
+ <test name="Change Language">
+	   <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-Samsung_ChangeLanguage"/>  
+		<groups>
+                <run>
+                    <include name="Change Language from English to thai and Thai to English"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.ChangeLanguage_Runner"/>
+		</classes>
+	</test> 
+	
+	<test name="More Button Validation">
+	   <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-Samsung_MoreButton"/>  
+		<groups>
+                <run>
+                    <include name="More Button Validation"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.More_Button_Validation_Runner"/>
+		</classes> 
+	</test> 
+	<test name="Inbox Notification">
+	   <parameter name="DeviceProfile" value="IT4IT-android-saucelabs-Samsung_Inbox"/>  
+		<groups>
+                <run>
+                    <include name="Inbox notification Validation"/>              
+                </run>
+            </groups>
+		<classes>
+			<class
+					name="com.ttbbank.oneapp.runner.IT4IT.Inbox_Notification_Validation_Runner"/>
+		</classes>
+	</test> 	
+  
+</suite>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+
+    <test name="Android Mutual Fund Passbook don't have Investment account">
+        <parameter name="DeviceProfile" value="customer-service-android-Samsung-A51-gender-female-no-title-saucelabs"/>
+        <groups>
+            <run>
+                <include name="Activate new flow"/>
+                <include name="Enter Service Screen Dev Latest" />
+                <include name="Customer Service Mutual Fund don't have investment account"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.customerservice.sprint33.MutualFundNoInvestmentAccountRunner"/>
+        </classes>
+    </test>
+<!--    <test name="iOS Mutual Fund Passbook don't have Investment account">-->
+<!--        <parameter name="DeviceProfile" value="customer-service-ios-oneapp-sim-iphone12-pro-max-have-pwa-saucelabs"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Activate new flow"/>-->
+<!--                <include name="Enter Service Screen Dev Latest" />-->
+<!--                <include name="Customer Service Mutual Fund don't have investment account"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.customerservice.sprint33.MutualFundNoInvestmentAccountRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

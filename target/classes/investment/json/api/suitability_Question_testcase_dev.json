@@ -1,0 +1,40 @@
+{
+  "TC_OneApp_Investment_Suitability_Question_0001": {
+    "ScenarioName": "Suitability Question Service",
+    "Description": "Validate Suitability Question in Thai language",
+    "ExpectedResult": [
+      "The response of Suitability Question is return the data as Thai language correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "customerType":"P",
+      "language": "TH"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Suitability_Question_0002": {
+    "ScenarioName": "Suitability Question Service",
+    "Description": "Validate Suitability Question in English language",
+    "ExpectedResult": [
+      "The response of Suitability Question is return the data as Thai English correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "customerType":"P",
+      "language": "EN"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

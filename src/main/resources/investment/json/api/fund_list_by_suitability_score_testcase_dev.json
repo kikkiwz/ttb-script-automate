@@ -1,0 +1,92 @@
+{
+  "TC_OneApp_Investment_Fund_List_By_Suitability_Score_0001": {
+    "ScenarioName": "Verify Fund List By Suitability Score Service",
+    "Description": "Verify Fund List By Suitability Score = 1",
+    "ExpectedResult": [
+      "The response of Fund List By Suitability Score is return and the data are match with score = 1 ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "suitScore": "1"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "product-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_By_Suitability_Score_0002": {
+    "ScenarioName": "Verify Fund List By Suitability Score Service",
+    "Description": "Verify Fund List By Suitability Score = 2",
+    "ExpectedResult": [
+      "The response of Fund List By Suitability Score is return and the data are match with score = 2 ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "suitScore": "2"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "product-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_By_Suitability_Score_0003": {
+    "ScenarioName": "Verify Fund List By Suitability Score Service",
+    "Description": "Verify Fund List By Suitability Score = 3",
+    "ExpectedResult": [
+      "The response of Fund List By Suitability Score is return and the data are match with score = 3 ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "suitScore": "3"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "product-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_By_Suitability_Score_0004": {
+    "ScenarioName": "Verify Fund List By Suitability Score Service",
+    "Description": "Verify Fund List By Suitability Score = 4",
+    "ExpectedResult": [
+      "The response of Fund List By Suitability Score is return and the data are match with score = 4",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "suitScore": "4"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "product-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Fund_List_By_Suitability_Score_0005": {
+    "ScenarioName": "Verify Fund List By Suitability Score Service",
+    "Description": "Verify Fund List By Suitability Score = 5",
+    "ExpectedResult": [
+      "The response of Fund List By Suitability Score is return and the data are match with score = 5",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "suitScore": "5"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "product-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

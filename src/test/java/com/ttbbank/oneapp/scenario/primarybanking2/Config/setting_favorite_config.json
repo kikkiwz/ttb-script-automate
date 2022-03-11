@@ -1,0 +1,32 @@
+{
+  "setting_fav_config": {
+    "view_fav_list_path": "/apis/customer/favorite/list",
+    "DEV": {
+      "hostname": "https://oneapp-dev1.tau2904.com",
+      "Validate": {
+        "function": "validate",
+        "service_name": "Validate Service",
+        "method": "POST",
+        "path": "/apis/customer/favorite/validate"
+      },
+      "Add_Favorite": {
+        "function": "add",
+        "service_name": "Add favorite Service",
+        "method": "POST",
+        "path": "/apis/customer/favorite/add"
+      },
+      "Update_Favorite": {
+        "function": "update",
+        "service_name": "Update favorite Service",
+        "method": "POST",
+        "path": "/apis/customer/favorite/validate"
+      },
+      "Delete_Favorite": {
+        "function": "update",
+        "service_name": "Update favorite Service",
+        "method": "POST",
+        "path": "/apis/customer/favorite/validate"
+      }
+    }
+  }
+}

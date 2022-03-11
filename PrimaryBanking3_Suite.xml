@@ -1,0 +1,352 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="1" parallel="tests" thread-count="1" data-provider-thread-count="1">
+<!--    <test name="OwnTransferNormalSuccessFullyRunner">-->
+<!--&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-nice"/>-->
+<!--    		<groups>-->
+<!--    			<run>-->
+<!--    				<include name="Transfer Own TTB"/>-->
+<!--    			</run>-->
+<!--    		</groups>-->
+<!--    		<classes>-->
+<!--    			<class name="com.ttbbank.oneapp.runner.primarybanking3.OwnTransferNormalSuccessFullyRunner"/>-->
+<!--    		</classes>-->
+<!--    	</test>-->
+<!--	<test name="OwnTransferCaseValidateEnterDetailsRunner">-->
+<!--&lt;!&ndash;		    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-nice"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Transfer Own TTB Validate Flow"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.OwnTransferCaseValidateEnterDetailsRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="PromptpayMobileSuccessfullyRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Transfer Promptpay mobile success"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.PromptpayMobileSuccessfullyRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="PromptpayCitizenSuccessfullyRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Transfer Promptpay citizen success"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.PromptpayCitizenSuccessfullyRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="OtherTransferOtherBankSuccessfullyRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Transfer other bank success"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.OtherTransferOtherBankSuccessfullyRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="OtherTransferOwnTTBSuccessfullyRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Transfer other own ttb success"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.OtherTransferOwnTTBSuccessfullyRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="OtherTransferOtherTTBSuccessfullyRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Transfer other ttb success"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.OtherTransferOtherTTBSuccessfullyRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="SetScheduleOnceRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Set schedule once"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOnceRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="SetScheduleWeeklyByEndDateRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Set schedule weekly by end date"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleWeeklyByEndDateRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="SetScheduleWeeklyByTimesRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Set schedule weekly by times"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleWeeklyByTimesRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--		<test name="SetScheduleMonthlyByEndDateRunner">-->
+<!--			&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--			<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--			<groups>-->
+<!--				<run>-->
+<!--					<include name="Set schedule monthly by end date"/>-->
+<!--				</run>-->
+<!--			</groups>-->
+<!--			<classes>-->
+<!--				<class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleMonthlyByEndDateRunner"/>-->
+<!--			</classes>-->
+<!--		</test>-->
+<!--		<test name="SetScheduleMonthlyByTimesRunner">-->
+<!--			&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--			<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--			<groups>-->
+<!--				<run>-->
+<!--					<include name="Set schedule monthly by times"/>-->
+<!--				</run>-->
+<!--			</groups>-->
+<!--			<classes>-->
+<!--				<class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleMonthlyByTimesRunner"/>-->
+<!--			</classes>-->
+<!--		</test>-->
+<!--	<test name="SetScheduleOtherOnceRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Set schedule other transfer to own account once"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherOnceRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="SetScheduleOtherToOwnAccountMonthlyByEndDateRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Set schedule other transfer to own account by end date frequency monthly"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherToOwnAccountMonthlyByEndDateRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="SetScheduleOtherToOwnAccountMonthlyByTimesRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Set schedule other transfer to own account by amount of times frequency monthly"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherToOwnAccountMonthlyByTimesRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="SetScheduleOtherToOwnAccountWeeklyByEndDateRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Set schedule other transfer to own account by end date frequency weekly"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherToOwnAccountWeeklyByEndDateRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="SetScheduleOtherToOwnAccountWeeklyByTimesRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Set schedule other transfer to own account by amount of times frequency weekly"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherToOwnAccountWeeklyByTimesRunner"/>-->
+<!--			</classes>-->
+<!--	</test>-->
+<!--	<test name="ValidateSetScheduleOwnTransferRunner">-->
+<!--		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="Validate SetSchedule OwnTransfer"/>-->
+<!--			</run>-->
+<!--		</groups>-->
+<!--		<classes>-->
+<!--			<class name="com.ttbbank.oneapp.runner.primarybanking3.ValidateSetScheduleOwnTransferRunner"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--    <test name="SetScheduleOtherTTBMonthlyByEndDateRunner">-->
+<!--        &lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="SetScheduleTransferOtherToOtherTTBAccountMonthlyByEndDateScenario"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherTTBMonthlyByEndDateRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    	<test name="SetScheduleOwnTTBNameDuplicateRunner">-->
+<!--    		&lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--    		<parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--    		<groups>-->
+<!--    			<run>-->
+<!--    				<include name="SetSchedule OwnTTB Name Duplicate"/>-->
+<!--    			</run>-->
+<!--    		</groups>-->
+<!--    		<classes>-->
+<!--    			<class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOwnTTBNameDuplicateRunner"/>-->
+<!--    		</classes>-->
+<!--    	</test>-->
+<!--    <test name="SetScheduleOtherTTBMonthlyByTimesRunner">-->
+<!--        &lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="SetScheduleTransferOtherToOtherTTBAccountMonthlyByTimesScenario"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherTTBMonthlyByTimesRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="SetScheduleOtherTTBOnceRunner">-->
+<!--        &lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="SetScheduleTransferOtherToOtherTTBAccountOnceScenario"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherTTBOnceRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="SetScheduleOtherTTBWeeklyByEndDateRunner">-->
+<!--        &lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="SetScheduleTransferOtherToOtherTTBAccountWeeklyByEndDateScenario"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherTTBWeeklyByEndDateRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="SetScheduleOtherTTBWeeklyByTimesRunner">-->
+<!--        &lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="SetScheduleTransferOtherToOtherTTBAccountWeeklyByTimesScenario"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherTTBWeeklyByTimesRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="SetScheduleOtherBankMonthlyByEndDateRunner">-->
+<!--        &lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Set schedule other bank monthly end date"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherBankMonthlyByEndDateRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="SetScheduleOtherBankMonthlyByTimesRunner">-->
+<!--        &lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Set schedule other bank monthly amount of times"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherBankMonthlyByTimesRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="SetScheduleOtherBankOnceRunner">-->
+<!--        &lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Set schedule other bank once"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherBankOnceRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="SetScheduleOtherBankWeeklyByEndDateRunner">-->
+<!--        &lt;!&ndash;    		<parameter name="DeviceProfile" value="platform1-android"/>&ndash;&gt;-->
+<!--        <parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Set schedule other bank weekly end date"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherBankWeeklyByEndDateRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="SetScheduleOtherBankWeeklyByTimesRunner">
+        <!--    		<parameter name="DeviceProfile" value="platform1-android"/>-->
+        <parameter name="DeviceProfile" value="primaryBanking3-ios-oneapp-sim-iphone12-pro-max-kai"/>
+        <groups>
+            <run>
+                <include name="Set schedule other bank weekly amount of times"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking3.SetScheduleOtherBankWeeklyByTimesRunner"/>
+        </classes>
+    </test>
+</suite>

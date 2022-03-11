@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+
+<!--    <test name="Android Case Tracking">-->
+<!--        <parameter name="DeviceProfile" value="customer-service-android-Samsung-A51-have-pwa-saucelabs"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Activate new flow"/>-->
+<!--                <include name="Enter Service Screen Dev Latest" />-->
+<!--                <include name="Customer Service Case Tracking"/>-->
+<!--                <include name="Customer Service case tracking list status inprogress"/>-->
+<!--                <include name="Customer Service case tracking detail status inprogress"/>-->
+<!--                <include name="Customer Service case tracking list status complete"/>-->
+<!--                <include name="Customer Service case tracking detail status complete"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.customerservice.sprint34.CaseTrackingRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="iOS Case Tracking">
+        <parameter name="DeviceProfile" value="customer-service-ios-oneapp-sim-iphone12-pro-max-have-pwa-saucelabs"/>
+        <groups>
+            <run>
+                <include name="Activate new flow"/>
+                <include name="Enter Service Screen Dev Latest" />
+                <include name="Customer Service Case Tracking"/>
+                <include name="Customer Service case tracking list status inprogress"/>
+                <include name="Customer Service case tracking detail status inprogress"/>
+                <include name="Customer Service case tracking list status complete"/>
+                <include name="Customer Service case tracking detail status complete"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.customerservice.sprint34.CaseTrackingRunner"/>
+        </classes>
+    </test>
+
+</suite>

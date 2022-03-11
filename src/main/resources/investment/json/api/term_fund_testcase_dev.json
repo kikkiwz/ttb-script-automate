@@ -1,0 +1,18 @@
+{
+  "TC_OneApp_Investment_Term_Fund_0001": {
+    "ScenarioName": "Term Fund",
+    "Description": "Validate Term Fund",
+    "ExpectedResult": [
+      "Validate response Term Fund in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "TMONEY",
+      "language": "EN",
+      "unitHolder": "PT000000000001829800",
+      "crmId": "00000018592884"
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

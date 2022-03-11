@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+
+<!--    <test name="Android Financial Certificate for Document thai">-->
+<!--        <parameter name="DeviceProfile" value="customer-service-android-Samsung-A51-have-pwa-saucelabs"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Activate new flow"/>-->
+<!--                <include name="Enter Service Screen Dev Latest" />-->
+<!--                <include name="Customer Service Financial Certificate select document thai and select owner"/>-->
+<!--                <include name="Select type financial certificate"/>-->
+<!--                <include name="Select preview information and input information sponsor"/>-->
+<!--                <include name="Select deposit or mutual fund"/>-->
+<!--                <include name="Select account"/>-->
+<!--                <include name="Review information financial certificate"/>-->
+<!--                <include name="Financial certificate PDF"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.customerservice.sprint30.FinancialCertificateDocThaiRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="iOS Financial Certificate for Document thai">
+        <parameter name="DeviceProfile" value="customer-service-ios-oneapp-sim-iphone12-pro-max-have-pwa-saucelabs"/>
+        <groups>
+            <run>
+                <include name="Activate new flow"/>
+                <include name="Enter Service Screen Dev Latest" />
+                <include name="Customer Service Financial Certificate select document thai and select owner"/>
+                <include name="Select type financial certificate"/>
+                <include name="Select preview information and input information sponsor"/>
+                <include name="Select deposit or mutual fund"/>
+                <include name="Select account"/>
+                <include name="Review information financial certificate"/>
+                <include name="Financial certificate PDF"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.customerservice.sprint30.FinancialCertificateDocThaiRunner"/>
+        </classes>
+    </test>
+
+</suite>

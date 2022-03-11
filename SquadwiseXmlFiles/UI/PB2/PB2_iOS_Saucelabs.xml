@@ -1,0 +1,194 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.ttbbank.oneapp.scenario.lending.iosUtil.ExReport">-->
+<!--        </listener>-->
+<!--    </listeners>-->
+
+
+    <test name="PB2_ManageCard_DebitCard_Limit_Usage">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="English"/>
+        <groups>
+            <run>
+                <include name="PB2_ManageCard_DebitCard_Limit_Usage"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+
+    <test name="PB2_ManageCard_DigitalCard_Limit_Usage">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="English"/>
+        <groups>
+            <run>
+                <include name="PB2_ManageCard_DigitalCard_Limit_Usage"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+
+    <test name="PB2_ManageCard_DigitalCard_Normal">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="English"/>
+        <groups>
+            <run>
+                <include name="PB2_ManageCard_DigitalCard_Normal"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+
+    <test name="PB2_ManageCard_DigitalCard_Blocked">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="English"/>
+        <groups>
+            <run>
+                <include name="PB2_ManageCard_DigitalCard_Blocked"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+
+    <test name="PB2_ManageCard_DebitCard_Normal">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="English"/>
+        <groups>
+            <run>
+                <include name="Select_Debit_Card_Detail"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+
+    <test name="PB2_ManageCard_DebitCard_Blocked">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="English"/>
+        <groups>
+            <run>
+                <include name="Verify_MyDebitCard_DebitCard_Blocked"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+    
+    <test name="PB2_ManageCard_Temp_Block_OnAndOff">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="English"/>
+        <groups>
+            <run>
+                <include name="PB2_ManageCard_Temp_Block_OnAndOff"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+    
+<!--    =======================================================================================-->
+    
+    <test name="PB2_ManageCard_DebitCard_Limit_Usage">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="Thai"/>
+        <groups>
+            <run>
+                <include name="PB2_ManageCard_DebitCard_Limit_Usage"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+
+    <test name="PB2_ManageCard_DigitalCard_Limit_Usage">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="Thai"/>
+        <groups>
+            <run>
+                <include name="PB2_ManageCard_DigitalCard_Limit_Usage"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+
+    <test name="PB2_ManageCard_DigitalCard_Normal">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="Thai"/>
+        <groups>
+            <run>
+                <include name="PB2_ManageCard_DigitalCard_Normal"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+
+    <test name="PB2_ManageCard_DigitalCard_Blocked">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="Thai"/>
+        <groups>
+            <run>
+                <include name="PB2_ManageCard_DigitalCard_Blocked"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+
+    <test name="PB2_ManageCard_DebitCard_Normal">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="Thai"/>
+        <groups>
+            <run>
+                <include name="Select_Debit_Card_Detail"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+
+    <test name="PB2_ManageCard_DebitCard_Blocked">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="Thai"/>
+        <groups>
+            <run>
+                <include name="Verify_MyDebitCard_DebitCard_Blocked"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+    
+    <test name="PB2_ManageCard_Temp_Block_OnAndOff">
+        <parameter name="DeviceProfile" value="pb2-ios-saucelabs"/>
+        <parameter name="Language" value="Thai"/>
+        <groups>
+            <run>
+                <include name="PB2_ManageCard_Temp_Block_OnAndOff"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.primarybanking2.ManageDebitCardRunner"/>
+        </classes>
+    </test>
+</suite>
+

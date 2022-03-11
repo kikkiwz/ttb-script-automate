@@ -1,0 +1,68 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+	
+<!-- 		<test name="Lending_s1309_iOS_English">
+	<parameter name="DeviceProfile" value="android.E8" />
+		<groups>
+			<run>
+				<include name="ios" />
+				<include name="android" />
+			</run>
+		</groups>
+		<classes>	 
+ 		 <class name="com.tmb.automation.test.lending.sprint17.UI_BlockCard_s4938_AE_1" />
+ 		 <class name="com.tmb.automation.test.lending.sprint17.UI_BlockCard_s4938_AE_2" />
+		</classes>
+	</test> -->
+	
+<!-- 		<test name="Lending_s1309_android_Thai">
+	<parameter name="DeviceProfile" value="android.E4" />
+		<groups>
+			<run>
+				<include name="ios" />
+				<include name="android" />
+			</run>
+		</groups>
+		<classes>
+ 		 <class name="com.tmb.automation.test.lending.sprint17.UI_BlockCard_s4938_AT_1" />
+ 		  <class name="com.tmb.automation.test.lending.sprint17.UI_BlockCard_s4938_AT_2" />
+		</classes>
+	</test> -->
+	
+		<test name="Lending_s1309_iOS_English">
+	<parameter name="DeviceProfile" value="ios.S1" />
+		<groups>
+			<run>
+				<include name="ios" />
+				<include name="android" />
+			</run>
+		</groups>
+		<classes>	 
+<!-- 		 <class name="com.tmb.automation.test.lending.sprint15.UI_ActivateCard_s3144_IE_2" /> -->
+		 <class name="com.tmb.automation.test.lending.sprint16.UI_ChangeLimit_s3123_IE_1" />
+		 <class name="com.tmb.automation.test.lending.sprint16.UI_ChangeLimit_s3123_IE_2" />
+ 		 <class name="com.tmb.automation.test.lending.sprint17.UI_BlockCard_s4938_IE_1" />
+ 	<!-- 	  <class name="com.tmb.automation.test.lending.sprint17.UI_BlockCard_s4938_IE_2" /> -->
+
+		</classes>
+	</test>
+	
+<!-- 		<test name="Lending_s1309_android_Thai">
+	<parameter name="DeviceProfile" value="ios.S1" />
+		<groups>
+			<run>
+				<include name="ios" />
+				<include name="android" />
+			</run>
+		</groups>
+		<classes>
+ 		 <class name="com.tmb.automation.test.lending.sprint17.UI_BlockCard_s4938_IT_1" />
+ 		  <class name="com.tmb.automation.test.lending.sprint17.UI_BlockCard_s4938_IT_2" />
+		</classes>
+	</test> -->
+	
+<!-- 	=============================== -->
+	
+</suite>
+

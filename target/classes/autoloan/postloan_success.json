@@ -1,0 +1,9 @@
+{
+  "keep_session_deep_link_url": "tmbtouch:\\keepalive",
+  "close_deep_link_url": "tmbtouch:\\close closedeeplink",
+  "navi_billpay_deep_link_url": "tmbtouch://linkaccess?redirect=&moduleName=&call=callBillPaymentFromMenuOneApp&compCode=5003&ref1=$ref1&ref2=$ref2",
+  "navi_car_reg_book_deep_link_url": "tmbtouch://linkaccess?redirect=&moduleName=&call=navigateToCarRegistrationAL&contractNo=0232610014900",
+  "navi_activate_deep_link_url": "tmbtouch://linkaccess?redirect=&moduleName=&call=onClickForgotPin&requiredLogin=N&requiredLogout=Yactivatedeeplink",
+  "navi_close_hp_deep_link_url": "tmbtouch://linkaccess?redirect=&moduleName=&call=callBillPaymentFromMenu&compCode=$compCode&ref1=$ref1&ref2=$ref2&amt=$amt&srid=$srid&srNo=$srNo&paymentType=$paymentType&objectiveId=$objectiveId",
+  "navi_activate_with_hp_acct": "tmbtouch://linkaccess?redirect=&moduleName=&call=callActTouchByALAcctFrmOneApp&autoAcctNo=$autoAcctNo"
+}

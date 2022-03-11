@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation-Testing" verbose="5" thread-count="4" data-provider-thread-count="6">
+
+	<test name="Protection: Update Profile for coverage recommendation customer04">
+		<parameter name="DeviceProfile" value="protection-android-customer04"/>
+		<groups>
+			<run>
+				<include name="Profile_22_EN_Update Profile for coverage recommendation summary"/>
+				<include name="Profile_23_EN_Update Profile for Health coverage recommendation"/>
+				<include name="Profile_25_EN_Update Profile for Wealth coverage recommendation"/>
+				<include name="Profile_27_EN_Update Profile for Life coverage recommendation"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.UpdateInfoRunner"/>
+		</classes>
+	</test>
+
+	<test name="Protection: Update Profile for coverage recommendation customer04">
+		<parameter name="DeviceProfile" value="protection-android-customer04"/>
+		<groups>
+			<run>
+				<include name="Profile_22_TH_Update Profile for coverage recommendation summary"/>
+				<include name="Profile_23_TH_Update Profile for Health coverage recommendation"/>
+				<include name="Profile_25_TH_Update Profile for Wealth coverage recommendation"/>
+				<include name="Profile_27_TH_Update Profile for Life coverage recommendation"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.protection.UpdateInfoTHRunner"/>
+		</classes>
+	</test>
+</suite>

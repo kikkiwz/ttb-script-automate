@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+	<test name="Android/iOS Pay with wow">
+		<parameter name="DeviceProfile" value="customer-centric-android-Pixel-4-emulator"/>
+<!--		<parameter name="DeviceProfile" value="platform1-ios-oneapp-sim-iphone12-pro-max"/>-->
+		<groups>
+			<run>
+				<include name="example Group"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.customercentric.TestRunner"/>
+		</classes>
+	</test>
+</suite>

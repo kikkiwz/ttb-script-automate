@@ -1,0 +1,40 @@
+{
+  "TC_OneApp_Investment_Funds_Fact_Sheet_0001": {
+    "ScenarioName": "VerifyFund Fact Sheet Service",
+    "Description": "Verify Fund Fact Sheet in Thai Language",
+    "ExpectedResult": [
+      "The response Fund Fact Sheet return base64 as Thai language correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "TESCHINAA",
+      "language": "TH"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Funds_Fact_Sheet_0002": {
+    "ScenarioName": "VerifyFund Fact Sheet Service",
+    "Description": "Verify Fund Fact Sheet in English Language",
+    "ExpectedResult": [
+      "The response Fund Fact Sheet return base64 as English language correctly",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode": "TESCHINAA",
+      "language": "EN"
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "investment-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

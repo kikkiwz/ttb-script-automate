@@ -1,0 +1,230 @@
+{
+  "TC_Register_PromptPay_001": {
+    "Description": "Verify registration promptPay with mobileNo success.",
+    "Expected_Result_Before_Register_PromptPay": {
+      "statusCode": "0000",
+      "statusDesc": "success",
+      "accountNumber": null,
+      "citizenId": null,
+      "phoneNo": "XXX-XXX-0008",
+      "status": "NOT REGISTERED",
+      "activationMode": "mobileNo",
+      "bankCode": null,
+      "bankNameTh": null,
+      "bankNameEn": null,
+      "productNameEn": null,
+      "productNameTh": null,
+      "bankShortname": null
+    },
+    "Expected_Result_After_Register_PromptPay": {
+      "statusCode": "0000",
+      "statusDesc": "success",
+      "accountNumber": "0019686229",
+      "citizenId": null,
+      "phoneNo": "XXX-XXX-0008",
+      "status": "REGISTERED",
+      "activationMode": "mobileNo",
+      "bankCode": "011",
+      "bankNameTh": "ธนาคารทหารไทยธนชาต จำกัด (มหาชน)",
+      "bankNameEn": "TMBThanachart Bank",
+      "productNameEn": "all free account",
+      "productNameTh": "บัญชี ออลล์ฟรี",
+      "bankShortname": "ttb"
+    },
+    "TestData": {
+      "crm_id": "001100000000000000000000155593"
+    },
+    "user_name": "YuTV5xrNweAp5i8Cl87CNMAWbnmrbNK3AsRzqtawR6/AuYVQygnVmTVAZE61XHiY50QxfBeCnXxUm5TGL08Sek2O+BC73RBBwmOf/2W4p6G2FUyXrMPn9mMrgYwakwpGsb7n/XklfQ7GTNEuoiegolTpVE/+8UwBeSwDKGCDeg06z7fbCtHIOQzx6SWs1OACdRTmZkEEhu/7rtily10k6pypRL1X6/LA9FeOdO57z5qbLYPl+7wwa4ztllBk7jhu+qin8BLQH32fEwtbbw/YbKuF4XIiAMinOS/aBtHUSMzweBty9kwfz6uTKaxiUbn6VPS6T9yvLwEl5/sS3vXcMw==",
+    "RegisterPromptPayParams": {
+      "activationMode": "mobileNo",
+      "accountNumber": "0019686229",
+      "bankCode": "011"
+    },
+    "ResponseBody": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-ex-service",
+        "description": "success"
+      },
+      "data": "Success"
+    }
+  },
+  "TC_Register_PromptPay_002": {
+    "Description": "Verify registration promptPay with citizenID success.",
+    "Expected_Result_Before_Register_PromptPay": {
+      "statusCode": "0000",
+      "statusDesc": "success",
+      "accountNumber": null,
+      "citizenId": "X-XXXX-XXXX8-37-6",
+      "phoneNo": null,
+      "status": "NOT REGISTERED",
+      "activationMode": "citizenId",
+      "bankCode": null,
+      "bankNameTh": null,
+      "bankNameEn": null,
+      "productNameEn": null,
+      "productNameTh": null,
+      "bankShortname": null
+    },
+    "Expected_Result_After_Register_PromptPay": {
+      "statusCode": "0000",
+      "statusDesc": "success",
+      "accountNumber": "0019686229",
+      "citizenId": "X-XXXX-XXXX8-37-6",
+      "phoneNo": null,
+      "status": "REGISTERED",
+      "activationMode": "citizenId",
+      "bankCode": "011",
+      "bankNameTh": "ธนาคารทหารไทยธนชาต จำกัด (มหาชน)",
+      "bankNameEn": "TMBThanachart Bank",
+      "productNameEn": "all free account",
+      "productNameTh": "บัญชี ออลล์ฟรี",
+      "bankShortname": "ttb"
+    },
+    "TestData": {
+      "crm_id": "001100000000000000000000155593",
+      "user_name": "YuTV5xrNweAp5i8Cl87CNMAWbnmrbNK3AsRzqtawR6/AuYVQygnVmTVAZE61XHiY50QxfBeCnXxUm5TGL08Sek2O+BC73RBBwmOf/2W4p6G2FUyXrMPn9mMrgYwakwpGsb7n/XklfQ7GTNEuoiegolTpVE/+8UwBeSwDKGCDeg06z7fbCtHIOQzx6SWs1OACdRTmZkEEhu/7rtily10k6pypRL1X6/LA9FeOdO57z5qbLYPl+7wwa4ztllBk7jhu+qin8BLQH32fEwtbbw/YbKuF4XIiAMinOS/aBtHUSMzweBty9kwfz6uTKaxiUbn6VPS6T9yvLwEl5/sS3vXcMw=="
+    },
+    "RegisterPromptPayParams": {
+      "activationMode": "citizenId",
+      "accountNumber": "0019686229",
+      "bankCode": "011"
+    },
+    "ResponseBody": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-ex-service",
+        "description": "success"
+      },
+      "data": "Success"
+    }
+  },
+  "TC_DeRegister_PromptPay_001": {
+
+    "Description": "Verify De-registration promptPay with mobileNo success.",
+    "Expected_Result_Before_DeRegister_PromptPay": {
+
+      "statusCode": "0000",
+      "statusDesc": "success",
+      "accountNumber": "0019686229",
+      "citizenId": null,
+      "phoneNo": "XXX-XXX-0008",
+      "status": "REGISTERED",
+      "activationMode": "mobileNo",
+      "bankCode": "011",
+      "bankNameTh": "ธนาคารทหารไทยธนชาต จำกัด (มหาชน)",
+      "bankNameEn": "TMBThanachart Bank",
+      "productNameEn": "all free account",
+      "productNameTh": "บัญชี ออลล์ฟรี",
+      "bankShortname": "ttb"
+    },
+    "Expected_Result_After_DeRegister_PromptPay": {
+
+      "statusCode": "0000",
+      "statusDesc": "success",
+      "accountNumber": null,
+      "citizenId": null,
+      "phoneNo": "XXX-XXX-0008",
+      "status": "NOT REGISTERED",
+      "activationMode": "mobileNo",
+      "bankCode": null,
+      "bankNameTh": null,
+      "bankNameEn": null,
+      "productNameEn": null,
+      "productNameTh": null,
+      "bankShortname": null
+    },
+    "TestData": {
+      "crm_id": "001100000000000000000000155593",
+      "user_name": "YuTV5xrNweAp5i8Cl87CNMAWbnmrbNK3AsRzqtawR6/AuYVQygnVmTVAZE61XHiY50QxfBeCnXxUm5TGL08Sek2O+BC73RBBwmOf/2W4p6G2FUyXrMPn9mMrgYwakwpGsb7n/XklfQ7GTNEuoiegolTpVE/+8UwBeSwDKGCDeg06z7fbCtHIOQzx6SWs1OACdRTmZkEEhu/7rtily10k6pypRL1X6/LA9FeOdO57z5qbLYPl+7wwa4ztllBk7jhu+qin8BLQH32fEwtbbw/YbKuF4XIiAMinOS/aBtHUSMzweBty9kwfz6uTKaxiUbn6VPS6T9yvLwEl5/sS3vXcMw=="
+    },
+    "DeRegisterPromptPayParams": {
+      "activationMode": "mobileNo",
+      "accountNumber": "0019686229"
+    },
+    "ResponseBody": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-ex-service",
+        "description": "success"
+      },
+      "data": "Success"
+    }
+  },
+  "TC_DeRegister_PromptPay_002": {
+
+    "Description": "Verify De-registration promptPay with citizenID success.",
+    "Expected_Result_Before_DeRegister_PromptPay": {
+      "statusCode": "0000",
+      "statusDesc": "success",
+      "accountNumber": "0019686229",
+      "citizenId": "X-XXXX-XXXX8-37-6",
+      "phoneNo": null,
+      "status": "REGISTERED",
+      "activationMode": "citizenId",
+      "bankCode": "011",
+      "bankNameTh": "ธนาคารทหารไทยธนชาต จำกัด (มหาชน)",
+      "bankNameEn": "TMBThanachart Bank",
+      "productNameEn": "all free account",
+      "productNameTh": "บัญชี ออลล์ฟรี",
+      "bankShortname": "ttb"
+    },
+    "Expected_Result_After_DeRegister_PromptPay": {
+      "statusCode": "0000",
+      "statusDesc": "success",
+      "accountNumber": null,
+      "citizenId": "X-XXXX-XXXX8-37-6",
+      "phoneNo": null,
+      "status": "NOT REGISTERED",
+      "activationMode": "citizenId",
+      "bankCode": null,
+      "bankNameTh": null,
+      "bankNameEn": null,
+      "productNameEn": null,
+      "productNameTh": null,
+      "bankShortname": null
+    },
+    "TestData": {
+      "crm_id": "001100000000000000000000155593",
+      "user_name": "YuTV5xrNweAp5i8Cl87CNMAWbnmrbNK3AsRzqtawR6/AuYVQygnVmTVAZE61XHiY50QxfBeCnXxUm5TGL08Sek2O+BC73RBBwmOf/2W4p6G2FUyXrMPn9mMrgYwakwpGsb7n/XklfQ7GTNEuoiegolTpVE/+8UwBeSwDKGCDeg06z7fbCtHIOQzx6SWs1OACdRTmZkEEhu/7rtily10k6pypRL1X6/LA9FeOdO57z5qbLYPl+7wwa4ztllBk7jhu+qin8BLQH32fEwtbbw/YbKuF4XIiAMinOS/aBtHUSMzweBty9kwfz6uTKaxiUbn6VPS6T9yvLwEl5/sS3vXcMw=="
+    },
+    "DeRegisterPromptPayParams": {
+      "activationMode": "citizenId",
+      "accountNumber": "0019686229"
+    },
+    "ResponseBody": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-ex-service",
+        "description": "success"
+      },
+      "data": "Success"
+    }
+  },
+  "TC_DeRegister_PromptPay_003": {
+    "Description": "Verify De-registration promptPay with mobileNo success.",
+    "TestData": {
+      "crm_id": "001100000000000000000018595721",
+      "user_name": "WIU1oKUlHkSOgeky7U44ZrnU2wgzOtmGWBEuTpq+JscQC46Nd8+IRecqo/0lbozCBTokQek6u+aqrXCqgz4F7L2FaU4x+aScBZuUDbecoWcGLp0c81gWkyX0OSG4+mngjcTCGJ0JaYyl37v4tW+wJfPiJePTMKd3yAX6ixoXXPidT+OrmhSicQEmj4lkfUq+IxjfhEaGNDQIdUZNikzbbwFopWN7qBdvk7dEOEJD0wgkggLsgWCPpP5yjLM8tT+DabpukvsdaF9c90YEPMYgBoH2ywjKOQk4XUzpzSZ5PgJjuW2F/iXAogxNKeDgiuG7f6TDVUE1moxWJpPH6ZRFgQ=="
+    },
+    "DeRegisterPromptPayParams": {
+      "activationMode": "mobileNo",
+      "accountNumber": "0019750843"
+    },
+    "TC_DeRegister_PromptPay_004": {
+      "Description": "Verify De-registration promptPay with citizenID success.",
+      "TestData": {
+        "crm_id": "001100000000000000000018595721",
+        "user_name": "WIU1oKUlHkSOgeky7U44ZrnU2wgzOtmGWBEuTpq+JscQC46Nd8+IRecqo/0lbozCBTokQek6u+aqrXCqgz4F7L2FaU4x+aScBZuUDbecoWcGLp0c81gWkyX0OSG4+mngjcTCGJ0JaYyl37v4tW+wJfPiJePTMKd3yAX6ixoXXPidT+OrmhSicQEmj4lkfUq+IxjfhEaGNDQIdUZNikzbbwFopWN7qBdvk7dEOEJD0wgkggLsgWCPpP5yjLM8tT+DabpukvsdaF9c90YEPMYgBoH2ywjKOQk4XUzpzSZ5PgJjuW2F/iXAogxNKeDgiuG7f6TDVUE1moxWJpPH6ZRFgQ=="
+      },
+      "DeRegisterPromptPayParams": {
+        "activationMode": "citizenId",
+        "accountNumber": "0019750843"
+      }
+    }
+  }
+}

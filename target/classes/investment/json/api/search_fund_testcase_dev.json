@@ -1,0 +1,43 @@
+{
+  "TC_OneApp_Investment_Search_Fund_0001": {
+    "ScenarioName": "Verify Search Fund Service",
+    "Description": "Verify Search Fund by Single Port",
+    "ExpectedResult": [
+      "The response of Search Fund Service turn the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001829800"
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "product-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  },
+  "TC_OneApp_Investment_Search_Fund_0002": {
+    "ScenarioName": "Verify Search Fund Service",
+    "Description": "Verify Search Fund by Multiple Port",
+    "ExpectedResult": [
+      "The response of Search Fund Service turn the data correctly ",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "unitHolderNo": [
+        "PT000000000001829800",
+        "PT000000000001829798"
+      ]
+    },
+    "ExpectedResultKey": [
+      "0000",
+      "success",
+      "product-exp-service",
+      "success"
+    ],
+    "IsSkip": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "setting_promptPay_config": {
+    "promptPay_inquiry_path": "/apis/customer/promptpay/inquiry",
+    "hostName_path": {
+        "DEV" : "https://oneapp-dev1.tau2904.com",
+        "VIT" : "https://oneapp-vit1.tau2904.com"
+    },
+    "registerPromptPay_path" : "/apis/customer/promptpay/activate",
+    "deRegisterPromptPay_path" : "/apis/customer/promptpay/deactivate"
+  },
+  "headers" : {
+     "X-Correlation-ID" : "c8dba407-e4b0-4be7-a0b2-fd58f1a93330",
+     "Content-Type" : "application/json",
+     "Cookie" : "eb911a1df66b3f243135173f0fd323ef=f393b79626f154e5255b8ef4ead1c9b7"
+  }
+}
+

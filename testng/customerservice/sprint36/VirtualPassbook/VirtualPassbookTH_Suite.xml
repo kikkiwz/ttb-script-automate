@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+
+    <test name="Android Virtual Passbook TH multiple account">
+        <parameter name="DeviceProfile" value="customer-service-android-oneapp-488-dev-Huawei-saucelabs"/>
+        <groups>
+            <run>
+                <include name="Activate new flow"/>
+                <include name="Change language application"/>
+                <include name="Enter Service Screen Dev Latest" />
+                <include name="Customer Service Passbook"/>
+                <include name="Customer Service Select account"/>
+                <include name="Customer Service Virtual Passbook Check radio button"/>
+                <include name="Customer Service Virtual Passbook SDA DORMANT"/>
+                <include name="Customer Service Virtual Passbook SDA ACTIVE"/>
+                <include name="Customer Service Virtual Passbook SDA OTHER"/>
+                <include name="Customer Service Virtual Passbook DDA ACTIVE"/>
+                <include name="Customer Service Save And Share"/>
+                <include name="Customer Service Back to service page"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.customerservice.sprint33.VirtualPassbookRunner"/>
+        </classes>
+    </test>
+<!--    <test name="iOS Virtual Passbook TH multiple account">-->
+<!--        <parameter name="DeviceProfile" value="customer-service-ios-oneapp-sim-iphone12-pro-max-saucelabs"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Activate new flow"/>-->
+<!--                <include name="Change language application"/>-->
+<!--                <include name="Enter Service Screen Dev Latest" />-->
+<!--                <include name="Customer Service Passbook"/>-->
+<!--                <include name="Customer Service Select account"/>-->
+<!--                <include name="Customer Service Virtual Passbook Check radio button"/>-->
+<!--                <include name="Customer Service Virtual Passbook SDA DORMANT"/>-->
+<!--                <include name="Customer Service Virtual Passbook SDA ACTIVE"/>-->
+<!--                <include name="Customer Service Virtual Passbook SDA OTHER"/>-->
+<!--                <include name="Customer Service Virtual Passbook DDA ACTIVE"/>-->
+<!--                <include name="Customer Service Save And Share"/>-->
+<!--                <include name="Customer Service Back to service page"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ttbbank.oneapp.runner.customerservice.sprint36.VirtualPassbookTH.VirtualPassbookTH_Runner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

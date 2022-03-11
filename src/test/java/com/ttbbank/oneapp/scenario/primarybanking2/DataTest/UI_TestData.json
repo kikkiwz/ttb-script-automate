@@ -1,0 +1,96 @@
+{
+  "Description": "Test Data for UI",
+  "config": {
+    "wait_visible_second": 30,
+    "pin": "010203",
+    "isByPassOTP": true,
+    "rm1":{
+      "rm": "001100000000000000000025524191",
+      "citizen_id": "5656874094331",
+      "account_number1": "0019765478",
+      "account_number2": "0019767979",
+      "debit_card1": "4303-06XX-XXXX-5766",
+      "digital_card1": "4013-67XX-XXXX-0604",
+      "digital_card2": "4013-67XX-XXXX-0261",
+      "digital_card3": "4013-67XX-XXXX-0054",
+      "digital_card4": "4013-67XX-XXXX-0579",
+      "digital_card5": "4013-67XX-XXXX-0612"
+
+    },
+    "rm2": {
+      "rm": "001100000000000000000025524193",
+      "citizen_id": "2612788612797",
+      "card_number1": ""
+    },
+    "rm3":{
+      "rm": "001100000000000000000025524194",
+      "citizen_id": "2594816499280",
+      "card_number1": ""
+    },
+    "rm4":{
+      "rm": "001100000000000000000025524195",
+      "citizen_id": "9752758532520",
+      "card_number1": "0019765478",
+      "card_number2": "0019767979"
+    }
+  },
+  "PB2_ManageCard_DebitCard_Limit_Usage": {
+    "rm": "rm1",
+    "account_number": "account_number1",
+    "card_number": "digital_card2",
+    "cash_withdrawal_limit": "-",
+    "spending_limit": "-",
+    "allow_for_overseas_usage": "true",
+    "allow_for_paywave": "true",
+    "allow_for_online_shopping": "false"
+  },
+    "PB2_ManageCard_DigitalCard_Limit_Usage": {
+    "rm": "rm1",
+    "account_number": "account_number1",
+    "card_number": "debit_card1",
+    "cash_withdrawal_limit": "-",
+    "spending_limit": "-",
+    "allow_for_overseas_usage": "true",
+    "allow_for_paywave": "true",
+    "allow_for_online_shopping": "false"
+  },
+  "PB2_ManageCard_DigitalCard_Normal": {
+    "rm": "rm1",
+    "account_number": "account_number1",
+    "card_number": "debit_card1"
+  },
+    "PB2_ManageCard_DigitalCard_Blocked": {
+    "rm": "rm1",
+    "account_number": "account_number1",
+    "card_number": "debit_card9"
+  },
+    "PB2_ManageCard_DebitCard_Normal": {
+    "rm": "rm1",
+    "account_number": "account_number1",
+    "card_number": "digital_card2"
+
+  },
+  "PB2_ManageCard_DebitCard_Blocked": {
+    "rm": "rm1",
+    "account_number": "account_number1",
+    "card_number": "digital_card1"
+  },
+  "PB2_ManageCard_Temp_Block": {
+    "rm": "rm1",
+    "account_number": "account_number1",
+    "card_number": "digital_card2",
+    "TempBlock_DebitCard": "false"
+  },
+  "PB2_ManageCard_Temp_UnBlock": {
+    "rm": "rm1",
+    "account_number": "account_number1",
+    "card_number": "digital_card2",
+    "TempBlock_DebitCard": "true"
+  },
+  "PB2_ManageCard_Temp_Block_OnAndOff": {
+    "rm": "rm1",
+    "account_number": "account_number1",
+    "card_number": "digital_card2",
+  }
+
+}

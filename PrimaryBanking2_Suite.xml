@@ -1,0 +1,60 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="1" parallel="tests" thread-count="1" data-provider-thread-count="1">
+
+ 	<!-- <test name="ActivityDetailsAndroid"> 
+		<parameter name="DeviceProfile" value="pb2-android-Huawei" />
+		<groups>
+			<run>
+				<include name="PB2" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.ttbbank.oneapp.pb2.UI.s14030.ActivityDetailsAndroid" />
+		</classes>
+	</test>
+
+	<test name="StatementAndroid">
+		<parameter name="DeviceProfile" value="pb2-android-Huawei" />
+		<groups>
+			<run>
+				<include name="PB2" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.ttbbank.oneapp.pb2.UI.s14030.StatementAndroid" />
+		</classes>
+	</test>
+
+	<test name="ActivityDetailsIOS">
+		<parameter name="DeviceProfile" value="pb2-ios-iphone11ProMax" />
+		<groups>
+			<run>
+				<include name="PB2" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.ttbbank.oneapp.pb2.UI.s14030.ActivityDetailsIOS" />
+		</classes>
+	</test> 
+
+ -->	<test name="StatementIOS">
+		<parameter name="DeviceProfile" value="IT4IT-iOS-saucelabs-Iphone11" />
+		<groups>
+			<run>
+				<include name="PB2" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.ttbbank.oneapp.pb2.UI.s14030.StatementIOS" />
+		</classes>
+	</test>
+
+
+
+
+</suite>

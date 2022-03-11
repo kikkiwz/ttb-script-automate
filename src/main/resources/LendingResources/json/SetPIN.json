@@ -1,0 +1,22 @@
+{
+  "description": "fetch-installment-plan",
+  "method": "POST",
+  "hostname": "https://oneapp-dev1.tau2904.com",
+  "api-path1": "/apis/auth/token",
+  "api-key": "oneapp-dev",
+  "Authorization": "4Od1045RewUrGux8aj1oXzzrXOonyG7oOSIhERTL27W2tYIkDON6PXlIHGkv26I2",
+  "headers": {
+    "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866"
+  },
+  "body": {
+    "grant_type": "password",
+    "username": "V/AHIx/wzZKUlTp+5/VoZ7izYePMSMDjPyvrV48gGWr3UrI9GNLAHhdZAwiN39zHEDZLF8B5EzbtDYXi2vtVkEOZxzvXLIRKhF4WH1Yg3YAp7xznfTjHqGQjQHpnicGEnMY65wJMqWHPSTXFY0AJhkt8pbhmtywO/69Fmgwo59kdLKvqjMokRZQ5NaxRci7s8XOxDWD04tRtvyUQeH8TdCQvBHPmDcquVz50I5V2jCLNf5Ik8PQmlMs0HJMBNKB6kfeZO+RfrtSbWqeEyHGbjZnpriVB0ZzDMqQ86QxZqdfMYyi4hM2Sn/bWovVS/SykmxTZ9rxXHFKb+aexdlZnRQ==",
+    "password": "WfR5cuIdLh/GY9d9LME+SpKawy+LUToauMWCF+F87GGLCka6IlTP1Q7qnOVmYxl0jZGusmFNK/bICIUJA1ro2AhQXYaTKgs5mOJEO0DDEYla7vvXaLYZP1l2E57Yyk5r/iIxP/EdhuV6wIi/wmeGDM6jWgwtI9SisCq5Mcf1rvXHpBb6Dz/K9ppUrkGeyh24QdHoGxsPhi98mE8XB9jy5bWFf2fUtCNZzsFY5oLj+9PcHv+t9iS1H11SNN6nqJvCErlAGRIRoV5LxEOVuZ2rh8AO4Dy4CDUpCE8EPVRlvwbMndgiCaOGc3NAt5fs0Dbh+HZ8w0K8mQiTdx7lrRyVfA==",
+    "scope": "mobile"
+  },
+  "accountId": "0000000050078360018000167",
+  "anb": "0630000000092",
+  "api-path2": "/apis/products/credit-card/set-pin"
+
+
+}

@@ -1,0 +1,274 @@
+{
+  "Description": "Lending Sprint24 Cash for You 3 Apis 1.saving, 2.get-eligible-lead, 3.get-installment-rate",
+  "token": {
+    "description": "get-token",
+    "method": "POST",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/auth/token",
+    "key": "oneapp-dev",
+    "Authorization": "4Od1045RewUrGux8aj1oXzzrXOonyG7oOSIhERTL27W2tYIkDON6PXlIHGkv26I2",
+    "headers": {
+      "X-Correlation-Id": "4e953db0-f5e7-4cf9-b44f-2819ee8e7866"
+    },
+    "body": {
+      "grant_type": "password",
+      "username": "YindE6oB1+/78ZAc6GP9EB2pS5YzZQTMA6Fq8VYDi9Z9Vwyuw7KqbkDbiqhWQcsQ9wIBGoRSdl5XO9e3Nh215hJ+yhskFc6u0fVV8gyHSFVw5u8RhiQmDLVt65+NKRvCLMnWQSfgGylRCh0CJ+LH+QqgNrBa7iMOSnKHN0+l38tF2ecc+hX4TndPrShaTxKGdIQ0jyYMwTZ7wF1DQIvH2rj/Qlf6zLNuzaSrfYTEdIihfVL0bm11NPmTaXsAUZoF2sl6gs4i5f5rhyJnsu0ibKZIuYFacKXGRD97waz4f8vhl97uUS2ax0J67dXyWyfrz6uk2R62kTNyi7KaXnue8Q==",
+      "password": "WfR5cuIdLh/GY9d9LME+SpKawy+LUToauMWCF+F87GGLCka6IlTP1Q7qnOVmYxl0jZGusmFNK/bICIUJA1ro2AhQXYaTKgs5mOJEO0DDEYla7vvXaLYZP1l2E57Yyk5r/iIxP/EdhuV6wIi/wmeGDM6jWgwtI9SisCq5Mcf1rvXHpBb6Dz/K9ppUrkGeyh24QdHoGxsPhi98mE8XB9jy5bWFf2fUtCNZzsFY5oLj+9PcHv+t9iS1H11SNN6nqJvCErlAGRIRoV5LxEOVuZ2rh8AO4Dy4CDUpCE8EPVRlvwbMndgiCaOGc3NAt5fs0Dbh+HZ8w0K8mQiTdx7lrRyVfA==",
+      "scope": "mobile"
+    }
+  },
+  "saving" : {
+    "description": "Lending-CashForYou_Get_Account Saving",
+    "method": "GET",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "path": "/apis/customer/accounts/saving",
+    "header": {"X-CRMID":"001100000000000000000001184383",
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da"},
+    "body": {},
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "customers-ex-service"
+      },
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+      }
+    }
+  },
+  "get-eligible-lead": {
+    "description": "Lending-CashForYou_Get_Account_Eligible_Lead_Details",
+    "path": "/apis/products/loan/get-eligible-lead",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "metod" : "POST",
+    "header": {
+      "X-CRMID":"001100000000000000000018593707",
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da",
+      "Content-Type":  "application/json"
+    },
+    "body": {
+      "disbursementDate": "2021-02-01",
+      "groupAccountId": "0000000050080760015"
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+      }
+    }
+  },
+  "get-installment-rate": {
+    "description": "Lending-CashForYou_Get_Account_Installment_Details",
+    "path": "/apis/products/credit-card/get-installment-rate",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "metod" : "POST",
+    "header": {"X-CRMID":"001100000000000000000018593707",
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da",
+      "Content-Type":  "application/json"},
+    "body": {
+      "accountId": "0000000050078680019000079 ",
+      "amount": 10000,
+      "billCycleCutDate": 3,
+      "cashChillChillFlag": "Y",
+      "cashTransferFlag": "Y",
+      "disbursementDate": "2020-10-16",
+      "getAllDetailFlag": "N",
+      "promoSegment": "CS7"
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "products-exp-service",
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+      }
+    }
+  },
+
+
+
+
+  "cash-transfer-confirm": {
+    "description": "Lending-CashForYou: Create Cash Transfer",
+    "path": "/apis/payment/credit-card/cash-transfer-confirm",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "metod" : "POST",
+    "header": {"X-CRMID":"001100000000000000000012004011",
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da",
+      "Content-Type":  "application/json"},
+    "body": {
+      "reference": "CC2021Jun1744181491"
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "payment-experience-service",
+        "description": "Success"
+      },
+      "data": {
+        "reference": "CA2021Jun1724705010",
+        "order_no": ""
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+      }
+    },
+    "expected3": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "payment-experience-service",
+        "description": "Success"
+      },
+      "data": {
+        "reference": "CA2021Jun1724705010",
+        "order_no": ""
+      }
+    }
+  },
+  "cash-transfer-review-ca": {
+    "description": "Lending-CashForYou: [CA] Create cash transfer review",
+    "path": "/apis/payment/credit-card/cash-transfer-review",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "metod" : "POST",
+    "header": {"X-CRMID":"001100000000000000000012004011",
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da",
+      "Content-Type":  "application/json"},
+    "body": {
+      "amounts": "5000.01",
+      "deposit_bank_code": "011",
+      "deposit_branch_code": "0001",
+      "from_account_id": "0000000050078670143000945",
+      "from_account_type": "CCA",
+      "model_type": "CA",
+      "to_account_id": "00000019688019",
+      "to_account_type": "SDA",
+      "transfer_type": "TMB"
+
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "payment-experience-service",
+        "description": "Success"
+      },
+      "data": {
+        "reference": "CA2021Jun1724705010"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+      }
+    }
+  },
+
+  "cash-transfer-review-ct": {
+    "description": "Lending-CashForYou: [CT] Create cash transfer review",
+    "path": "/apis/payment/credit-card/cash-transfer-review",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "metod" : "POST",
+    "header": {"X-CRMID":"001100000000000000000012004011",
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da",
+      "Content-Type":  "application/json"},
+    "body": {
+      "amounts": "5000.02",
+      "deposit_bank_code": "011",
+      "deposit_branch_code": "0001",
+      "from_account_id": "0000000050078680472000929",
+      "from_account_type": "CCA",
+      "model_type": "CT",
+      "promotion_model_no": "B32",
+      "to_account_id": "0019686609",
+      "to_account_type": "SDA",
+      "transfer_type": "TMB"
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "payment-experience-service",
+        "description": "Success"
+      },
+      "data": {
+        "reference": "CC2021Jun1768060006"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+      }
+    }
+  },
+
+  "cash-transfer-review-cc": {
+    "description": "Lending-CashForYou: [CC] Create cash transfer review",
+    "path": "/apis/payment/credit-card/cash-transfer-review",
+    "hostname": "https://oneapp-dev1.tau2904.com",
+    "metod" : "POST",
+    "header": {"X-CRMID":"001100000000000000000012004011",
+      "X-Correlation-ID":"32fbd3b2-3f97-4a89-ar39-b4f628fbc8da",
+      "Content-Type":  "application/json"},
+    "body": {
+      "amounts": "5000.03",
+      "deposit_bank_code": "011",
+      "deposit_branch_code": "0001",
+      "from_account_id": "0000000050078680472000929",
+      "from_account_type": "CCA",
+      "model_type": "IL",
+      "promotion_model_no": "CS15",
+      "to_account_id": "0019686609",
+      "to_account_type": "SDA",
+      "transfer_type": "TMB",
+      "no_of_month1": "6",
+      "rate_step1": "3.84",
+      "tenor": "6"
+    },
+    "expected1": {
+      "status": {
+        "code": "0000",
+        "message": "success",
+        "service": "payment-experience-service",
+        "description": "Success"
+      },
+      "data": {
+        "reference": "CC2021Jun1797994987"
+      }
+    },
+    "expected2": {
+      "status": {
+        "code": "0004",
+        "message": "Unauthorized",
+        "service": "oneapp-ex-gw-service",
+      }
+    }
+  }
+}

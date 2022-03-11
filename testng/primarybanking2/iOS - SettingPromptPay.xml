@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="1" parallel="tests" thread-count="1" data-provider-thread-count="1">
+
+ 	<test name="SettingPromptPay">
+ 		<parameter name="DeviceProfile" value="pb2-ios-iphone11ProMax" />
+ 		<groups>
+ 			<run>
+				<include name="Register PromptPay"></include>
+				<include name="DeRegister PromptPay"></include>
+				<include name="CitizenID"></include>
+				<include name="MobileNo"></include>
+ 			</run>
+ 		</groups>
+ 		<classes>
+ 			<class
+ 				name="com.ttbbank.oneapp.runner.primarybanking2.SettingPromptpayRunnerAndroid" />
+ 		</classes>
+ 	</test>
+
+</suite>

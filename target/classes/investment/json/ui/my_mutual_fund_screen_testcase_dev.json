@@ -1,0 +1,14 @@
+{
+  "TC_OneApp_my_mutual_fund_screen_0001": {
+    "ScenarioName": "My Mutual Fund screen",
+    "Description": "Validate My Mutual Fund screen",
+    "ExpectedResult": [
+      "My Mutual Fund screen should be display correctly"
+    ],
+    "TestData": {
+      "fundCode": "TMBAALF"
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

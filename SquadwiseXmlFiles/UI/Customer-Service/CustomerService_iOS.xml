@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5">
+	<listeners>
+		<listener
+			class-name="com.tmb.automation.helper.ExtentListeners">
+
+		</listener>
+	</listeners>
+<parameter name="DeviceProfile" value="SaucelabiosCustomerService" />
+	<test preserve-order="true"  name="MutualFund_EN">	
+		<classes>
+            <class name="com.tmb.automation.test.customerservice.sprint25.MutualFund_EN"/>           
+        </classes>
+	</test> 
+		<test preserve-order="true"  name="MutualFund_TH">	
+		<classes>
+            <class name="com.tmb.automation.test.customerservice.sprint25.MutualFund_TH"/>           
+        </classes>
+	</test> 	
+</suite>

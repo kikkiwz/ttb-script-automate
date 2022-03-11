@@ -1,0 +1,15 @@
+{
+  "TC_OneApp_Investment_daily_nav_Summary_0001": {
+    "ScenarioName": "Daily",
+    "Description": "Verify Daily service",
+    "ExpectedResult": [
+      "Validate response Daily in case is success",
+      "HTTP code should = 200"
+    ],
+    "TestData": {
+      "fundCode" : "TESCHINAA"
+    },
+    "ExpectedResultKey": [],
+    "IsSkip": false
+  }
+}

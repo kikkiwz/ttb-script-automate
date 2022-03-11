@@ -1,0 +1,77 @@
+{
+  "server": {
+    "dev": "https://oneapp-dev1.tau2904.com",
+    "vit": "https://oneapp-vit1.tau2904.com",
+    "sit": "https://oneapp-sit1.tau2904.com",
+    "uat": "https://oneapp-uat1.tau2904.com",
+    "pre": "https://oneapp-pre1.tau2904.com"
+  },
+  "mongodb": {
+    "employee": {
+      "dev": {
+        "client_url": "mongodb://employeeactivityusr:DEVemp_2021@10.171.0.83:27017/employeeactivity",
+        "database_name": "employeeactivity",
+        "collection_name": "employee_activity_log_information_",
+        "sorts_by_column": "activity_date"
+      },
+      "vit": {
+        "client_url": "mongodb://employeeactivityusr:PwDemp_2021@10.171.0.88:28000/employeeactivity",
+        "database_name": "employeeactivity",
+        "collection_name": "employee_activity_log_information_",
+        "sorts_by_column": "activity_date"
+      },
+      "sit": {
+        "client_url": "",
+        "database_name": "",
+        "collection_name": "",
+        "sorts_by_column": ""
+      },
+      "uat": {
+        "client_url": "",
+        "database_name": "",
+        "collection_name": "",
+        "sorts_by_column": ""
+      },
+      "pre": {
+        "client_url": "",
+        "database_name": "",
+        "collection_name": "",
+        "sorts_by_column": ""
+      }
+    },
+    "customer": {
+      "dev": {
+        "client_url": "mongodb://activityusr:DEVact_2021@10.171.0.83:27017/activity",
+        "database_name": "activity",
+        "collection_name": "activity_log_information_",
+        "sorts_by_column": "activity_date"
+      },
+      "vit": {
+        "client_url": "mongodb://activityusr:DEVact_2021@10.171.0.88:28000/activity",
+        "database_name": "activity",
+        "collection_name": "activity_log_information_",
+        "sorts_by_column": "activity_date"
+      },
+      "sit": {
+        "client_url": "",
+        "database_name": "",
+        "collection_name": "",
+        "sorts_by_column": ""
+      },
+      "uat": {
+        "client_url": "",
+        "database_name": "",
+        "collection_name": "",
+        "sorts_by_column": ""
+      },
+      "pre": {
+        "client_url": "",
+        "database_name": "",
+        "collection_name": "",
+        "sorts_by_column": ""
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+	<test name="Change email success">
+		<parameter name="DeviceProfile" value="platform2-saucelabs-android-s21"/>
+		<parameter name="citizenId" value="4438408929690"/>
+		<parameter name="pin" value="010203"/>
+		<parameter name="scenarioTestName" value="Platform 2: Change email (email flagN)"/>
+		<parameter name="scenarioType" value="flagN"/>
+		<groups>
+			<run>
+				<include name="verifyChangeEmailMenu"/>
+				<include name="validateUpdateEmailUnsuccessfulFlagN"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ttbbank.oneapp.runner.platform2.ui.ChangeEmailFlagNRunner"/>
+		</classes>
+	</test>
+</suite>

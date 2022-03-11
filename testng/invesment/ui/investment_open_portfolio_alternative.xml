@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-Testing" verbose="5" parallel="tests" thread-count="4" data-provider-thread-count="6">
+
+    <test name="Investment - Open Port Exiting Customer">
+        <parameter name="DeviceProfile" value="investment-android-oneapp-606-vit-hauwie"/>
+        <parameter name="mutualFundMenuItem" value="more"/>
+        <parameter name="moreMenuItem" value="openPort"/>
+        <groups>
+            <run>
+                <include name="Enter Home Screen Dev Latest By Investment"/>
+                <include name="Enter Investment Home"/>
+                <include name="My Mutual Fund"/>
+                <include name="My Mutual Fund Menu"/>
+                <include name="More Menu"/>
+                <include name="Service Hours"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ttbbank.oneapp.runner.investment.CannotOpenPortRunner"/>
+        </classes>
+    </test>
+
+</suite>
+
